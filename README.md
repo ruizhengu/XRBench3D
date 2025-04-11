@@ -2,6 +2,8 @@
 
 # VR-Game-Jam-Template
 
+**Repo:** https://github.com/ValemVR/VR-Game-Jam-Template
+
 **Unity Editor Version:** 2021.3.45f1
 
 **XRI Version:** 2.6.3
