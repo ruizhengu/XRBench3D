@@ -10,15 +10,9 @@
 
 **Scene Under Test:** Demo Scene
 
-# XRI Starter Kit
-
-**Unity Editor Version:** 6000.0.45f1
-
-**XRI Version:** 3.1.1
-
-**Scene Under Test:** XRI Starter Kit
-
 # XRI Examples
+
+**Link:** https://github.com/Unity-Technologies/XR-Interaction-Toolkit-Examples
 
 **Unity Editor Version:** 6000.0.45f1
 
@@ -30,9 +24,18 @@
 
 **Link:** https://github.com/ValemVR/VR-Game-Jam-Template
 
-**Unity Editor Version:** 2021.3.45f1
+**Unity Editor Version:** 6000.0.45f1
 
 **XRI Version:** 2.6.3
 
 **Scene Under Test:** 2 Game Scene
 
+# XRI Starter Kit
+
+**Link:** https://assetstore.unity.com/packages/tools/game-toolkits/xr-interaction-toolkit-starter-kit-170222
+
+**Unity Editor Version:** 6000.0.45f1
+
+**XRI Version:** 3.1.1
+
+**Scene Under Test:** XRI Starter Kit

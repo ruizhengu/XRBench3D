@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR.Content.Interaction.Analytics;
 using UnityObject = UnityEngine.Object;
@@ -9,7 +8,7 @@ namespace UnityEditor.XR.Content.Interaction.Analytics
     /// Editor for <see cref="XrcSceneAnalytics"/> that makes it easy to spot missing analytics objects by validating
     /// object reference properties in all components in the same GameObject.
     /// </summary>
-    [CustomEditor(typeof(XrcSceneAnalyticsEditor))]
+    [CustomEditor(typeof(XrcSceneAnalytics))]
     class XrcSceneAnalyticsEditor : Editor
     {
         const string k_WarningMessage = "Missing analytics object reference in property \'{0}.{1}\'";
@@ -29,7 +28,7 @@ namespace UnityEditor.XR.Content.Interaction.Analytics
         {
             if (GUILayout.Button("Validate References"))
             {
-                var sceneAnalytics = target as XrcSceneAnalyticsEditor;
+                var sceneAnalytics = target as XrcSceneAnalytics;
                 if (sceneAnalytics == null)
                     return;
 

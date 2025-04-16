@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 namespace UnityEngine.XR.Content.Interaction
 {
@@ -101,8 +103,9 @@ namespace UnityEngine.XR.Content.Interaction
         /// <summary>
         /// See <see cref="MonoBehaviour"/>.
         /// </summary>
-        protected virtual void OnValidate()
+        protected override void OnValidate()
         {
+            base.OnValidate();
             m_GridWidth = Mathf.Max(1, m_GridWidth);
             m_GridHeight = Mathf.Max(1, m_GridHeight);
         }
