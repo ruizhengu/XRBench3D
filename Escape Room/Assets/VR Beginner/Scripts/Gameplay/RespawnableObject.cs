@@ -40,7 +40,7 @@ public class RespawnableObject : MonoBehaviour
         }
         else
         {
-            m_Rigidbody.velocity = Vector3.zero;
+            m_Rigidbody.linearVelocity = Vector3.zero;
             m_Rigidbody.angularVelocity = Vector3.zero;
             m_Rigidbody.position = m_StartingPosition;
             m_Rigidbody.rotation = m_StartingRotation;

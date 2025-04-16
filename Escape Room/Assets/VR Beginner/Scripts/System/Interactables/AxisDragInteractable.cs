@@ -7,13 +7,13 @@ using Random = UnityEngine.Random;
 /// <summary>
 /// Custom interactable that can be dragged along an axis. Can either be continuous or snap to integer steps.
 /// </summary>
-public class AxisDragInteractable : XRBaseInteractable
+public class AxisDragInteractable : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable
 {
     [Serializable]
-    public class DragDistanceEvent : UnityEvent<float> {}
+    public class DragDistanceEvent : UnityEvent<float> { }
 
     [Serializable]
-    public class DragStepEvent : UnityEvent<int> {}
+    public class DragStepEvent : UnityEvent<int> { }
 
     [Tooltip("The Rigidbody that will be moved. If null will try to grab one on that object or its children")]
     public Rigidbody MovingRigidbody;
@@ -24,7 +24,7 @@ public class AxisDragInteractable : XRBaseInteractable
     [Tooltip("If 0, then this is a float [0,1] range slider, otherwise there is an integer slider")]
     public int Steps = 0;
     public bool SnapOnlyOnRelease = true;
-    
+
     public bool ReturnOnFree;
     public float ReturnSpeed;
 
@@ -32,16 +32,16 @@ public class AxisDragInteractable : XRBaseInteractable
 
     public DragDistanceEvent OnDragDistance;
     public DragStepEvent OnDragStep;
-    
+
     Vector3 m_EndPoint;
     Vector3 m_StartPoint;
     Vector3 m_GrabbedOffset;
     float m_CurrentDistance;
     int m_CurrentStep;
-    XRBaseInteractor m_GrabbingInteractor;
+    UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor m_GrabbingInteractor;
 
     float m_StepLength;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,10 +62,10 @@ public class AxisDragInteractable : XRBaseInteractable
         {
             m_StepLength = AxisLength / Steps;
         }
-        
+
         m_StartPoint = transform.position;
         m_EndPoint = transform.position + transform.TransformDirection(LocalAxis) * AxisLength;
-        
+
         if (MovingRigidbody == null)
         {
             MovingRigidbody = GetComponentInChildren<Rigidbody>();
@@ -84,7 +84,7 @@ public class AxisDragInteractable : XRBaseInteractable
 
                 Vector3 distance = m_GrabbingInteractor.transform.position - transform.position - m_GrabbedOffset;
                 float projected = Vector3.Dot(distance, WorldAxis);
-                
+
                 //ajust projected to clamp it to steps if there is steps
                 if (Steps != 0 && !SnapOnlyOnRelease)
                 {
@@ -111,7 +111,7 @@ public class AxisDragInteractable : XRBaseInteractable
                         }, 0.0f);
                         OnDragStep.Invoke(posStep);
                     }
-                    
+
                     m_CurrentStep = posStep;
                 }
 
@@ -131,7 +131,7 @@ public class AxisDragInteractable : XRBaseInteractable
             {
                 Vector3 targetPoint = Vector3.MoveTowards(transform.position, m_StartPoint, ReturnSpeed * Time.deltaTime);
                 Vector3 move = targetPoint - transform.position;
-                
+
                 if (MovingRigidbody != null)
                     MovingRigidbody.MovePosition(MovingRigidbody.position + move);
                 else
@@ -144,21 +144,22 @@ public class AxisDragInteractable : XRBaseInteractable
     {
         base.OnSelectEntered(args);
 
-        var interactor = args.interactor;
-        m_GrabbedOffset = interactor.transform.position - transform.position;
-        m_GrabbingInteractor = interactor;
+        // Get the interactor from interactorObject instead of deprecated interactor
+        var interactor = args.interactorObject.transform;
+        m_GrabbedOffset = interactor.position - transform.position;
+        m_GrabbingInteractor = args.interactorObject as UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor;
     }
 
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
-        
+
         if (SnapOnlyOnRelease && Steps != 0)
         {
             float dist = (transform.position - m_StartPoint).magnitude;
             int step = Mathf.RoundToInt(dist / m_StepLength);
             dist = step * m_StepLength;
-            
+
             transform.position = m_StartPoint + transform.TransformDirection(LocalAxis) * dist;
 
             if (step != m_CurrentStep)
@@ -177,7 +178,7 @@ public class AxisDragInteractable : XRBaseInteractable
     void OnDrawGizmosSelected()
     {
         Vector3 end = transform.position + transform.TransformDirection(LocalAxis.normalized) * AxisLength;
-        
+
         Gizmos.DrawLine(transform.position, end);
         Gizmos.DrawSphere(end, 0.01f);
     }

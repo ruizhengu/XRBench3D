@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 //Allow for controlling the camera & hand controller when in editor without a headset present
 //will also allow for camera control on mobile, for performace test
@@ -20,7 +20,7 @@ public class DebugController : MonoBehaviour
    public static bool VRDisplayIsPresent()
    {
        var xrDisplaySubsystems = new List<XRDisplaySubsystem>();
-       SubsystemManager.GetInstances<XRDisplaySubsystem>(xrDisplaySubsystems);
+       SubsystemManager.GetSubsystems<XRDisplaySubsystem>(xrDisplaySubsystems);
        foreach (var xrDisplay in xrDisplaySubsystems)
        {
            if (xrDisplay.running)
@@ -47,11 +47,11 @@ public class DebugController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TeleportationAnchor anchor = null;
+        UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportationAnchor anchor = null;
         RaycastHit hit;
         if (Physics.Raycast(CameraPivotTransform.position, CameraPivotTransform.forward, out hit, 100.0f, LayerMask.GetMask("Teleporter")))
         {
-            anchor = hit.collider.GetComponentInParent<TeleportationAnchor>();
+            anchor = hit.collider.GetComponentInParent<UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportationAnchor>();
         }
         
         if (Input.GetMouseButton(1) && anchor != null)

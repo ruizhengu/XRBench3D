@@ -33,7 +33,7 @@ public class MagicBallProjectile : ProjectileBase
     public override void Launched(Vector3 direction, ObjectLauncher launcher)
     {
         //as they are pooled, they could have been already used and have previous velocity
-        m_Rigidbody.velocity = Vector3.zero;
+        m_Rigidbody.linearVelocity = Vector3.zero;
 
         m_Rigidbody.AddForce(direction * 200.0f);
         m_Launcher = launcher;

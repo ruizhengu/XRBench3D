@@ -1,33 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-[RequireComponent(typeof(XRBaseInteractor))]
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor))]
 public class TriggerAnimationEvent : MonoBehaviour
 {
     public string TriggerName;
+    public InteractionLayerMask excludedLayers;
 
     int m_TriggerID;
-    
+
     void Start()
     {
         m_TriggerID = Animator.StringToHash(TriggerName);
-        var interactor = GetComponent<XRBaseInteractor>();
-        interactor.selectEntered.AddListener(TriggerAnim);
+        GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor>().selectEntered.AddListener(TriggerAnim);
     }
 
     public void TriggerAnim(SelectEnterEventArgs args)
     {
-        var interactable = args.interactable;
+        var interactable = args.interactableObject as MonoBehaviour;
+        if (interactable == null) return;
+
         var animator = interactable.GetComponentInChildren<Animator>();
+        animator?.SetTrigger(m_TriggerID);
 
-        if (animator != null)
+        // Update interaction layers using new system
+        if (interactable.TryGetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>(out var xrInteractable))
         {
-            animator.SetTrigger(TriggerName);
-        }
+            // xrInteractable.interactionLayers = xrInteractable.interactionLayers.Exclude(excludedLayers);
+            xrInteractable.interactionLayers &= ~(1 << LayerMask.NameToLayer("Hands"));
 
-        interactable.interactionLayerMask &= ~(1<<LayerMask.NameToLayer("Hands"));
+        }
     }
 }

@@ -9,29 +9,29 @@ using UnityEngine.XR.Interaction.Toolkit;
 /// Special script that work with the XRExclusiveSocket script. This allow to define a SocketType and if that SocketType
 /// does not match the XRExclusiveSocket SocketType, this won't be accepted by the socket as a valid target
 /// </summary>
-[RequireComponent(typeof(XRBaseInteractable))]
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable))]
 public class SocketTarget : MonoBehaviour
 {
     public string SocketType;
     public SelectEnterEvent SocketedEvent;
     public bool DisableSocketOnSocketed;
-    
+
     void Awake()
     {
-        var interactable = GetComponent<XRBaseInteractable>();
+        var interactable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
 
         interactable.selectEntered.AddListener(SelectedSwitch);
     }
 
     public void SelectedSwitch(SelectEnterEventArgs args)
     {
-        var interactor = args.interactor;
+        var interactor = args.interactorObject;
         var socketInteractor = interactor as XRExclusiveSocketInteractor;
-        
-        if(socketInteractor == null)
+
+        if (socketInteractor == null)
             return;
 
-        if(SocketType != socketInteractor.AcceptedType)
+        if (SocketType != socketInteractor.AcceptedType)
             return;
 
         if (DisableSocketOnSocketed)

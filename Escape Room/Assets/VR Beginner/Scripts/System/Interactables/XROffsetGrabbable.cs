@@ -1,78 +1,69 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-/// <summary>
-/// Small modification of the classic XRGrabInteractable that will keep the position and rotation offset between the
-/// grabbed object and the controller instead of snapping the object to the controller. Better for UX and the illusion
-/// of holding the thing (see Tomato Presence : https://owlchemylabs.com/tomatopresence/)
-/// </summary>
-public class XROffsetGrabbable : XRGrabInteractable
+public class XROffsetGrabbable : UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
 {
     class SavedTransform
     {
         public Vector3 OriginalPosition;
         public Quaternion OriginalRotation;
     }
-    
-    
-    Dictionary<XRBaseInteractor, SavedTransform> m_SavedTransforms = new Dictionary<XRBaseInteractor, SavedTransform>();
 
+    Dictionary<UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor, SavedTransform> m_SavedTransforms = new Dictionary<UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor, SavedTransform>();
     Rigidbody m_Rb;
 
     protected override void Awake()
     {
         base.Awake();
-
-        //the base class already grab it but don't expose it so have to grab it again
         m_Rb = GetComponent<Rigidbody>();
     }
-    
-    protected override void OnSelectEntered(SelectEnterEventArgs evt)
+
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        var interactor = evt.interactor;
-        if (interactor is XRDirectInteractor)
+        var interactor = args.interactorObject;
+        if (interactor is UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor directInteractor)
         {
-            SavedTransform savedTransform = new SavedTransform();
-            
-            savedTransform.OriginalPosition = interactor.attachTransform.localPosition;
-            savedTransform.OriginalRotation = interactor.attachTransform.localRotation;
+            var savedTransform = new SavedTransform
+            {
+                OriginalPosition = directInteractor.attachTransform.localPosition,
+                OriginalRotation = directInteractor.attachTransform.localRotation
+            };
 
             m_SavedTransforms[interactor] = savedTransform;
-            
-            
+
             bool haveAttach = attachTransform != null;
-
-            interactor.attachTransform.position = haveAttach ? attachTransform.position : m_Rb.worldCenterOfMass;
-            interactor.attachTransform.rotation = haveAttach ? attachTransform.rotation : m_Rb.rotation;
+            directInteractor.attachTransform.position = haveAttach ? attachTransform.position : m_Rb.worldCenterOfMass;
+            directInteractor.attachTransform.rotation = haveAttach ? attachTransform.rotation : m_Rb.rotation;
         }
 
-        base.OnSelectEntered(evt);
+        base.OnSelectEntered(args);
     }
 
-    protected override void OnSelectExited(SelectExitEventArgs evt)
+    protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        var interactor = evt.interactor;
-        if (interactor is XRDirectInteractor)
+        var interactor = args.interactorObject;
+        if (interactor is UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor directInteractor && m_SavedTransforms.TryGetValue(interactor, out var savedTransform))
         {
-            SavedTransform savedTransform = null;
-            if (m_SavedTransforms.TryGetValue(interactor, out savedTransform))
-            {
-                interactor.attachTransform.localPosition = savedTransform.OriginalPosition;
-                interactor.attachTransform.localRotation = savedTransform.OriginalRotation;
-
-                m_SavedTransforms.Remove(interactor);
-            }
+            directInteractor.attachTransform.localPosition = savedTransform.OriginalPosition;
+            directInteractor.attachTransform.localRotation = savedTransform.OriginalRotation;
+            m_SavedTransforms.Remove(interactor);
         }
-        
-        base.OnSelectExited(evt);
+
+        base.OnSelectExited(args);
     }
 
-    public override bool IsSelectableBy(XRBaseInteractor interactor)
+    public override bool IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor interactor)
     {
-        int interactorLayerMask = 1 << interactor.gameObject.layer;
-        return base.IsSelectableBy(interactor) && (interactionLayerMask.value & interactorLayerMask) != 0 ;
+        if (!base.IsSelectableBy(interactor))
+            return false;
+
+        if (interactor is UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor baseInteractor)
+        {
+            int interactorLayerMask = 1 << baseInteractor.gameObject.layer;
+            return (interactionLayers.value & interactorLayerMask) != 0;
+        }
+        return false;
     }
 }

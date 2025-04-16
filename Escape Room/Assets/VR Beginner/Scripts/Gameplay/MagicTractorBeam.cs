@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 /// <summary>
 /// Utility script that can pull toward the hand/controller the currently selected object through a Raycast.
@@ -16,7 +16,7 @@ public class MagicTractorBeam : MonoBehaviour
     public bool IsEnabled => BeamRenderer.gameObject.activeSelf;
     public bool IsTracting => m_TractingObject;
     
-    XRDirectInteractor m_DirectInteractor;
+    UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor m_DirectInteractor;
     
     Rigidbody m_HighlightedRigidbody;
     SelectionOutline m_CurrentSelectionOutline = null;
@@ -25,7 +25,7 @@ public class MagicTractorBeam : MonoBehaviour
     
     void Start()
     {
-        m_DirectInteractor = GetComponentInChildren<XRDirectInteractor>();
+        m_DirectInteractor = GetComponentInChildren<UnityEngine.XR.Interaction.Toolkit.Interactors.XRDirectInteractor>();
     }
     
     void Update()
@@ -48,7 +48,7 @@ public class MagicTractorBeam : MonoBehaviour
                 float closestDistance = float.MaxValue;
                 float closestDistanceGrabbable = float.MaxValue;
 
-                XRGrabInteractable closestGrababble = null;
+                UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable closestGrababble = null;
 
                 for (int i = 0; i < count; ++i)
                 {
@@ -58,7 +58,7 @@ public class MagicTractorBeam : MonoBehaviour
                     if (m_HitCache[i].rigidbody == null)
                         continue;
 
-                    var grabbable = m_HitCache[i].rigidbody.GetComponentInChildren<XRGrabInteractable>();
+                    var grabbable = m_HitCache[i].rigidbody.GetComponentInChildren<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
 
                     if (grabbable != null && m_HitCache[i].distance < closestDistanceGrabbable)
                     {
@@ -96,7 +96,7 @@ public class MagicTractorBeam : MonoBehaviour
         if(toTarget.sqrMagnitude > 1.0f)
             toTarget.Normalize();
             
-        m_HighlightedRigidbody.velocity = Vector3.zero;
+        m_HighlightedRigidbody.linearVelocity = Vector3.zero;
         m_HighlightedRigidbody.AddForce(toTarget * 2.0f, ForceMode.VelocityChange);
     }
 
@@ -122,7 +122,7 @@ public class MagicTractorBeam : MonoBehaviour
             }
 
             m_TractingObject = false;
-            m_HighlightedRigidbody.velocity = Vector3.zero;
+            m_HighlightedRigidbody.linearVelocity = Vector3.zero;
             m_HighlightedRigidbody = null;
         }
         

@@ -148,7 +148,7 @@ public class Potion : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (m_Breakable && m_RbPotion.velocity.magnitude > 1.35)
+        if (m_Breakable && m_RbPotion.linearVelocity.magnitude > 1.35)
         {
 
             if (m_PlugIn)

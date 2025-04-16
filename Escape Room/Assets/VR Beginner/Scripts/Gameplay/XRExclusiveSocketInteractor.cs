@@ -1,26 +1,27 @@
 ﻿using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 
-/// <summary>
-/// Subclass of the classic Socket Interactor from the Interaction toolkit that will only accept object with the right
-/// SocketTarget 
-/// </summary>
-public class XRExclusiveSocketInteractor : XRSocketInteractor
+
+public class XRExclusiveSocketInteractor : UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
 {
     public string AcceptedType;
 
-    public override bool CanSelect(XRBaseInteractable interactable)
+    public override bool CanSelect(UnityEngine.XR.Interaction.Toolkit.Interactables.IXRSelectInteractable interactable)
     {
-        SocketTarget socketTarget = interactable.GetComponent<SocketTarget>();
-
-        if (socketTarget == null)
+        if (!base.CanSelect(interactable))
             return false;
 
-        return base.CanSelect(interactable) && (socketTarget.SocketType == AcceptedType);
+        // Get the SocketTarget component from the interactable
+        var socketTarget = (interactable as MonoBehaviour)?.GetComponent<SocketTarget>();
+        return socketTarget != null && socketTarget.SocketType == AcceptedType;
     }
 
-    public override bool CanHover(XRBaseInteractable interactable)
+    public override bool CanHover(UnityEngine.XR.Interaction.Toolkit.Interactables.IXRHoverInteractable interactable)
     {
-        return CanSelect(interactable);
+        if (!base.CanHover(interactable))
+            return false;
+
+        // Get the SocketTarget component from the interactable
+        var socketTarget = (interactable as MonoBehaviour)?.GetComponent<SocketTarget>();
+        return socketTarget != null && socketTarget.SocketType == AcceptedType;
     }
 }

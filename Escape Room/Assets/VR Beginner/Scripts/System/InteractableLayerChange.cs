@@ -1,20 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class InteractableLayerChange : MonoBehaviour
 {
-    public XRBaseInteractable TargetInteractable;
-    public LayerMask NewLayerMask;
+    [SerializeField] UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable TargetInteractable;
+    [SerializeField] InteractionLayerMask NewInteractionLayers;
 
-    public void ChangeLayerDynamic(XRBaseInteractable interactable)
+    public void ChangeLayerDynamic(UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable interactable)
     {
-        interactable.interactionLayerMask = NewLayerMask;
+        interactable.interactionLayers = NewInteractionLayers;
     }
 
     public void ChangeLayer()
     {
-        TargetInteractable.interactionLayerMask = NewLayerMask;
+        if (TargetInteractable != null)
+            TargetInteractable.interactionLayers = NewInteractionLayers;
     }
 }

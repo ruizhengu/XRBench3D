@@ -43,20 +43,20 @@ public class AlignmentTrigger : MonoBehaviour
         for (int i = 0; i < RequiredMatch.Length && allMatch; ++i)
         {
             AxisMatch match = RequiredMatch[i];
-            
+
             Vector3 worldLocal = transform.TransformVector(match.LocalAxis);
             Vector3 worldExternal;
 
 
             if (match.ExternalAxisMode == Mode.View)
             {
-                worldExternal =  MasterController.Instance.Rig.cameraGameObject.transform.TransformVector(match.ExternalAxis);
+                // Updated camera access
+                worldExternal = MasterController.Instance.Rig.Camera.gameObject.transform.TransformVector(match.ExternalAxis);
             }
             else
             {
                 worldExternal = match.ExternalAxis;
             }
-
             float dot = Vector3.Dot(worldLocal, worldExternal);
 
             allMatch &= dot > 1.0f - match.Tolerance;
