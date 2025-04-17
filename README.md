@@ -26,7 +26,7 @@
 
 **Unity Editor Version:** 6000.0.45f1
 
-**XRI Version:** 2.6.3
+**XRI Version:** 3.1.1
 
 **Scene Under Test:** 2 Game Scene
 
@@ -39,3 +39,13 @@
 **XRI Version:** 3.1.1
 
 **Scene Under Test:** XRI Starter Kit
+
+# VR Beginner: The Escape Room
+
+**Link:** https://assetstore.unity.com/packages/templates/tutorials/vr-beginner-the-escape-room-163264?srsltid=AfmBOoqhZh5LdXmRYc4vJgmQA--Wj0uIJCpI6XjNpgN-xrgzVUgnCqWA
+
+**Unity Editor Version:** 6000.0.45f1
+
+**XRI Version:** 3.1.1
+
+**Scene Under Test:** Prototype Scene, Escape Room
