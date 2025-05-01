@@ -64,20 +64,43 @@ MonoBehaviour:
     locomotion.
   preview: {fileID: -7201468737772367373}
   dependencies:
+  - dependency: {fileID: 4180064242812793430, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+      type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 2d41fd27f23a18d48a4a9076fac52166, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 7bda26f245bb1c942b25d7f19f3e6d0f, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 930e7292575643f408eda54953f2584d, type: 2}
     instantiationMode: 0
   - dependency: {fileID: -927199367670048503, guid: ca3902aea3bd1c641970767996c30a95,
       type: 3}
     instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: f5d45bc1d2cb66b49a693c5bf6e4a180, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: bd3da505ae8a0b14f99978167f68918c, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2658822711922157559, guid: 9d62e873ef8781a45865a8388d7f2e86,
+      type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 1b6af59b67329fa44b1cadf488866199, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 66494c612fc2dee4a8e3dd043fb46c0e, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 8685512c7856ffd40a4ad1859a7cb52c, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 933a9ef6eb5d56243bd9074d2c2673ce, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 40d5f39ae0668b14f9d71f56c2981be7, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 349ca49b96534224caefd1b9cdf1694a, type: 2}
     instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 4bc8d5c0ab740ab4289fb8d171c18d35, type: 2}
+    instantiationMode: 0
   - dependency: {fileID: 2282336950282846497, guid: 21a9b655c2d703344abc684145092a05,
+      type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 4845999675907301473, guid: 5e6cbe37b1986fc4f81a1edc7f1f9dc0,
       type: 3}
     instantiationMode: 0
   templatePipeline: {fileID: 0}

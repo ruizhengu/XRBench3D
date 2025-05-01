@@ -9,16 +9,16 @@ public class ButtonInteractable : MonoBehaviour
     [System.Serializable]
     public class ButtonReleasedEvent : UnityEvent { }
 
-    public Vector3 Axis = new Vector3(0,-1,0 );
+    public Vector3 Axis = new Vector3(0, -1, 0);
     public float MaxDistance;
     public float ReturnSpeed = 10.0f;
 
     public AudioClip ButtonPressAudioClip;
     public AudioClip ButtonReleaseAudioClip;
-    
+
     public ButtonPressedEvent OnButtonPressed;
     public ButtonReleasedEvent OnButtonReleased;
-    
+
     Vector3 m_StartPosition;
     Rigidbody m_Rigidbody;
     Collider m_Collider;
@@ -36,7 +36,7 @@ public class ButtonInteractable : MonoBehaviour
     {
         Vector3 worldAxis = transform.TransformDirection(Axis);
         Vector3 end = transform.position + worldAxis * MaxDistance;
-        
+
         float m_CurrentDistance = (transform.position - m_StartPosition).magnitude;
         RaycastHit info;
 
