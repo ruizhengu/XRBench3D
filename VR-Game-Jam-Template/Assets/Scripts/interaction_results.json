@@ -1,0 +1,281 @@
+[
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "DoorLocked",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "DoorLocked",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SpringJointInteractable_01",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "SpringJointInteractable_01",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SprintJointInteractable_04",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "SprintJointInteractable_04",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Mallet",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Mallet",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Cabinet",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Cabinet",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Launcher",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Launcher",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Dial",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Dial",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Launcher2H",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Launcher2H",
+        "type": "socket",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Launcher2H",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Launcher2H",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "VelocityTrackedCube",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "VelocityTrackedCube",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "DoorKey",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "DoorKey",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Mallet",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Mallet",
+        "type": "socket",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "WateringCan",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "WateringCan",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SprintJointInteractable_02",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "SprintJointInteractable_02",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SimpleSocketShape",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "SimpleSocketShape",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SpringJointInteractable_03",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "SpringJointInteractable_03",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Fader Screen",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "InstantTracking",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "InstantTracking",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "KinematicCube",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "KinematicCube",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Wheel",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Wheel",
+        "type": "socket",
+        "event_type": "select"
+    }
+]
