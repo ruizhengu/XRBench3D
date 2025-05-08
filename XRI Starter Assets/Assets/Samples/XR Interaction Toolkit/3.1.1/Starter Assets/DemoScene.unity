@@ -1490,6 +1490,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBudget: 300
+--- !u!114 &1443614604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443614596}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCount: 0
+  rightController: {fileID: 0}
 --- !u!1 &1486677401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,9 +1606,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 206595260629764052, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_PermittedDisplacementAxes
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1060243933316379515, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       propertyPath: m_Name
       value: Interactables Sample
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060243933316379515, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2991896912978869755, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       propertyPath: m_RootOrder
@@ -1639,6 +1661,10 @@ PrefabInstance:
     - target: {fileID: 2991896912978869755, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6263395680885754751, guid: 6821e1b7f44d8c44b8a2ba02f37309d5, type: 3}
+      propertyPath: m_PermittedDisplacementAxes
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2671,6 +2697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poke Interactions Sample
       objectReference: {fileID: 0}
+    - target: {fileID: 670559718997833774, guid: 88246f8e9c3765d49be8da34eca3c630, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 670559718997833775, guid: 88246f8e9c3765d49be8da34eca3c630, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2827,6 +2857,34 @@ PrefabInstance:
     - target: {fileID: 5151981248583452152, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.439
+      objectReference: {fileID: 0}
+    - target: {fileID: 5965078454125837647, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435774841609749895, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745135394966125637, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.18951
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745135394966125637, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.21076
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745135394966125637, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745135394966125637, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.117
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745135394966125637, guid: f5ee409d69254d64da7a3b74d31a5a40, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4169,6 +4227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Climb Sample
       objectReference: {fileID: 0}
+    - target: {fileID: 3953970342314940650, guid: 2ea572d587ee60f44bd5baa3bc2d6503, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3953970343158939989, guid: 2ea572d587ee60f44bd5baa3bc2d6503, type: 3}
       propertyPath: m_Name
       value: Handles (Climbable) 2
@@ -4448,6 +4510,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1443614603}
+    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1443614604}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!4 &9014170783777442264 stripped
 Transform:

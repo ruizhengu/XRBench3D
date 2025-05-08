@@ -1,0 +1,100 @@
+[
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Climbing Wall",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "Blaser-Long",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Interactable Velocity Tapered Cylinder",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Dynamic Attach Torus",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "Blaser",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Push Button 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Push Button 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Push Button 3",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Blaser",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Interactable Kinematic Torus",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Blaser-Long",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Interactable Instant Cylinder",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Single Floor Ladder",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Multi Floor Ladder",
+        "type": "3d",
+        "event_type": "select"
+    }
+]
