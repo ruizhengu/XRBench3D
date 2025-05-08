@@ -35,6 +35,13 @@
         "event_type": "select"
     },
     {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SprintJointInteractable_03",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
         "interactor": "SimpleSocket",
         "condition": [],
         "interactable": "SprintJointInteractable_04",
@@ -58,7 +65,14 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Cabinet",
+        "interactable": "Drawer 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Drawer 2",
         "type": "3d",
         "event_type": "select"
     },
@@ -72,44 +86,53 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Launcher",
+        "interactable": "Launcher1H",
         "type": "3d",
         "event_type": "select"
     },
     {
-        "interactor": "SimpleSocket",
-        "condition": [],
-        "interactable": "Launcher",
-        "type": "socket",
-        "event_type": "select"
-    },
-    {
         "interactor": "XR Origin (XR Rig)",
-        "condition": [],
-        "interactable": "Dial",
-        "type": "3d",
-        "event_type": "select"
-    },
-    {
-        "interactor": "SimpleSocket",
-        "condition": [],
-        "interactable": "Dial",
-        "type": "socket",
-        "event_type": "select"
-    },
-    {
-        "interactor": "XR Origin (XR Rig)",
-        "condition": [],
-        "interactable": "Launcher2H",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Launcher1H",
         "type": "3d",
         "event_type": "activate"
     },
     {
         "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Launcher",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Dial 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Dial",
+        "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
         "condition": [
             "select"
         ],
         "interactable": "Launcher2H",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "SimpleSocket",
+        "condition": [],
+        "interactable": "Launcher2H",
         "type": "socket",
         "event_type": "activate"
     },
@@ -130,7 +153,21 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "VelocityTrackedCube",
+        "interactable": "VelocityTrackedCube 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "VelocityTrackedCube 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "VelocityTrackedCube 3",
         "type": "3d",
         "event_type": "select"
     },
@@ -191,6 +228,13 @@
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
         "interactable": "SprintJointInteractable_02",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SprintJointInteractable_01",
         "type": "3d",
         "event_type": "select"
     },
@@ -239,7 +283,21 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "InstantTracking",
+        "interactable": "InstantTracking 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "InstantTracking 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "InstantTracking 3",
         "type": "3d",
         "event_type": "select"
     },
@@ -253,7 +311,21 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "KinematicCube",
+        "interactable": "KinematicCube 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "KinematicCube 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "KinematicCube 3",
         "type": "3d",
         "event_type": "select"
     },
@@ -267,7 +339,7 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Wheel",
+        "interactable": "Wheel 1",
         "type": "3d",
         "event_type": "select"
     },
@@ -276,6 +348,41 @@
         "condition": [],
         "interactable": "Wheel",
         "type": "socket",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Joystick 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Slider 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "GripButton",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "PushButton",
+        "type": "3d",
         "event_type": "select"
     }
 ]

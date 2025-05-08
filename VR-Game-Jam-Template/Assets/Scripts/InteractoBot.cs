@@ -25,7 +25,7 @@ public class InteractoBot : MonoBehaviour
     private float updateInterval = 0.05f;
     private float timeSinceLastUpdate = 0f;
     private float interactionAngle = 5.0f; // The angle for transiting from rotation to interaction
-    private float controllerMovementThreshold = 0.05f; // The distance of controller movement to continue interaction
+    private float controllerMovementThreshold = 0.1f; // The distance of controller movement to continue interaction
     private float interactionOffset = 0.05f; // Small distance in front of the target for interaction
     private float stateTransitionDelay = 0.1f; // Delay between state transitions
     private bool isControllerMoving = false; // Flag to track if controller is currently moving
@@ -165,7 +165,7 @@ public class InteractoBot : MonoBehaviour
             Vector3 controllerCurrentPos = rightController.transform.position;
             Vector3 controllerTargetPos = closestObject.transform.position;
             // Add offset in front of the target in the z axis
-            controllerTargetPos += new Vector3(0, 0, interactionOffset);
+            // controllerTargetPos += new Vector3(0, 0, interactionOffset);
 
             Vector3 controllerWorldDirection = Utils.GetControllerWorldDirection(controllerCurrentPos, controllerTargetPos);
             float distanceToTarget = Vector3.Distance(controllerCurrentPos, controllerTargetPos);
