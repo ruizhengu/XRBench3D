@@ -13195,7 +13195,11 @@ PrefabInstance:
         type: 3}
       insertIndex: 0
       addedObject: {fileID: 391919801}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670725264}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!114 &1470220575 stripped
 MonoBehaviour:
@@ -15515,6 +15519,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1665179185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1670725257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1468702134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670725264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670725257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCount: 0
+  rightController: {fileID: 0}
 --- !u!1001 &1675996088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20711,6 +20735,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1912cf3f8f6b9c644bbf1d004c946284, type: 2}
+    - target: {fileID: 1670148650989432322, guid: 8c9051b3ca2d4ed4d8d7a18f8cad0cc5,
+        type: 3}
+      propertyPath: m_Name
+      value: BrewButton
+      objectReference: {fileID: 0}
     - target: {fileID: 2015437248901717854, guid: 8c9051b3ca2d4ed4d8d7a18f8cad0cc5,
         type: 3}
       propertyPath: m_LocalRotation.w

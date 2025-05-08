@@ -1,0 +1,16 @@
+[
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Secret_instructions",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "BrewButton",
+        "type": "3d",
+        "event_type": "select"
+    }
+]

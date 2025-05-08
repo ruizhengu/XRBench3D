@@ -25,7 +25,7 @@ public class InteractoBot : MonoBehaviour
     private float updateInterval = 0.05f;
     private float timeSinceLastUpdate = 0f;
     private float interactionAngle = 5.0f; // The angle for transiting from rotation to interaction
-    private float controllerMovementThreshold = 0.08f; // The distance of controller movement to continue interaction
+    private float controllerMovementThreshold = 0.05f; // The distance of controller movement to continue interaction
     private float interactionOffset = 0.05f; // Small distance in front of the target for interaction
     private float stateTransitionDelay = 0.1f; // Delay between state transitions
     private bool isControllerMoving = false; // Flag to track if controller is currently moving
@@ -68,21 +68,21 @@ public class InteractoBot : MonoBehaviour
     {
         Time.timeScale = gameSpeed;
         // Handle different exploration states
-        switch (currentExplorationState)
-        {
-            case ExplorationState.Navigation:
-                Navigation();
-                break;
-            case ExplorationState.ControllerMovement:
-                ControllerMovement();
-                break;
-            case ExplorationState.ThreeDInteraction:
-                ThreeDInteraction();
-                break;
-            case ExplorationState.TwoDInteraction:
-                TwoDInteraction();
-                break;
-        }
+        // switch (currentExplorationState)
+        // {
+        //     case ExplorationState.Navigation:
+        //         Navigation();
+        //         break;
+        //     case ExplorationState.ControllerMovement:
+        //         ControllerMovement();
+        //         break;
+        //     case ExplorationState.ThreeDInteraction:
+        //         ThreeDInteraction();
+        //         break;
+        //     case ExplorationState.TwoDInteraction:
+        //         TwoDInteraction();
+        //         break;
+        // }
     }
 
     /// <summary>
@@ -432,7 +432,7 @@ public class InteractoBot : MonoBehaviour
                 baseInteractable.selectExited.AddListener(OnSelectExited);
                 baseInteractable.activated.AddListener(OnActivated);
                 baseInteractable.deactivated.AddListener(OnDeactivated);
-                // baseInteractable.hoverEntered.AddListener(OnHoverEntered);
+                baseInteractable.hoverEntered.AddListener(OnHoverEntered);
             }
         }
         // Register EventTrigger listeners for UI elements
@@ -464,7 +464,6 @@ public class InteractoBot : MonoBehaviour
         var xrInteractable = args.interactableObject;
         Debug.Log("OnHoverEntered: " + xrInteractable.transform.name);
     }
-
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         var xrInteractable = args.interactableObject;
