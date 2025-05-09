@@ -68,21 +68,21 @@ public class InteractoBot : MonoBehaviour
     {
         Time.timeScale = gameSpeed;
         // Handle different exploration states
-        // switch (currentExplorationState)
-        // {
-        //     case ExplorationState.Navigation:
-        //         Navigation();
-        //         break;
-        //     case ExplorationState.ControllerMovement:
-        //         ControllerMovement();
-        //         break;
-        //     case ExplorationState.ThreeDInteraction:
-        //         ThreeDInteraction();
-        //         break;
-        //     case ExplorationState.TwoDInteraction:
-        //         TwoDInteraction();
-        //         break;
-        // }
+        switch (currentExplorationState)
+        {
+            case ExplorationState.Navigation:
+                Navigation();
+                break;
+            case ExplorationState.ControllerMovement:
+                ControllerMovement();
+                break;
+            case ExplorationState.ThreeDInteraction:
+                ThreeDInteraction();
+                break;
+            case ExplorationState.TwoDInteraction:
+                TwoDInteraction();
+                break;
+        }
     }
 
     /// <summary>
@@ -188,12 +188,11 @@ public class InteractoBot : MonoBehaviour
                     current3DInteractionPattern = string.Join(",", events);
                     if (closestInteractable.GetObjectType() == "3d")
                     {
+                        bool intersection = Utils.GetIntersected(closestInteractable.GetObject(), rightController);
+                        closestInteractable.SetIntersected(intersection);
+                        Debug.Log("Intersected: " + closestInteractable.GetName() + " " + intersection);
                         StartCoroutine(TransitionToState(ExplorationState.ThreeDInteraction));
                     }
-                    // else if (closestInteractable.GetObjectType() == "2d")
-                    // {
-                    //     StartCoroutine(TransitionToState(ExplorationState.TwoDInteraction));
-                    // }
                 }
             }
         }
@@ -405,8 +404,6 @@ public class InteractoBot : MonoBehaviour
         float minDistance = Mathf.Infinity;
         foreach (InteractableObject interactable in interactableObjects)
         {
-            // GameObject interactable = GameObject.Find(interactionEvent.interactable);
-            // InteractableObject interactable = entry.Value;
             if (!interactable.GetVisited())
             {
                 float distance = Vector3.Distance(transform.position, interactable.GetObject().transform.position);
@@ -432,7 +429,7 @@ public class InteractoBot : MonoBehaviour
                 baseInteractable.selectExited.AddListener(OnSelectExited);
                 baseInteractable.activated.AddListener(OnActivated);
                 baseInteractable.deactivated.AddListener(OnDeactivated);
-                baseInteractable.hoverEntered.AddListener(OnHoverEntered);
+                // baseInteractable.hoverEntered.AddListener(OnHoverEntered);
             }
         }
         // Register EventTrigger listeners for UI elements
@@ -464,6 +461,7 @@ public class InteractoBot : MonoBehaviour
         var xrInteractable = args.interactableObject;
         Debug.Log("OnHoverEntered: " + xrInteractable.transform.name);
     }
+
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         var xrInteractable = args.interactableObject;
@@ -559,5 +557,31 @@ public class InteractoBot : MonoBehaviour
             triggerActionCount = 0; // Reset trigger action count when leaving 2D interaction state
         }
         currentExplorationState = newState;
+    }
+
+    private void GetComponentAttributes()
+    {
+        GameObject blaster = GameObject.Find("Blaster").transform.parent.gameObject;
+        Debug.Log(blaster.GetComponent<XRGrabInteractable>());
+        var grabInteractable = blaster.GetComponent<XRGrabInteractable>();
+        if (grabInteractable != null)
+        {
+            // Get the activated event
+            var activatedEvent = grabInteractable.activated;
+            Debug.Log($"Blaster Activate Event: {activatedEvent}");
+            activatedEvent.AddListener((args) =>
+            {
+                Debug.Log("Blaster activated event was fired!");
+            });
+            // You can also check if there are any listeners attached to this event
+            var hasListeners = activatedEvent.GetPersistentEventCount() > 0;
+            Debug.Log($"Blaster Activate Event has listeners: {hasListeners}");
+            for (int i = 0; i < activatedEvent.GetPersistentEventCount(); i++)
+            {
+                var target = activatedEvent.GetPersistentTarget(i);
+                var method = activatedEvent.GetPersistentMethodName(i);
+                Debug.Log($"Activate Listener {i}: Target={target}, Method={method}");
+            }
+        }
     }
 }

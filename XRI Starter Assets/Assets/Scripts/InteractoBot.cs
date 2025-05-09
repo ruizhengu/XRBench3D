@@ -152,6 +152,11 @@ public class InteractoBot : MonoBehaviour
         InteractableObject closestInteractable = GetCloestInteractable();
         if (closestInteractable == null)
         {
+            if (interactableObjects.All(obj => obj.GetVisited()) &&
+                (isGripHeld || gripActionCount > 0 || combinedActionCount > 0))
+            {
+                return; // Don't end the test yet, let the interaction complete
+            }
             StartCoroutine(TransitionToState(ExplorationState.Navigation));
             return;
         }

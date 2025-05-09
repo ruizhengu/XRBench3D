@@ -10,6 +10,7 @@ public class InteractableObject
   GameObject interactable;
   string name;
   bool interacted;
+  bool intersected;
   bool visited;
   string type;
   List<string> events;
@@ -21,6 +22,7 @@ public class InteractableObject
     this.visited = false;
     this.interacted = false;
     this.events = events;
+    this.intersected = false;
   }
 
   public string GetName()
@@ -75,5 +77,15 @@ public class InteractableObject
   public void SetEvents(List<string> events)
   {
     this.events = events;
+  }
+
+  public void SetIntersected(bool flag)
+  {
+    this.intersected = flag;
+  }
+
+  public bool GetIntersected()
+  {
+    return this.intersected;
   }
 }

@@ -136,7 +136,8 @@ public static class Utils
   /// </summary>
   public static List<InteractionEvent> GetInteractionEvents()
   {
-    string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results.json");
+    // string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results.json");
+    string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results_PrototypeScene.json");
     using (StreamReader r = new StreamReader(jsonPath))
     {
       string json = r.ReadToEnd();
@@ -301,11 +302,31 @@ public static class Utils
       {
         count++;
       }
+      else if (!obj.GetInteracted() && obj.GetIntersected())
+      {
+        Debug.Log("Could be a bug: " + obj.GetName());
+      }
       else
       {
         Debug.Log("Not Interacted Interactable: " + obj.GetName());
       }
     }
     return count;
+  }
+
+  public static bool GetIntersected(GameObject target, GameObject controller)
+  {
+    Collider[] interactableColliders = target.GetComponentsInChildren<Collider>();
+    Collider controllerCollider = controller.GetComponent<Collider>();
+    if (interactableColliders.Length > 0 && controllerCollider != null)
+    {
+      Bounds combinedBounds = interactableColliders[0].bounds;
+      for (int i = 1; i < interactableColliders.Length; i++)
+      {
+        combinedBounds.Encapsulate(interactableColliders[i].bounds);
+      }
+      return combinedBounds.Intersects(controllerCollider.bounds);
+    }
+    return false;
   }
 }
