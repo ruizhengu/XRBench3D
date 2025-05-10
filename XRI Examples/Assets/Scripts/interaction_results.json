@@ -170,14 +170,14 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Lighter",
+        "interactable": "Lighter 1",
         "type": "3d",
         "event_type": "select"
     },
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": ["select"],
-        "interactable": "Lighter",
+        "interactable": "Lighter 1",
         "type": "3d",
         "event_type": "activate"
     },
@@ -303,14 +303,14 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Megaphone",
+        "interactable": "Megaphone 1",
         "type": "3d",
         "event_type": "select"
     },
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": ["select"],
-        "interactable": "Megaphone",
+        "interactable": "Megaphone 1",
         "type": "3d",
         "event_type": "activate"
     },
@@ -411,6 +411,41 @@
         "interactable": "SimpleActivateShape 1",
         "type": "3d",
         "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "SimpleActivateShape 1",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SimpleActivateShape 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "SimpleActivateShape 2",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "SimpleActivateShape 3",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "SimpleActivateShape 3",
+        "type": "3d",
+        "event_type": "activate"
     },
     {
         "interactor": "XR Origin (XR Rig)",
@@ -536,21 +571,14 @@
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Drawer 01",
+        "interactable": "Drawer 1",
         "type": "3d",
         "event_type": "select"
     },
     {
         "interactor": "XR Origin (XR Rig)",
         "condition": [],
-        "interactable": "Drawer 02",
-        "type": "3d",
-        "event_type": "select"
-    },
-    {
-        "interactor": "XR Origin (XR Rig)",
-        "condition": [],
-        "interactable": "Drawer 02",
+        "interactable": "Drawer 2",
         "type": "3d",
         "event_type": "select"
     }

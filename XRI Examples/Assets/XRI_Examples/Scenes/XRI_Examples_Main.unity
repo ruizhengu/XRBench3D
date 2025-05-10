@@ -5498,6 +5498,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2785464732825257599, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
+      propertyPath: m_Name
+      value: Megaphone 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3026304724038141441, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -12034,6 +12038,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.00000031664968
       objectReference: {fileID: 0}
+    - target: {fileID: 4407127939765159598, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Drawer 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6252418184100948470, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0.00000012130477
@@ -12045,6 +12053,10 @@ PrefabInstance:
     - target: {fileID: 6252418184100948470, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 2.370358e-22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405477311648000385, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Drawer 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12463,6 +12475,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627049872}
     m_Modifications:
+    - target: {fileID: 1362929430410378996, guid: e5f583eb414b93849a117c40250890ca, type: 3}
+      propertyPath: m_Name
+      value: Lighter 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2804422015809968620, guid: e5f583eb414b93849a117c40250890ca, type: 3}
       propertyPath: m_Name
       value: Lighter
@@ -15140,7 +15156,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2609984114077390469}
   - {fileID: 1477099516}
   - {fileID: 1200013191}
   - {fileID: 1858042528}
@@ -15153,5 +15168,6 @@ SceneRoots:
   - {fileID: 1882929043}
   - {fileID: 1902120916235679079}
   - {fileID: 499064196}
+  - {fileID: 2609984114077390469}
   - {fileID: 275395432}
   - {fileID: 14822158}
