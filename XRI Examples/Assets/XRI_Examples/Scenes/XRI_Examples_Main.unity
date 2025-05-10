@@ -280,6 +280,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7048750260010228544, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Launcher1H
+      objectReference: {fileID: 0}
     - target: {fileID: 9207176055816488244, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
       propertyPath: launchSpeed
       value: 500
@@ -947,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7459442142708147920, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
       propertyPath: m_Name
-      value: Lever
+      value: Lever 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1397,7 +1401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5162356030215288089, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
       propertyPath: m_Name
-      value: Joystick
+      value: Joystick 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2607,7 +2611,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451206656157691855, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
       propertyPath: m_Name
-      value: Slider
+      value: Slider 3
       objectReference: {fileID: 0}
     - target: {fileID: 7563839910878393084, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
       propertyPath: m_RootOrder
@@ -3667,6 +3671,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1200013191}
     m_Modifications:
+    - target: {fileID: 3131828208244143749, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131828209758453026, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131828209853149430, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266942505850756701, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Dial 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266942506082290048, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Dial 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298358551258930488, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4737614149401252632, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073576341645409149, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5544843954889725784, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3691,6 +3727,34 @@ PrefabInstance:
       propertyPath: m_Manager
       value: 
       objectReference: {fileID: 2609984114077390472}
+    - target: {fileID: 5566402559122065846, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Slider 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399763442014652375, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Slider 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196094625038779604, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196094625092858900, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196094625621845141, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459442143184605949, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408004059565048617, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5812,7 +5876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399821747579187769, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
       propertyPath: m_Name
-      value: PushButton
+      value: PushButton 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6493,7 +6557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602867, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_Name
-      value: InstantTracking
+      value: InstantTracking 3
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602869, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_Mesh
@@ -6616,7 +6680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602867, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_Name
-      value: InstantTracking
+      value: InstantTracking 1
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602869, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_Mesh
@@ -6727,7 +6791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6447800829924892773, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: m_Name
-      value: CandleSmallAngular
+      value: CandleSmallAngular 1
       objectReference: {fileID: 0}
     - target: {fileID: 8751116817855349204, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -7437,7 +7501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602867, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_Name
-      value: InstantTracking
+      value: InstantTracking 2
       objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602869, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_Mesh
@@ -8397,7 +8461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6447800829924892773, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: m_Name
-      value: CandleSmallAngular
+      value: CandleSmallAngular 2
       objectReference: {fileID: 0}
     - target: {fileID: 8751116817855349204, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -9784,7 +9848,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7036237613977572533, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
       propertyPath: m_Name
-      value: Dial
+      value: Dial 3
       objectReference: {fileID: 0}
     - target: {fileID: 7954031252265753577, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
       propertyPath: m_RootOrder
@@ -10047,7 +10111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399821747579187769, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
       propertyPath: m_Name
-      value: PushButton
+      value: PushButton 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11174,9 +11238,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 777917385}
     m_Modifications:
+    - target: {fileID: 102153097891186696, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: BlackSheepPrize 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 102153098552202887, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: BlackSheepPrize 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 102153098628043144, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: BlackSheepPrize 2
+      objectReference: {fileID: 0}
     - target: {fileID: 984094193647085265, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
       value: BarnMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811659115381141103, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Joystick 2
       objectReference: {fileID: 0}
     - target: {fileID: 3376210039400353937, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_RootOrder
@@ -11221,6 +11301,38 @@ PrefabInstance:
     - target: {fileID: 3376210039400353937, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481290059973052072, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: BlackSheepPrize 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508849100308414263, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: SheepPrize 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508849101168945004, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: SheepPrize 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7650257522284272077, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: PushButton 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7710705845924892973, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: SheepPrize 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671607662658341148, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: CowPrize 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671607663156328990, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: CowPrize 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8671607664281732692, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: CowPrize 1
       objectReference: {fileID: 0}
     - target: {fileID: 8768138410289284921, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_InteractionManager
@@ -13185,7 +13297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480230, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_Name
-      value: KinematicCube
+      value: KinematicCube 2
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480232, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_Mesh
@@ -13300,7 +13412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
-      value: VelocityTrackedCube
+      value: VelocityTrackedCube 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13497,7 +13609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480230, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_Name
-      value: KinematicCube
+      value: KinematicCube 3
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480232, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_Mesh
@@ -13716,7 +13828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
-      value: VelocityTrackedCube
+      value: VelocityTrackedCube 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14009,7 +14121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480230, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_Name
-      value: KinematicCube
+      value: KinematicCube 1
       objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480232, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_Mesh
@@ -14585,7 +14697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
-      value: VelocityTrackedCube
+      value: VelocityTrackedCube 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14838,7 +14950,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1351904833967977961, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2609984114077390474}
   m_SourcePrefab: {fileID: 100100000, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
 --- !u!114 &2609984114077390470 stripped
 MonoBehaviour:
@@ -14873,6 +14988,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa74d384629b02340bc59709603b0771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2609984114077390473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1351904833967977961, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+  m_PrefabInstance: {fileID: 2609984114077390469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2609984114077390474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2609984114077390473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionCount: 0
+  rightController: {fileID: 0}
 --- !u!1001 &2875410408107174874
 PrefabInstance:
   m_ObjectHideFlags: 0
