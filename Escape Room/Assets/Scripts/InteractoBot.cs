@@ -103,8 +103,13 @@ public class InteractoBot : MonoBehaviour
             return;
         }
         ResetControllerPosition();
-
+        Debug.Log("Closest Interactable: " + closestInteractable.GetName());
         GameObject closestObject = closestInteractable.GetObject();
+        if (closestObject == null)
+        {
+            closestInteractable.SetVisited(true);
+            return;
+        }
         Vector3 currentPos = transform.position;
         Vector3 targetPos = closestObject.transform.position;
 
@@ -190,7 +195,7 @@ public class InteractoBot : MonoBehaviour
                     {
                         bool intersection = Utils.GetIntersected(closestInteractable.GetObject(), rightController);
                         closestInteractable.SetIntersected(intersection);
-                        Debug.Log("Intersected: " + closestInteractable.GetName() + " " + intersection);
+                        // Debug.Log("Intersected: " + closestInteractable.GetName() + " " + intersection);
                         StartCoroutine(TransitionToState(ExplorationState.ThreeDInteraction));
                     }
                 }
@@ -214,11 +219,11 @@ public class InteractoBot : MonoBehaviour
         // Normal grip action
         else if (current3DInteractionPattern.Contains("select"))
         {
-            if (gripActionCount < 1)
+            if (gripActionCount < 2)
             {
                 ControllerGripAction();
                 gripActionCount++;
-                if (gripActionCount >= 1)
+                if (gripActionCount >= 2)
                 {
                     StartCoroutine(TransitionToState(ExplorationState.Navigation));
                 }
@@ -402,12 +407,13 @@ public class InteractoBot : MonoBehaviour
     {
         InteractableObject closest = null;
         float minDistance = Mathf.Infinity;
+        float largestDistance = 100f;
         foreach (InteractableObject interactable in interactableObjects)
         {
             if (!interactable.GetVisited())
             {
                 float distance = Vector3.Distance(transform.position, interactable.GetObject().transform.position);
-                if (distance < minDistance)
+                if (distance < minDistance && distance < largestDistance)
                 {
                     minDistance = distance;
                     closest = interactable;

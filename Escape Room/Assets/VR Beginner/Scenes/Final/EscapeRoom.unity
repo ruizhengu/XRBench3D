@@ -138,7 +138,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 2
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -228,7 +228,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 3
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -427,7 +427,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 3
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -506,7 +506,7 @@ PrefabInstance:
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
       propertyPath: m_Name
-      value: Onion
+      value: Onion 2
       objectReference: {fileID: 0}
     - target: {fileID: 3733091860893705619, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
@@ -647,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 3
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -771,7 +771,7 @@ PrefabInstance:
     - target: {fileID: 5489839186461855382, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
       propertyPath: m_Name
-      value: Feather
+      value: Feather 4
       objectReference: {fileID: 0}
     - target: {fileID: 8823829851086716037, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
@@ -883,22 +883,26 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4458350255575102021}
+  - {fileID: 2144348614}
   - {fileID: 5006512735229488859}
   - {fileID: 1077199293}
-  - {fileID: 374033387}
-  - {fileID: 394523599}
-  - {fileID: 5006512734896509120}
-  - {fileID: 5006512735696832564}
-  - {fileID: 128270233}
   - {fileID: 1170169660}
+  - {fileID: 713456522}
+  - {fileID: 374033387}
+  - {fileID: 5006512734896509120}
+  - {fileID: 128270233}
   - {fileID: 2038628874}
+  - {fileID: 451369124}
+  - {fileID: 394523599}
+  - {fileID: 5006512735696832564}
   - {fileID: 406842980}
   - {fileID: 383891510}
   - {fileID: 111657361839816772}
-  - {fileID: 388535753}
   - {fileID: 683840672}
   - {fileID: 1308504023}
+  - {fileID: 357233130}
+  - {fileID: 388535753}
+  - {fileID: 4458350255575102021}
   - {fileID: 1724922233}
   - {fileID: 940478702}
   - {fileID: 1360570820}
@@ -954,18 +958,15 @@ Transform:
   - {fileID: 1526942841}
   - {fileID: 179576315}
   - {fileID: 1538359063}
-  - {fileID: 713456522}
-  - {fileID: 2144348614}
-  - {fileID: 451369124}
-  - {fileID: 357233130}
-  - {fileID: 637601876}
   - {fileID: 1250120427}
   - {fileID: 1443075215}
+  - {fileID: 637601876}
   - {fileID: 726121796}
   - {fileID: 367677711}
   - {fileID: 1381864883}
   - {fileID: 961215696}
   - {fileID: 815580408}
+  - {fileID: 5006512735113030276}
   - {fileID: 638944459}
   - {fileID: 2037704386}
   - {fileID: 1642982709}
@@ -991,7 +992,7 @@ PrefabInstance:
     - target: {fileID: 1234575337291081341, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
       propertyPath: m_Name
-      value: Cheese (1)
+      value: Cheese 1
       objectReference: {fileID: 0}
     - target: {fileID: 2844390824692126830, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
@@ -1211,7 +1212,6 @@ Transform:
   - {fileID: 2001016748}
   - {fileID: 579831181}
   - {fileID: 1190238593}
-  - {fileID: 5006512735113030276}
   - {fileID: 530483422}
   - {fileID: 2114622985}
   - {fileID: 874577789}
@@ -1256,7 +1256,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 3
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -1543,7 +1543,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 4
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -1725,7 +1725,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -1804,7 +1804,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -1895,7 +1895,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking (6)
+      value: Pumpking 1
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -2017,7 +2017,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 5
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -2226,7 +2226,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 5
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -2305,7 +2305,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking
+      value: Pumpking 8
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -2543,7 +2543,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 7
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -2672,7 +2672,7 @@ PrefabInstance:
     - target: {fileID: 5489839186461855382, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
       propertyPath: m_Name
-      value: Feather
+      value: Feather 2
       objectReference: {fileID: 0}
     - target: {fileID: 8823829851086716037, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
@@ -2766,7 +2766,7 @@ PrefabInstance:
     - target: {fileID: 131682426962571761, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: Orange 5
       objectReference: {fileID: 0}
     - target: {fileID: 4001603990840476642, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
@@ -2962,7 +2962,7 @@ PrefabInstance:
     - target: {fileID: 131682426962571761, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: Orange 2
       objectReference: {fileID: 0}
     - target: {fileID: 4001603990840476642, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
@@ -3152,7 +3152,7 @@ PrefabInstance:
     - target: {fileID: 131682426962571761, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: Orange 4
       objectReference: {fileID: 0}
     - target: {fileID: 4001603990840476642, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
@@ -3747,7 +3747,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 6
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -3930,7 +3930,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -4355,7 +4355,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 4
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -4465,7 +4465,7 @@ PrefabInstance:
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
       propertyPath: m_Name
-      value: Onion (1)
+      value: Onion 1
       objectReference: {fileID: 0}
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
@@ -4582,7 +4582,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 10
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -4661,7 +4661,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking (2)
+      value: Pumpking 5
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -4775,7 +4775,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 6
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -5053,7 +5053,7 @@ PrefabInstance:
     - target: {fileID: 24254901672572159, guid: b7e389feae5750046b654451b357f33b,
         type: 3}
       propertyPath: m_Name
-      value: MeatSlice
+      value: MeatSlice 2
       objectReference: {fileID: 0}
     - target: {fileID: 24254901672572159, guid: b7e389feae5750046b654451b357f33b,
         type: 3}
@@ -5418,7 +5418,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 6
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -5727,7 +5727,7 @@ PrefabInstance:
     - target: {fileID: 5489839186461855382, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
       propertyPath: m_Name
-      value: Feather (1)
+      value: Feather 1
       objectReference: {fileID: 0}
     - target: {fileID: 8823829851086716037, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
@@ -5815,7 +5815,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 7
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -6188,7 +6188,7 @@ PrefabInstance:
     - target: {fileID: 7867452114456035392, guid: 021949f8e99a07a4b9ebb77c3e1a6df3,
         type: 3}
       propertyPath: m_Name
-      value: BookGreen Variant
+      value: BookGreen Variant 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6356,7 +6356,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 6
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -6526,7 +6526,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 8
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -6789,7 +6789,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 4
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -7101,7 +7101,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 5
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -7418,7 +7418,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 9
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -7517,7 +7517,7 @@ PrefabInstance:
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
       propertyPath: m_Name
-      value: Onion
+      value: Onion 5
       objectReference: {fileID: 0}
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
@@ -7617,7 +7617,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 3
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -8015,7 +8015,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -8112,7 +8112,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 7
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -8491,7 +8491,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 8
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -8574,7 +8574,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 7
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -8653,7 +8653,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 7
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -8732,7 +8732,7 @@ PrefabInstance:
     - target: {fileID: 1234575337291081341, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
       propertyPath: m_Name
-      value: Cheese
+      value: Cheese 3
       objectReference: {fileID: 0}
     - target: {fileID: 2844390824692126830, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
@@ -8828,7 +8828,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 1
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -8917,7 +8917,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 5
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -10138,7 +10138,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 6
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -10321,7 +10321,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -10601,7 +10601,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 5
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -10680,7 +10680,7 @@ PrefabInstance:
     - target: {fileID: 1234575337291081341, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
       propertyPath: m_Name
-      value: Cheese
+      value: Cheese 4
       objectReference: {fileID: 0}
     - target: {fileID: 2844390824692126830, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
@@ -10783,7 +10783,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 8
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -10996,7 +10996,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -11434,7 +11434,7 @@ PrefabInstance:
     - target: {fileID: 131682426962571761, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
       propertyPath: m_Name
-      value: Orange (1)
+      value: Orange 1
       objectReference: {fileID: 0}
     - target: {fileID: 4001603990840476642, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
@@ -11626,7 +11626,7 @@ PrefabInstance:
     - target: {fileID: 24254901672572159, guid: b7e389feae5750046b654451b357f33b,
         type: 3}
       propertyPath: m_Name
-      value: MeatSlice
+      value: MeatSlice 3
       objectReference: {fileID: 0}
     - target: {fileID: 24254901672572159, guid: b7e389feae5750046b654451b357f33b,
         type: 3}
@@ -11775,7 +11775,7 @@ PrefabInstance:
     - target: {fileID: 7867452114456035392, guid: 021949f8e99a07a4b9ebb77c3e1a6df3,
         type: 3}
       propertyPath: m_Name
-      value: BookGreen Variant
+      value: BookGreen Variant 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11944,7 +11944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -12023,7 +12023,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 1
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -12172,7 +12172,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking (1)
+      value: Pumpking 6
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -12244,7 +12244,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 9
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -12585,7 +12585,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 7
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -12723,7 +12723,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 4
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -12836,7 +12836,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -13097,7 +13097,7 @@ PrefabInstance:
     - target: {fileID: 7867452114456035392, guid: 021949f8e99a07a4b9ebb77c3e1a6df3,
         type: 3}
       propertyPath: m_Name
-      value: BookGreen Variant
+      value: BookGreen Variant 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13206,6 +13206,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1670725264}
+    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670725271}
     - targetCorrespondingSourceObject: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       insertIndex: -1
@@ -13366,7 +13370,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 9
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -13777,7 +13781,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 7
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -13853,6 +13857,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 145810550}
     m_Modifications:
+    - target: {fileID: 757987103243669114, guid: 42ef0afd77890574984e1344fcef2d98,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5119196441152093144, guid: 42ef0afd77890574984e1344fcef2d98,
         type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.size
@@ -14215,7 +14224,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 6
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -14294,7 +14303,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_2
+      value: PotionBottle_2 2
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -14449,7 +14458,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 4
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -15203,7 +15212,7 @@ PrefabInstance:
     - target: {fileID: 2171994109590594993, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
       propertyPath: m_Name
-      value: BookBlue Variant
+      value: BookBlue Variant 3
       objectReference: {fileID: 0}
     - target: {fileID: 2918087343350323106, guid: 339cc9ba45d1b734d851fe10664b090a,
         type: 3}
@@ -15462,7 +15471,7 @@ PrefabInstance:
     - target: {fileID: 5981695111636453293, guid: f9052a9252653184899af8729f925707,
         type: 3}
       propertyPath: m_Name
-      value: BookYellow Variant
+      value: BookYellow Variant 5
       objectReference: {fileID: 0}
     - target: {fileID: 7302615220216591806, guid: f9052a9252653184899af8729f925707,
         type: 3}
@@ -15543,13 +15552,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670725257}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactionCount: 0
   rightController: {fileID: 0}
+--- !u!114 &1670725271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670725257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f83fbc6f43d44ea18234b2945826635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBudget: 300
 --- !u!1001 &1675996088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15616,7 +15638,7 @@ PrefabInstance:
     - target: {fileID: 7867452114456035392, guid: 021949f8e99a07a4b9ebb77c3e1a6df3,
         type: 3}
       propertyPath: m_Name
-      value: BookGreen Variant
+      value: BookGreen Variant 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15713,7 +15735,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking (4)
+      value: Pumpking 3
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -15974,7 +15996,7 @@ PrefabInstance:
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
       propertyPath: m_Name
-      value: Onion
+      value: Onion 4
       objectReference: {fileID: 0}
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
@@ -16238,7 +16260,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 6
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -16476,7 +16498,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 3
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -16616,7 +16638,7 @@ PrefabInstance:
     - target: {fileID: 7867452114456035392, guid: 021949f8e99a07a4b9ebb77c3e1a6df3,
         type: 3}
       propertyPath: m_Name
-      value: BookGreen Variant
+      value: BookGreen Variant 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17041,7 +17063,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking (3)
+      value: Pumpking 4
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -17114,7 +17136,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking (5)
+      value: Pumpking 2
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -17339,7 +17361,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 4
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -17527,7 +17549,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -17700,7 +17722,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 8
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -17864,7 +17886,7 @@ PrefabInstance:
     - target: {fileID: 5193246759137898033, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
       propertyPath: m_Name
-      value: BookBrown Variant
+      value: BookBrown Variant 5
       objectReference: {fileID: 0}
     - target: {fileID: 9099883349673647138, guid: be008901cb178d3439017dfd49697f06,
         type: 3}
@@ -18104,7 +18126,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 8
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -18259,7 +18281,7 @@ PrefabInstance:
     - target: {fileID: 265066684354361825, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
       propertyPath: m_Name
-      value: BookRed Variant
+      value: BookRed Variant 4
       objectReference: {fileID: 0}
     - target: {fileID: 3888556352052497394, guid: f125cb860e3b1e44585ab587487f3e98,
         type: 3}
@@ -18430,7 +18452,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 2
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -18564,7 +18586,7 @@ PrefabInstance:
     - target: {fileID: 7867452114456035392, guid: 021949f8e99a07a4b9ebb77c3e1a6df3,
         type: 3}
       propertyPath: m_Name
-      value: BookGreen Variant
+      value: BookGreen Variant 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18611,7 +18633,7 @@ PrefabInstance:
     - target: {fileID: 5489839186461855382, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
       propertyPath: m_Name
-      value: Feather
+      value: Feather 5
       objectReference: {fileID: 0}
     - target: {fileID: 8823829851086716037, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
@@ -18819,7 +18841,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2476466738600292, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15, type: 3}
       propertyPath: m_Name
-      value: BookNavy Variant
+      value: BookNavy Variant 10
       objectReference: {fileID: 0}
     - target: {fileID: 3914636937022303095, guid: 4bf7c8ebd37aa3d4f8a0aa1788dd6c15,
         type: 3}
@@ -19260,7 +19282,7 @@ PrefabInstance:
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
-      value: PotionBottle_1
+      value: PotionBottle_1 9
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -19424,7 +19446,7 @@ PrefabInstance:
     - target: {fileID: 402441717626591104, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
       propertyPath: m_Name
-      value: Onion
+      value: Onion 3
       objectReference: {fileID: 0}
     - target: {fileID: 3733091860893705619, guid: ba179794458011749b87f8ff88b4c662,
         type: 3}
@@ -20058,7 +20080,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 155339331}
+    m_TransformParent: {fileID: 145810550}
     m_Modifications:
     - target: {fileID: 2930022913613158964, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -20068,7 +20090,7 @@ PrefabInstance:
     - target: {fileID: 6595633008962192718, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
       propertyPath: m_Name
-      value: Pumpking
+      value: Pumpking 7
       objectReference: {fileID: 0}
     - target: {fileID: 7913735620187305821, guid: 55368765a9112f74389e5e019bb3844b,
         type: 3}
@@ -20173,6 +20195,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 4.2320004
       objectReference: {fileID: 0}
+    - target: {fileID: 3780339466824890535, guid: 89026add816f1f142b81b0985e4e79a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Handle-KitchenLeftDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 4023695405335581510, guid: 89026add816f1f142b81b0985e4e79a9,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -20217,6 +20244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.293
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731213764209904948, guid: 89026add816f1f142b81b0985e4e79a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Handle-KitchenRightDoor
       objectReference: {fileID: 0}
     - target: {fileID: 6873112912697376109, guid: 89026add816f1f142b81b0985e4e79a9,
         type: 3}
@@ -20562,7 +20594,7 @@ PrefabInstance:
     - target: {fileID: 24254901672572159, guid: b7e389feae5750046b654451b357f33b,
         type: 3}
       propertyPath: m_Name
-      value: MeatSlice
+      value: MeatSlice 1
       objectReference: {fileID: 0}
     - target: {fileID: 3894895063911073516, guid: b7e389feae5750046b654451b357f33b,
         type: 3}
@@ -21844,7 +21876,7 @@ PrefabInstance:
     - target: {fileID: 5489839186461855382, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
       propertyPath: m_Name
-      value: Feather
+      value: Feather 3
       objectReference: {fileID: 0}
     - target: {fileID: 8823829851086716037, guid: e023e700608d14945bb93a8eb4240b4c,
         type: 3}
@@ -23578,7 +23610,7 @@ PrefabInstance:
     - target: {fileID: 1234575337291081341, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
       propertyPath: m_Name
-      value: Cheese
+      value: Cheese 2
       objectReference: {fileID: 0}
     - target: {fileID: 2844390824692126830, guid: 05a1a1043460c314da6c90b8bd7cc28c,
         type: 3}
@@ -24270,7 +24302,7 @@ PrefabInstance:
     - target: {fileID: 131682426962571761, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
       propertyPath: m_Name
-      value: Orange
+      value: Orange 3
       objectReference: {fileID: 0}
     - target: {fileID: 4001603990840476642, guid: 27a1f347c2830a74498e63c9dbe501b8,
         type: 3}
