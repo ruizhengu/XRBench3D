@@ -1,0 +1,499 @@
+[
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Halberd - Grab Anywhere - Broken",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Foregrip Grab Point - Interactable",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "ZomBear (1)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Front Door Handle Interactable",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Foregrip Grab Point - Interactable",
+        "type": "3d",
+        "event_type": "activate"
+    },
+
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "VelocityTrackedCube",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Wheel",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Back Door Handle Interactable",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Teraformer Gun Velocity Tracked",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Teraformer Gun Velocity Tracked",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "BowlingBall (4)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Rifle 2Hand- Auto Fire",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "Rifle 2Hand- Auto Fire",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Sword",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "BowlingBall (1)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "BowlingBall (2)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "FireHand 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "FireHand 1",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "FireHand 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "FireHand 2",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "BowlingBall (3)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "HandGun Infinte Ammo",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "HandGun Infinte Ammo",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Model -- Affordance",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "ZomBear",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "TinyHat",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "HandGun Reloading (1)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "HandGun Reloading (1)",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Dial - Brightness",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Torch",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "HandGun Reloading",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "HandGun Reloading",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Interactable Kinematic Torus",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Dial - Color",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Fork Lift Area",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "BowlingBall",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Rifle 2Handed",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "Rifle 2Handed",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever -1 Axis",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Recursive Bow",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Magazine",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Flashlight",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "Flashlight",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Torch (1)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever -All",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "HandGun Infinte Ammo (1)",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": ["select"],
+        "interactable": "HandGun Infinte Ammo (1)",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [
+            "select"
+        ],
+        "interactable": "Halberd - Grab Anywhere - Broken",
+        "type": "3d",
+        "event_type": "activate"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever -Scripts",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "TurnableKey",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "TurnableKey 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "PushButton 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "PushButton 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "PushButton 3",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Grabbable Lever 1",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Grabbable Lever 2",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Archery - AutoSpawn",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Quiver",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Light Switch Lever",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "InstantCube",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Player Speed",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Player Turning",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Vignette Feathering",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Vignette Aperature",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Vignette Controls",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "GripButton",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Wheel - Direction Control",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever - Gear Control",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever -Tilt Control",
+        "type": "3d",
+        "event_type": "select"
+    },
+    {
+        "interactor": "XR Origin (XR Rig)",
+        "condition": [],
+        "interactable": "Lever -Lift Control",
+        "type": "3d",
+        "event_type": "select"
+    }
+]
