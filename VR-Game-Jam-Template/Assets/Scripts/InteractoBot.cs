@@ -39,6 +39,10 @@ public class InteractoBot : MonoBehaviour
     private bool isGripHeld = false; // Track if grip is currently held
     private int gripActionCount = 0; // Track number of grip actions
     private int combinedActionCount = 0; // Track number of combined actions
+    private float reportInterval = 30f; // Report interval in seconds
+    private float reportTimer = 0f; // Timer for report interval
+    private float totalTime = 0f; // Total time of the test
+    private float minuteCount = 0.5f;
     private enum ControllerState // Controller manipulation state
     {
         None,
@@ -67,23 +71,32 @@ public class InteractoBot : MonoBehaviour
 
     void Update()
     {
-        Time.timeScale = gameSpeed;
+        // Time.timeScale = gameSpeed;
+        reportTimer += Time.deltaTime;
+        totalTime += Time.deltaTime;
+        if (reportTimer >= reportInterval)
+        {
+            int currentInteracted = Utils.CountInteracted(interactableObjects);
+            Debug.Log("Current Interacted " + minuteCount + "m: " + currentInteracted + " / " + interactionCount + " (" + (float)currentInteracted / (float)interactionCount * 100 + "%)");
+            minuteCount += 0.5f;
+            reportTimer = 0f;
+        }
         // Handle different exploration states
-        // switch (currentExplorationState)
-        // {
-        //     case ExplorationState.Navigation:
-        //         Navigation();
-        //         break;
-        //     case ExplorationState.ControllerMovement:
-        //         ControllerMovement();
-        //         break;
-        //     case ExplorationState.ThreeDInteraction:
-        //         ThreeDInteraction();
-        //         break;
-        //     case ExplorationState.TwoDInteraction:
-        //         TwoDInteraction();
-        //         break;
-        // }
+        switch (currentExplorationState)
+        {
+            case ExplorationState.Navigation:
+                Navigation();
+                break;
+            case ExplorationState.ControllerMovement:
+                ControllerMovement();
+                break;
+            case ExplorationState.ThreeDInteraction:
+                ThreeDInteraction();
+                break;
+            case ExplorationState.TwoDInteraction:
+                TwoDInteraction();
+                break;
+        }
     }
 
     /// <summary>

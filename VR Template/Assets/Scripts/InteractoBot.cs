@@ -39,9 +39,10 @@ public class InteractoBot : MonoBehaviour
     private bool isGripHeld = false; // Track if grip is currently held
     private int gripActionCount = 0; // Track number of grip actions
     private int combinedActionCount = 0; // Track number of combined actions
-    private float reportInterval = 60f; // Report interval in seconds
+    private float reportInterval = 30f; // Report interval in seconds
     private float reportTimer = 0f; // Timer for report interval
     private float totalTime = 0f; // Total time of the test
+    private float minuteCount = 0.5f;
     private enum ControllerState // Controller manipulation state
     {
         None,
@@ -75,7 +76,8 @@ public class InteractoBot : MonoBehaviour
         if (reportTimer >= reportInterval)
         {
             int currentInteracted = Utils.CountInteracted(interactableObjects);
-            Debug.Log("Current Interacted: " + currentInteracted + " / " + interactionCount + " (" + (float)currentInteracted / (float)interactionCount * 100 + "%)");
+            Debug.Log("Current Interacted " + minuteCount + "m: " + currentInteracted + " / " + interactionCount + " (" + (float)currentInteracted / (float)interactionCount * 100 + "%)");
+            minuteCount += 0.5f;
             reportTimer = 0f;
         }
         // Handle different exploration states
@@ -111,8 +113,7 @@ public class InteractoBot : MonoBehaviour
             }
             Debug.Log("Test End");
             Debug.Log("Number of Interacted Interactables: " + Utils.CountInteracted(interactableObjects) + " / " + interactionCount);
-            Debug.Log("Total Time: " + totalTime);
-            this.enabled = false;
+            return;
         }
         ResetControllerPosition();
 

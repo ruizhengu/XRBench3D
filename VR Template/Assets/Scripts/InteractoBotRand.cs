@@ -25,9 +25,9 @@ public class InteractoBotRand : MonoBehaviour
     private bool isTimeBudgetExceeded = false; // Flag to track if time budget is exceeded
     private Dictionary<GameObject, InteractableObject> interactables;
     private int totalInteractables = 0;
-    private float reportInterval = 60f; // Report interval in seconds
+    private float reportInterval = 30f; // Report interval in seconds
     private float reportTimer = 0f; // Timer for report interval
-    private int minuteCount = 1;
+    private float minuteCount = 0.5f;
 
     // Action types that can be randomly selected
     private enum ActionType
@@ -86,7 +86,7 @@ public class InteractoBotRand : MonoBehaviour
         {
             int currentInteracted = Utils.CountInteracted(interactables.Values.ToList());
             Debug.Log("Current Interacted " + minuteCount + "m: " + currentInteracted + " / " + totalInteractables + " (" + (float)currentInteracted / (float)totalInteractables * 100 + "%)");
-            minuteCount++;
+            minuteCount += 0.5f;
             reportTimer = 0f;
         }
         // Check if we've exceeded the time budget
