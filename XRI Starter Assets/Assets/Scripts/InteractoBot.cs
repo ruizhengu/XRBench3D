@@ -21,7 +21,7 @@ public class InteractoBot : MonoBehaviour
     // Movement parameters
     private float moveSpeed = 1.0f;
     private float rotateSpeed = 1.0f;
-    private float updateInterval = 0.05f;
+    private float updateInterval = 0.01f;
     private float timeSinceLastUpdate = 0f;
     private float interactionAngle = 5.0f; // The angle for transiting from rotation to interaction
     private float controllerMovementThreshold = 0.05f; // The distance of controller movement to continue interaction
@@ -30,9 +30,6 @@ public class InteractoBot : MonoBehaviour
     private ControllerState currentControllerState = ControllerState.None; // Default state
     private ExplorationState currentExplorationState = ExplorationState.Navigation; // Default state
     private bool isMovedController = false; // Track if controller has been moved
-    private float lastInteractionTime = 0f;
-    // private float interactionOffset = 0.05f; // Small distance in front of the target for interaction
-    private int triggerActionCount = 0;
     private string current3DInteractionPattern = ""; // Store the current 3D interaction pattern
     private bool isGrabHeld = false; // Track if grab is currently held
     private int grabActionCount = 0; // Track number of grab actions
@@ -44,7 +41,6 @@ public class InteractoBot : MonoBehaviour
     private float timeBudget = 600f; // 10 minutes time budget in seconds
     private float startTime; // Time when the program started
     private bool isTimeBudgetExceeded = false; // Flag to track if time budget is exceeded
-    private bool hasAttemptedThreeDInteraction = false;
     private enum ControllerState // Controller manipulation state
     {
         None,
@@ -59,7 +55,6 @@ public class InteractoBot : MonoBehaviour
         Navigation,
         ControllerMovement,
         ThreeDInteraction,
-        // TwoDInteraction
     }
 
     void Start()
@@ -119,9 +114,6 @@ public class InteractoBot : MonoBehaviour
             case ExplorationState.ThreeDInteraction:
                 ThreeDInteraction();
                 break;
-                // case ExplorationState.TwoDInteraction:
-                //     TwoDInteraction();
-                //     break;
         }
     }
 
@@ -196,12 +188,8 @@ public class InteractoBot : MonoBehaviour
             // Controller Movement
             Vector3 controllerCurrentPos = rightController.transform.position;
             Vector3 controllerTargetPos = targetObject.transform.position;
-            // Add offset in front of the target in the z axis
-            // controllerTargetPos += new Vector3(0, 0, interactionOffset);
-
             Vector3 controllerWorldDirection = Utils.GetControllerWorldDirection(controllerCurrentPos, controllerTargetPos);
             float distanceToTarget = Vector3.Distance(controllerCurrentPos, controllerTargetPos);
-
             if (distanceToTarget > controllerMovementThreshold)
             {
                 // Set to the right controller state
@@ -259,10 +247,6 @@ public class InteractoBot : MonoBehaviour
 
     private IEnumerator HoldGrabAndTrigger()
     {
-        Debug.Log($"Current Interactable: {targetInteractable.Name}");
-        Debug.Log($"Current Interactable Interaction Attempted: {targetInteractable.InteractionAttempted}");
-        Debug.Log($"Current Interactable Grabbed: {targetInteractable.Grabbed}");
-        Debug.Log($"Current Interactable Interacted: {targetInteractable.Interacted}");
         if (targetInteractable == null || targetInteractable.InteractionAttempted) yield break;
         isGrabHeld = true;
         var keyboard = InputSystem.GetDevice<Keyboard>();
@@ -291,30 +275,6 @@ public class InteractoBot : MonoBehaviour
             StartCoroutine(TransitionToState(ExplorationState.Navigation));
         }
     }
-
-    /// <summary>
-    /// Handle 2D interaction state
-    /// </summary>
-    // private void TwoDInteraction()
-    // {
-    //     // Check cool down time since the last interaction
-    //     if (Time.time - lastInteractionTime < interactionCooldown)
-    //     {
-    //         return;
-    //     }
-    //     // Only perform the trigger action if haven't completed two actions
-    //     if (triggerActionCount < 2)
-    //     {
-    //         ControllerTriggerAction();
-    //         triggerActionCount++;
-    //         lastInteractionTime = Time.time;
-    //         // Only transition to Navigation after two trigger actions are completed
-    //         if (triggerActionCount == 2)
-    //         {
-    //             StartCoroutine(TransitionToState(ExplorationState.Navigation));
-    //         }
-    //     }
-    // }
 
     /// <summary>
     /// Ensure we're in the desired controller manipulation state
@@ -416,12 +376,6 @@ public class InteractoBot : MonoBehaviour
         // Debug.Log("Controller Grab Action");
         Key grabKey = Key.G;
         StartCoroutine(ExecuteKeyWithDuration(grabKey, 0.1f));
-    }
-
-    void ControllerTriggerAction()
-    {
-        Key triggerKey = Key.T;
-        StartCoroutine(ExecuteKeyWithDuration(triggerKey, 0.1f));
     }
 
     /// <summary>

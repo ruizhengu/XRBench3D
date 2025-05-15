@@ -170,13 +170,17 @@ public static class Utils
           count++;
         }
       }
-      else if (detailedLog)
+      else if (!obj.Interacted && obj.Grabbed)
+      {
+        count++;
+      }
+      if (detailedLog)
       {
         if (!obj.Interacted && obj.Intersected)
         {
           Debug.Log("Could be a bug: " + obj.Name);
         }
-        else
+        if (!obj.Interacted)
         {
           Debug.Log("Not Interacted Interactable: " + obj.Name);
         }

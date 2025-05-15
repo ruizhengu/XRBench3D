@@ -16,7 +16,7 @@ public class RandomBaseline : MonoBehaviour
     public int interactionCount = 0;
     public List<Utils.InteractableObject> interactableObjects;
     private float gameSpeed = 2.0f; // May alter gameSpeed to speed up the test execution process
-    private float actionInterval = 1.0f; // Time between random actions
+    private float actionInterval = 0.5f; // Time between random actions
     private float lastActionTime = 0f;
     private bool isExecutingAction = false;
     private bool isCameraMode = true; // Track whether we're in camera or controller mode
@@ -61,18 +61,6 @@ public class RandomBaseline : MonoBehaviour
         RegisterListeners();
     }
 
-    void RegisterListeners()
-    {
-        foreach (var obj in interactableObjects)
-        {
-            var baseInteractable = obj.Interactable.GetComponent<XRBaseInteractable>();
-            if (baseInteractable != null)
-            {
-                baseInteractable.selectEntered.AddListener(OnSelectEntered);
-                baseInteractable.activated.AddListener(OnActivated);
-            }
-        }
-    }
 
     void FixedUpdate()
     {
@@ -101,20 +89,18 @@ public class RandomBaseline : MonoBehaviour
         }
     }
 
-    private void OnSelectEntered(SelectEnterEventArgs args)
+    void RegisterListeners()
     {
-        var xrInteractable = args.interactableObject;
-        // Debug.Log($"OnSelectEntered: {xrInteractable.transform.name}");
-        SetObjectGrabbed(xrInteractable.transform.name);
+        foreach (var obj in interactableObjects)
+        {
+            var baseInteractable = obj.Interactable.GetComponent<XRBaseInteractable>();
+            if (baseInteractable != null)
+            {
+                baseInteractable.selectEntered.AddListener(OnSelectEntered);
+                baseInteractable.activated.AddListener(OnActivated);
+            }
+        }
     }
-
-    private void OnActivated(ActivateEventArgs args)
-    {
-        var interactable = args.interactableObject;
-        // Debug.Log($"OnActivated: {interactable.transform.name}");
-        SetObjectTriggered(interactable.transform.name);
-    }
-
 
     void SetObjectGrabbed(string interactableName)
     {
@@ -148,6 +134,20 @@ public class RandomBaseline : MonoBehaviour
                 break;
             }
         }
+    }
+
+    private void OnSelectEntered(SelectEnterEventArgs args)
+    {
+        var xrInteractable = args.interactableObject;
+        // Debug.Log($"OnSelectEntered: {xrInteractable.transform.name}");
+        SetObjectGrabbed(xrInteractable.transform.name);
+    }
+
+    private void OnActivated(ActivateEventArgs args)
+    {
+        var interactable = args.interactableObject;
+        // Debug.Log($"OnActivated: {interactable.transform.name}");
+        SetObjectTriggered(interactable.transform.name);
     }
 
     private IEnumerator ExecuteRandomAction()
