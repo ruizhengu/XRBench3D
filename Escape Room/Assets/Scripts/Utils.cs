@@ -137,8 +137,8 @@ public static class Utils
   public static List<InteractionEvent> GetInteractionEvents()
   {
     // string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results.json");
-    // string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results_PrototypeScene.json");
-    string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results_EscapeRoom.json");
+    string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results_PrototypeScene.json");
+    // string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results_EscapeRoom.json");
     using (StreamReader r = new StreamReader(jsonPath))
     {
       string json = r.ReadToEnd();

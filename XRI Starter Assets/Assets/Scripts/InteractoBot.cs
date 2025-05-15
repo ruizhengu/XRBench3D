@@ -10,15 +10,14 @@ using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.UI;
-using TMPro;
 
 public class InteractoBot : MonoBehaviour
 {
-    public List<InteractableObject> interactableObjects;
+    public List<Utils.InteractableObject> interactableObjects;
+    public Utils.InteractableObject targetInteractable;
     public int interactionCount = 0;
     public GameObject rightController;
-    private float gameSpeed = 3.0f; // May alter gameSpeed to speed up the test execution process
+    private float gameSpeed = 2.0f; // May alter gameSpeed to speed up the test execution process
     // Movement parameters
     private float moveSpeed = 1.0f;
     private float rotateSpeed = 1.0f;
@@ -26,23 +25,26 @@ public class InteractoBot : MonoBehaviour
     private float timeSinceLastUpdate = 0f;
     private float interactionAngle = 5.0f; // The angle for transiting from rotation to interaction
     private float controllerMovementThreshold = 0.05f; // The distance of controller movement to continue interaction
-    private float interactionOffset = 0.05f; // Small distance in front of the target for interaction
     private float stateTransitionDelay = 0.1f; // Delay between state transitions
     private bool isControllerMoving = false; // Flag to track if controller is currently moving
     private ControllerState currentControllerState = ControllerState.None; // Default state
     private ExplorationState currentExplorationState = ExplorationState.Navigation; // Default state
     private bool isMovedController = false; // Track if controller has been moved
     private float lastInteractionTime = 0f;
-    private float interactionCooldown = 0.2f; // Cooldown period in seconds
+    // private float interactionOffset = 0.05f; // Small distance in front of the target for interaction
     private int triggerActionCount = 0;
     private string current3DInteractionPattern = ""; // Store the current 3D interaction pattern
-    private bool isGripHeld = false; // Track if grip is currently held
-    private int gripActionCount = 0; // Track number of grip actions
+    private bool isGrabHeld = false; // Track if grab is currently held
+    private int grabActionCount = 0; // Track number of grab actions
     private int combinedActionCount = 0; // Track number of combined actions
     private float reportInterval = 30f; // Report interval in seconds
     private float reportTimer = 0f; // Timer for report interval
     private float totalTime = 0f; // Total time of the test
     private float minuteCount = 0.5f;
+    private float timeBudget = 600f; // 10 minutes time budget in seconds
+    private float startTime; // Time when the program started
+    private bool isTimeBudgetExceeded = false; // Flag to track if time budget is exceeded
+    private bool hasAttemptedThreeDInteraction = false;
     private enum ControllerState // Controller manipulation state
     {
         None,
@@ -57,28 +59,53 @@ public class InteractoBot : MonoBehaviour
         Navigation,
         ControllerMovement,
         ThreeDInteraction,
-        TwoDInteraction
+        // TwoDInteraction
     }
 
     void Start()
     {
         interactableObjects = Utils.GetInteractableObjects();
-        interactionCount = interactableObjects.Count;
-        RegisterListener(); // Register listeners for interactables and UIs
+        interactionCount = Utils.GetInteractableEventsCount(interactableObjects);
+        RegisterListeners();
         Utils.FindSimulatedDevices(); // Find the simulated devices
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        // Time.timeScale = gameSpeed;
+        Time.timeScale = gameSpeed;
         reportTimer += Time.deltaTime;
         totalTime += Time.deltaTime;
         if (reportTimer >= reportInterval)
         {
             int currentInteracted = Utils.CountInteracted(interactableObjects);
-            Debug.Log("Current Interacted " + minuteCount + "m: " + currentInteracted + " / " + interactionCount + " (" + (float)currentInteracted / (float)interactionCount * 100 + "%)");
+            float currentInteractedPercentage = (float)currentInteracted / (float)interactionCount * 100;
+            Debug.Log($"Current Interacted {minuteCount}m: {currentInteracted} / {interactionCount} ({currentInteractedPercentage}%)");
             minuteCount += 0.5f;
             reportTimer = 0f;
+        }
+        if (!isTimeBudgetExceeded && Time.time - startTime >= timeBudget)
+        {
+            isTimeBudgetExceeded = true;
+            Debug.Log($"Time budget exceeded. Stopping script execution.");
+            int currentInteracted = Utils.CountInteracted(interactableObjects, true);
+            float currentInteractedPercentage = (float)currentInteracted / (float)interactionCount * 100;
+            Debug.Log($"Interaction Results: {currentInteracted} / {interactionCount} ({currentInteractedPercentage}%)");
+            this.enabled = false;
+            return;
+        }
+        if (interactableObjects.All(obj => obj.InteractionAttempted))
+        {
+            // Only end if there are no ongoing interactions and at least one ThreeDInteraction attempt has been made
+            if (!isGrabHeld && grabActionCount == 0 && combinedActionCount == 0)
+            {
+                Debug.Log($"Test End: execution time {totalTime}s");
+                int currentInteracted = Utils.CountInteracted(interactableObjects, true);
+                float currentInteractedPercentage = (float)currentInteracted / (float)interactionCount * 100;
+                Debug.Log($"Number of Interacted Interactables: {currentInteracted} / {interactionCount} ({currentInteractedPercentage}%)");
+                this.enabled = false;
+                return;
+            }
+            return; // Don't end yet, there are ongoing interactions or ThreeDInteraction not attempted
         }
         // Handle different exploration states
         switch (currentExplorationState)
@@ -92,9 +119,9 @@ public class InteractoBot : MonoBehaviour
             case ExplorationState.ThreeDInteraction:
                 ThreeDInteraction();
                 break;
-            case ExplorationState.TwoDInteraction:
-                TwoDInteraction();
-                break;
+                // case ExplorationState.TwoDInteraction:
+                //     TwoDInteraction();
+                //     break;
         }
     }
 
@@ -103,23 +130,16 @@ public class InteractoBot : MonoBehaviour
     /// </summary>
     private void Navigation()
     {
-        InteractableObject closestInteractable = GetCloestInteractable();
-        if (closestInteractable == null)
+        targetInteractable = GetCloestInteractable();
+        Debug.Log($"Current Closest Interactable: {targetInteractable.Name}");
+        if (targetInteractable == null)
         {
-            if (interactableObjects.All(obj => obj.GetVisited()) &&
-                (isGripHeld || gripActionCount > 0 || combinedActionCount > 0))
-            {
-                return; // Don't end the test yet, let the interaction complete
-            }
-            Debug.Log("Test End");
-            Debug.Log("Number of Interacted Interactables: " + Utils.CountInteracted(interactableObjects) + " / " + interactionCount);
             return;
         }
         ResetControllerPosition();
-
-        GameObject closestObject = closestInteractable.GetObject();
+        GameObject targetObject = targetInteractable.Interactable;
         Vector3 currentPos = transform.position;
-        Vector3 targetPos = closestObject.transform.position;
+        Vector3 targetPos = targetObject.transform.position;
 
         // Rotation (only rotate y-axis)
         Vector3 targetDirection = (targetPos - currentPos).normalized;
@@ -162,28 +182,22 @@ public class InteractoBot : MonoBehaviour
             return;
         }
 
-        InteractableObject closestInteractable = GetCloestInteractable();
-        if (closestInteractable == null)
+        if (targetInteractable == null)
         {
-            if (interactableObjects.All(obj => obj.GetVisited()) &&
-                (isGripHeld || gripActionCount > 0 || combinedActionCount > 0))
-            {
-                return; // Don't end the test yet, let the interaction complete
-            }
             StartCoroutine(TransitionToState(ExplorationState.Navigation));
             return;
         }
 
-        GameObject closestObject = closestInteractable.GetObject();
+        GameObject targetObject = targetInteractable.Interactable;
         timeSinceLastUpdate += Time.deltaTime;
         if (timeSinceLastUpdate >= updateInterval)
         {
             timeSinceLastUpdate = 0f;
             // Controller Movement
             Vector3 controllerCurrentPos = rightController.transform.position;
-            Vector3 controllerTargetPos = closestObject.transform.position;
+            Vector3 controllerTargetPos = targetObject.transform.position;
             // Add offset in front of the target in the z axis
-            controllerTargetPos += new Vector3(0, 0, interactionOffset);
+            // controllerTargetPos += new Vector3(0, 0, interactionOffset);
 
             Vector3 controllerWorldDirection = Utils.GetControllerWorldDirection(controllerCurrentPos, controllerTargetPos);
             float distanceToTarget = Vector3.Distance(controllerCurrentPos, controllerTargetPos);
@@ -201,17 +215,12 @@ public class InteractoBot : MonoBehaviour
                 if (isControllerMoving) // Only proceed if the controller has stopped moving
                 {
                     isControllerMoving = false;
-                    closestInteractable.SetVisited(true);
-                    var events = closestInteractable.GetEvents();
+                    targetInteractable.Visited = true;
+                    var events = targetInteractable.Events;
                     current3DInteractionPattern = string.Join(",", events);
-                    if (closestInteractable.GetObjectType() == "3d")
-                    {
-                        StartCoroutine(TransitionToState(ExplorationState.ThreeDInteraction));
-                    }
-                    // else if (closestInteractable.GetObjectType() == "2d")
-                    // {
-                    //     StartCoroutine(TransitionToState(ExplorationState.TwoDInteraction));
-                    // }
+                    bool intersection = Utils.GetIntersected(targetInteractable.Interactable, rightController);
+                    targetInteractable.Intersected = intersection;
+                    StartCoroutine(TransitionToState(ExplorationState.ThreeDInteraction));
                 }
             }
         }
@@ -222,60 +231,63 @@ public class InteractoBot : MonoBehaviour
     /// </summary>
     private void ThreeDInteraction()
     {
-        // Grip and trigger action
-        if (current3DInteractionPattern.Contains("select") && current3DInteractionPattern.Contains("activate"))
+        Debug.Log($"Current 3D Interaction Pattern: {current3DInteractionPattern}");
+        // Grab and trigger action
+        if (current3DInteractionPattern.Contains("grab") && current3DInteractionPattern.Contains("trigger"))
         {
-            if (!isGripHeld && gripActionCount == 0 && combinedActionCount == 0)
+            if (!isGrabHeld && grabActionCount == 0 && combinedActionCount == 0)
             {
-                StartCoroutine(HoldGripAndTrigger());
+                Debug.Log("Hold Grab and Trigger");
+                StartCoroutine(HoldGrabAndTrigger());
             }
         }
-        // Normal grip action
-        else if (current3DInteractionPattern.Contains("select"))
+        // Normal grab action
+        else if (current3DInteractionPattern.Contains("grab"))
         {
-            if (gripActionCount < 1)
+            if (grabActionCount < 2)
             {
-                ControllerGripAction();
-                gripActionCount++;
-                if (gripActionCount >= 1)
+                ControllerGrabAction();
+                grabActionCount++;
+                if (grabActionCount >= 2)
                 {
+                    targetInteractable.InteractionAttempted = true;
                     StartCoroutine(TransitionToState(ExplorationState.Navigation));
                 }
             }
         }
     }
 
-    private IEnumerator HoldGripAndTrigger()
+    private IEnumerator HoldGrabAndTrigger()
     {
-        if (isGripHeld) yield break;
-        isGripHeld = true;
+        Debug.Log($"Current Interactable: {targetInteractable.Name}");
+        Debug.Log($"Current Interactable Interaction Attempted: {targetInteractable.InteractionAttempted}");
+        Debug.Log($"Current Interactable Grabbed: {targetInteractable.Grabbed}");
+        Debug.Log($"Current Interactable Interacted: {targetInteractable.Interacted}");
+        if (targetInteractable == null || targetInteractable.InteractionAttempted) yield break;
+        isGrabHeld = true;
         var keyboard = InputSystem.GetDevice<Keyboard>();
         if (keyboard == null) yield break;
-        // Hold grip
-        if (gripActionCount == 0)
+        // Hold grab
+        if (grabActionCount == 0 && !targetInteractable.InteractionAttempted)
         {
-            yield return new WaitForSeconds(0.5f); // Wait a moment to ensure grip is registered
             InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.G));
-            gripActionCount++;
-            yield return new WaitForSeconds(0.5f);
+            grabActionCount++;
         }
-        // Execute trigger action while grip is held
-        if (gripActionCount > 0 && combinedActionCount == 0)
+        // Execute trigger action while grab is held
+        if (grabActionCount > 0 && combinedActionCount == 0 && !targetInteractable.InteractionAttempted)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
             Key[] keys = { Key.T, Key.G };
             InputSystem.QueueStateEvent(keyboard, new KeyboardState(keys));
             combinedActionCount++;
-            yield return new WaitForSeconds(0.5f);
         }
-        // Keep grip held after trigger
-        if (gripActionCount > 0 && combinedActionCount > 0)
+        // Keep grab held after trigger
+        if (grabActionCount > 0 && combinedActionCount > 0 && !targetInteractable.InteractionAttempted)
         {
-            yield return new WaitForSeconds(0.5f);
-            InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.G));
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
             InputSystem.QueueStateEvent(keyboard, new KeyboardState());
-            isGripHeld = false;
+            isGrabHeld = false;
+            targetInteractable.InteractionAttempted = true;
             StartCoroutine(TransitionToState(ExplorationState.Navigation));
         }
     }
@@ -283,26 +295,26 @@ public class InteractoBot : MonoBehaviour
     /// <summary>
     /// Handle 2D interaction state
     /// </summary>
-    private void TwoDInteraction()
-    {
-        // Check cool down time since the last interaction
-        if (Time.time - lastInteractionTime < interactionCooldown)
-        {
-            return;
-        }
-        // Only perform the trigger action if haven't completed two actions
-        if (triggerActionCount < 2)
-        {
-            ControllerTriggerAction();
-            triggerActionCount++;
-            lastInteractionTime = Time.time;
-            // Only transition to Navigation after two trigger actions are completed
-            if (triggerActionCount == 2)
-            {
-                StartCoroutine(TransitionToState(ExplorationState.Navigation));
-            }
-        }
-    }
+    // private void TwoDInteraction()
+    // {
+    //     // Check cool down time since the last interaction
+    //     if (Time.time - lastInteractionTime < interactionCooldown)
+    //     {
+    //         return;
+    //     }
+    //     // Only perform the trigger action if haven't completed two actions
+    //     if (triggerActionCount < 2)
+    //     {
+    //         ControllerTriggerAction();
+    //         triggerActionCount++;
+    //         lastInteractionTime = Time.time;
+    //         // Only transition to Navigation after two trigger actions are completed
+    //         if (triggerActionCount == 2)
+    //         {
+    //             StartCoroutine(TransitionToState(ExplorationState.Navigation));
+    //         }
+    //     }
+    // }
 
     /// <summary>
     /// Ensure we're in the desired controller manipulation state
@@ -330,7 +342,6 @@ public class InteractoBot : MonoBehaviour
 
     IEnumerator ExecuteKeyWithDuration(Key key, float duration)
     {
-        // Debug.Log($"Executing key: {key} for {duration} seconds");
         var keyboard = InputSystem.GetDevice<Keyboard>();
         if (keyboard == null) yield break;
         // Press the key
@@ -400,11 +411,11 @@ public class InteractoBot : MonoBehaviour
         StartCoroutine(ExecuteKeyWithDuration(resetKey, 0.1f));
     }
 
-    void ControllerGripAction()
+    void ControllerGrabAction()
     {
-        // Debug.Log("Controller Grip Action");
-        Key gripKey = Key.G;
-        StartCoroutine(ExecuteKeyWithDuration(gripKey, 0.1f));
+        // Debug.Log("Controller Grab Action");
+        Key grabKey = Key.G;
+        StartCoroutine(ExecuteKeyWithDuration(grabKey, 0.1f));
     }
 
     void ControllerTriggerAction()
@@ -417,17 +428,15 @@ public class InteractoBot : MonoBehaviour
     /// Greedy policy: move to and interact with the closest interactable based on the current position
     /// </summary>
     /// <returns></returns>
-    public InteractableObject GetCloestInteractable()
+    public Utils.InteractableObject GetCloestInteractable()
     {
-        InteractableObject closest = null;
+        Utils.InteractableObject closest = null;
         float minDistance = Mathf.Infinity;
-        foreach (InteractableObject interactable in interactableObjects)
+        foreach (Utils.InteractableObject interactable in interactableObjects)
         {
-            // GameObject interactable = GameObject.Find(interactionEvent.interactable);
-            // InteractableObject interactable = entry.Value;
-            if (!interactable.GetVisited())
+            if (!interactable.Visited && !interactable.InteractionAttempted)
             {
-                float distance = Vector3.Distance(transform.position, interactable.GetObject().transform.position);
+                float distance = Vector3.Distance(transform.position, interactable.Interactable.transform.position);
                 if (distance < minDistance)
                 {
                     minDistance = distance;
@@ -438,40 +447,48 @@ public class InteractoBot : MonoBehaviour
         return closest;
     }
 
-    void RegisterListener()
+    void RegisterListeners()
     {
-        // Register listeners for common interactable types
         foreach (var obj in interactableObjects)
         {
-            var baseInteractable = obj.GetObject().GetComponent<XRBaseInteractable>();
+            var baseInteractable = obj.Interactable.GetComponent<XRBaseInteractable>();
             if (baseInteractable != null)
             {
                 baseInteractable.selectEntered.AddListener(OnSelectEntered);
-                baseInteractable.selectExited.AddListener(OnSelectExited);
                 baseInteractable.activated.AddListener(OnActivated);
-                baseInteractable.deactivated.AddListener(OnDeactivated);
             }
         }
-        // Register EventTrigger listeners for UI elements
-        // EventTrigger[] uiTriggers = FindObjectsByType<EventTrigger>(FindObjectsSortMode.None);
-        // foreach (EventTrigger trigger in uiTriggers)
-        // {
-        //     // Create entry for pointer click
-        //     EventTrigger.Entry pointerClickEntry = new EventTrigger.Entry();
-        //     pointerClickEntry.eventID = EventTriggerType.PointerClick;
-        //     pointerClickEntry.callback.AddListener((data) => { OnPointerClick((PointerEventData)data); });
-        //     trigger.triggers.Add(pointerClickEntry);
-        // }
     }
 
-    void SetObjectInteracted(string interactableName)
+    void SetObjectGrabbed(string interactableName)
     {
         foreach (var obj in interactableObjects)
         {
-            if (obj.GetObject().name == interactableName && !obj.GetInteracted())
+            if (obj.Interactable.name == interactableName && !obj.Interacted)
             {
-                obj.SetInteracted(true);
-                Debug.Log("Interacted: " + obj.GetName() + " " + obj.GetObject().name);
+                obj.Grabbed = true;
+                if (!obj.IsTrigger)
+                {
+                    obj.Interacted = true;
+                }
+                Debug.Log("Grabbed: " + obj.Name + " " + obj.Interactable.name);
+                break;
+            }
+        }
+    }
+
+    void SetObjectTriggered(string interactableName)
+    {
+        foreach (var obj in interactableObjects)
+        {
+            if (obj.Interactable.name == interactableName && !obj.Interacted)
+            {
+                obj.Triggered = true;
+                if (obj.Grabbed)
+                {
+                    obj.Interacted = true;
+                }
+                Debug.Log("Triggered: " + obj.Name + " " + obj.Interactable.name);
                 break;
             }
         }
@@ -480,97 +497,57 @@ public class InteractoBot : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         var xrInteractable = args.interactableObject;
-        Debug.Log("OnSelectEntered: " + xrInteractable.transform.name);
-        SetObjectInteracted(xrInteractable.transform.name);
-    }
-
-    private void OnSelectExited(SelectExitEventArgs args)
-    {
-        var xrInteractable = args.interactableObject;
-        // Debug.Log("OnSelectExited: " + xrInteractable.transform.name);
+        // Debug.Log("OnSelectEntered: " + xrInteractable.transform.name);
+        SetObjectGrabbed(xrInteractable.transform.name);
     }
 
     private void OnActivated(ActivateEventArgs args)
     {
         var interactable = args.interactableObject;
-        Debug.Log($"OnActivated: {interactable.transform.name}");
-        SetObjectInteracted(interactable.transform.name);
+        // Debug.Log($"OnActivated: {interactable.transform.name}");
+        SetObjectTriggered(interactable.transform.name);
     }
-
-    private void OnDeactivated(DeactivateEventArgs args)
-    {
-        var interactable = args.interactableObject;
-        // Debug.Log($"OnDeactivated: {interactable.transform.name}");
-    }
-
-    private void OnPointerEnter(PointerEventData eventData)
-    {
-        Debug.Log($"Pointer entered UI: {eventData.pointerEnter.name}");
-    }
-
-    private void OnPointerExit(PointerEventData eventData)
-    {
-        Debug.Log($"Pointer exited UI: {eventData.pointerEnter.name}");
-    }
-
-    // private void OnPointerClick(PointerEventData eventData)
-    // {
-    //     var button = eventData.pointerEnter.GetComponentInParent<Button>();
-    //     var toggle = eventData.pointerEnter.GetComponentInParent<Toggle>();
-    //     var slider = eventData.pointerEnter.GetComponentInParent<Slider>();
-    //     var dropdown = eventData.pointerEnter.GetComponentInParent<Dropdown>();
-    //     var tmp_dropdown = eventData.pointerEnter.GetComponentInParent<TMP_Dropdown>();
-    //     if (button != null)
-    //     {
-    //         // Debug.Log("Button clicked: " + button.gameObject.name);
-    //         SetObjectInteracted(button.gameObject.name);
-    //     }
-    //     else if (toggle != null)
-    //     {
-    //         // Debug.Log("Toggle clicked: " + toggle.gameObject.name);
-    //         SetObjectInteracted(toggle.gameObject.name);
-    //     }
-    //     else if (slider != null)
-    //     {
-    //         // Debug.Log("Slider clicked: " + slider.gameObject.name);
-    //         SetObjectInteracted(slider.gameObject.name);
-    //     }
-    //     else if (dropdown != null)
-    //     {
-    //         // Debug.Log("Dropdown clicked: " + dropdown.gameObject.name);
-    //         SetObjectInteracted(dropdown.gameObject.name);
-    //     }
-    //     else if (tmp_dropdown != null)
-    //     {
-    //         // Debug.Log("TMP_Dropdown clicked: " + tmp_dropdown.gameObject.name);
-    //         SetObjectInteracted(tmp_dropdown.gameObject.name);
-    //     }
-    //     else
-    //     {
-    //         // Debug.Log("Uncategorised UI clicked: " + eventData.pointerEnter.name);
-    //         SetObjectInteracted(eventData.pointerEnter.name);
-    //     }
-    // }
 
     /// <summary>
     /// Transition to a new state with a delay
     /// </summary>
     private IEnumerator TransitionToState(ExplorationState newState)
     {
-        // Wait for the specified delay
         yield return new WaitForSeconds(stateTransitionDelay);
         // Reset the action flags when transitioning to a new state
         if (newState != ExplorationState.ThreeDInteraction)
         {
             current3DInteractionPattern = ""; // Clear the interaction pattern when leaving 3D state
-            isGripHeld = false; // Ensure grip is released when leaving state
-            gripActionCount = 0; // Reset grip action count
+            isGrabHeld = false; // Ensure grab is released when leaving state
+            grabActionCount = 0; // Reset grab action count
             combinedActionCount = 0; // Reset combined action count
         }
-        if (newState != ExplorationState.TwoDInteraction)
-        {
-            triggerActionCount = 0; // Reset trigger action count when leaving 2D interaction state
-        }
         currentExplorationState = newState;
+    }
+
+    private void GetComponentAttributes()
+    {
+        GameObject blaster = GameObject.Find("Blaster").transform.parent.gameObject;
+        Debug.Log(blaster.GetComponent<XRGrabInteractable>());
+        var grabInteractable = blaster.GetComponent<XRGrabInteractable>();
+        if (grabInteractable != null)
+        {
+            // Get the activated event
+            var activatedEvent = grabInteractable.activated;
+            Debug.Log($"Blaster Activate Event: {activatedEvent}");
+            activatedEvent.AddListener((args) =>
+            {
+                Debug.Log("Blaster activated event was fired!");
+            });
+            // You can also check if there are any listeners attached to this event
+            var hasListeners = activatedEvent.GetPersistentEventCount() > 0;
+            Debug.Log($"Blaster Activate Event has listeners: {hasListeners}");
+            for (int i = 0; i < activatedEvent.GetPersistentEventCount(); i++)
+            {
+                var target = activatedEvent.GetPersistentTarget(i);
+                var method = activatedEvent.GetPersistentMethodName(i);
+                Debug.Log($"Activate Listener {i}: Target={target}, Method={method}");
+            }
+        }
     }
 }

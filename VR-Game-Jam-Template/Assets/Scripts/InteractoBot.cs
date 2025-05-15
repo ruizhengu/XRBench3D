@@ -267,11 +267,11 @@ public class InteractoBot : MonoBehaviour
         // Normal grip action
         else if (current3DInteractionPattern.Contains("select"))
         {
-            if (gripActionCount < 1)
+            if (gripActionCount < 2)
             {
                 ControllerGripAction();
                 gripActionCount++;
-                if (gripActionCount >= 1)
+                if (gripActionCount >= 2)
                 {
                     StartCoroutine(TransitionToState(ExplorationState.Navigation));
                 }

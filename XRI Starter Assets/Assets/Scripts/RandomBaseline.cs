@@ -11,20 +11,20 @@ using UnityEngine.UI;
 using TMPro;
 using System.Linq;
 
-public class InteractoBotRand : MonoBehaviour
+public class RandomBaseline : MonoBehaviour
 {
+    public int interactionCount = 0;
+    public List<Utils.InteractableObject> interactableObjects;
+    private float gameSpeed = 2.0f; // May alter gameSpeed to speed up the test execution process
     private float actionInterval = 1.0f; // Time between random actions
     private float lastActionTime = 0f;
     private bool isExecutingAction = false;
     private bool isCameraMode = true; // Track whether we're in camera or controller mode
     private float cameraMoveSpeed = 0.1f; // Speed of camera movement
     private float cameraRotateSpeed = 5f; // Speed of camera rotation
-    [SerializeField]
-    private float timeBudget = 300f; // 5 minutes time budget in seconds
+    private float timeBudget = 600f; // 10 minutes time budget in seconds
     private float startTime; // Time when the program started
     private bool isTimeBudgetExceeded = false; // Flag to track if time budget is exceeded
-    private Dictionary<GameObject, InteractableObject> interactables;
-    private int totalInteractables = 0;
     private float reportInterval = 30f; // Report interval in seconds
     private float reportTimer = 0f; // Timer for report interval
     private float minuteCount = 0.5f;
@@ -47,58 +47,54 @@ public class InteractoBotRand : MonoBehaviour
 
     void Start()
     {
+        // Place the object at a random x and z position (y unchanged)
+        Vector3 pos = transform.position;
+        float randomX = UnityEngine.Random.Range(-2.5f, 2.5f);
+        float randomZ = UnityEngine.Random.Range(-2.5f, 2.5f);
+        transform.position = new Vector3(randomX, pos.y, randomZ);
+
+        Time.timeScale = gameSpeed;
         startTime = Time.time;
-        Debug.Log($"Starting XUIMonkey with {timeBudget} seconds time budget");
-        interactables = Utils.GetInteractables();
-        totalInteractables = interactables.Count;
+        Debug.Log($"Starting random baseline with {timeBudget} seconds time budget");
+        interactableObjects = Utils.GetInteractableObjects();
+        interactionCount = Utils.GetInteractableEventsCount(interactableObjects);
         RegisterListeners();
     }
 
     void RegisterListeners()
     {
-        foreach (var obj in interactables.Values)
+        foreach (var obj in interactableObjects)
         {
-            var baseInteractable = obj.GetObject().GetComponent<XRBaseInteractable>();
+            var baseInteractable = obj.Interactable.GetComponent<XRBaseInteractable>();
             if (baseInteractable != null)
             {
                 baseInteractable.selectEntered.AddListener(OnSelectEntered);
-                baseInteractable.selectExited.AddListener(OnSelectExited);
                 baseInteractable.activated.AddListener(OnActivated);
-                baseInteractable.deactivated.AddListener(OnDeactivated);
             }
-        }
-
-        // Register EventTrigger listeners for UI elements
-        EventTrigger[] uiTriggers = FindObjectsByType<EventTrigger>(FindObjectsSortMode.None);
-        foreach (EventTrigger trigger in uiTriggers)
-        {
-            EventTrigger.Entry pointerClickEntry = new EventTrigger.Entry();
-            pointerClickEntry.eventID = EventTriggerType.PointerClick;
-            pointerClickEntry.callback.AddListener((data) => { OnPointerClick((PointerEventData)data); });
-            trigger.triggers.Add(pointerClickEntry);
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         reportTimer += Time.deltaTime;
         if (reportTimer >= reportInterval)
         {
-            int currentInteracted = Utils.CountInteracted(interactables.Values.ToList());
-            Debug.Log("Current Interacted " + minuteCount + "m: " + currentInteracted + " / " + totalInteractables + " (" + (float)currentInteracted / (float)totalInteractables * 100 + "%)");
+            int currentInteracted = Utils.CountInteracted(interactableObjects);
+            float currentInteractedPercentage = (float)currentInteracted / (float)interactionCount * 100;
+            Debug.Log($"Current Interacted {minuteCount}m: {currentInteracted} / {interactionCount} ({currentInteractedPercentage}%)");
             minuteCount += 0.5f;
             reportTimer = 0f;
         }
-        // Check if we've exceeded the time budget
         if (!isTimeBudgetExceeded && Time.time - startTime >= timeBudget)
         {
             isTimeBudgetExceeded = true;
             Debug.Log($"Time budget exceeded. Stopping script execution.");
-            Debug.Log($"Interaction Results: {Utils.CountInteracted(interactables.Values.ToList())} / {totalInteractables} interactables triggered");
-            this.enabled = false; // Disable this script
+            int currentInteracted = Utils.CountInteracted(interactableObjects, true);
+            float currentInteractedPercentage = (float)currentInteracted / (float)interactionCount * 100;
+            Debug.Log($"Interaction Results: {currentInteracted} / {interactionCount} ({currentInteractedPercentage}%)");
+            this.enabled = false;
             return;
         }
-
         if (!isTimeBudgetExceeded && Time.time - lastActionTime >= actionInterval && !isExecutingAction)
         {
             StartCoroutine(ExecuteRandomAction());
@@ -108,88 +104,47 @@ public class InteractoBotRand : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         var xrInteractable = args.interactableObject;
-        Debug.Log($"OnSelectEntered: {xrInteractable.transform.name}");
-        IncrementTriggeredCount(xrInteractable.transform.name);
-    }
-
-    private void OnSelectExited(SelectExitEventArgs args)
-    {
-        var xrInteractable = args.interactableObject;
-        // Debug.Log($"OnSelectExited: {xrInteractable.transform.name}");
+        // Debug.Log($"OnSelectEntered: {xrInteractable.transform.name}");
+        SetObjectGrabbed(xrInteractable.transform.name);
     }
 
     private void OnActivated(ActivateEventArgs args)
     {
         var interactable = args.interactableObject;
-        Debug.Log($"OnActivated: {interactable.transform.name}");
-        IncrementTriggeredCount(interactable.transform.name);
+        // Debug.Log($"OnActivated: {interactable.transform.name}");
+        SetObjectTriggered(interactable.transform.name);
     }
 
-    private void OnDeactivated(DeactivateEventArgs args)
+
+    void SetObjectGrabbed(string interactableName)
     {
-        var interactable = args.interactableObject;
-        // Debug.Log($"OnDeactivated: {interactable.transform.name}");
-    }
-
-    private void OnPointerClick(PointerEventData eventData)
-    {
-        var button = eventData.pointerEnter.GetComponentInParent<Button>();
-        var toggle = eventData.pointerEnter.GetComponentInParent<Toggle>();
-        var slider = eventData.pointerEnter.GetComponentInParent<Slider>();
-        var dropdown = eventData.pointerEnter.GetComponentInParent<Dropdown>();
-        var tmp_dropdown = eventData.pointerEnter.GetComponentInParent<TMP_Dropdown>();
-
-        if (button != null)
+        foreach (var obj in interactableObjects)
         {
-            IncrementTriggeredCount(button.gameObject.name);
-        }
-        else if (toggle != null)
-        {
-            IncrementTriggeredCount(toggle.gameObject.name);
-        }
-        else if (slider != null)
-        {
-            IncrementTriggeredCount(slider.gameObject.name);
-        }
-        else if (dropdown != null)
-        {
-            IncrementTriggeredCount(dropdown.gameObject.name);
-        }
-        else if (tmp_dropdown != null)
-        {
-            IncrementTriggeredCount(tmp_dropdown.gameObject.name);
-        }
-        else
-        {
-            IncrementTriggeredCount(eventData.pointerEnter.name);
-        }
-    }
-
-    // private int CountInteracted()
-    // {
-    //     int count = 0;
-    //     foreach (var obj in interactableObjects)
-    //     {
-    //         if (obj.GetInteracted())
-    //         {
-    //             count++;
-    //         }
-    //         else
-    //         {
-    //             Debug.Log("Not Interacted Interactable: " + obj.GetName());
-    //         }
-    //     }
-    //     return count;
-    // }
-
-    private void IncrementTriggeredCount(string interactableName)
-    {
-        foreach (var obj in interactables.Values)
-        {
-            if (obj.GetObject().name == interactableName && !obj.GetInteracted())
+            if (obj.Interactable.name == interactableName && !obj.Interacted)
             {
-                obj.SetInteracted(true);
-                Debug.Log("Interacted: " + obj.GetName() + " " + obj.GetObject().name);
+                obj.Grabbed = true;
+                if (!obj.IsTrigger)
+                {
+                    obj.Interacted = true;
+                }
+                Debug.Log("Grabbed: " + obj.Name + " " + obj.Interactable.name);
+                break;
+            }
+        }
+    }
+
+    void SetObjectTriggered(string interactableName)
+    {
+        foreach (var obj in interactableObjects)
+        {
+            if (obj.Interactable.name == interactableName && !obj.Interacted)
+            {
+                obj.Triggered = true;
+                if (obj.Grabbed)
+                {
+                    obj.Interacted = true;
+                }
+                Debug.Log("Triggered: " + obj.Name + " " + obj.Interactable.name);
                 break;
             }
         }
@@ -260,32 +215,32 @@ public class InteractoBotRand : MonoBehaviour
     private IEnumerator ExecuteControllerAction(ActionType action)
     {
         if (isTimeBudgetExceeded) yield break;
-
+        float randomDuration = UnityEngine.Random.Range(0.1f, 0.5f);
         switch (action)
         {
             case ActionType.MoveForward:
-                yield return ExecuteKeyWithDuration(Key.W, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.W, randomDuration);
                 break;
             case ActionType.MoveBackward:
-                yield return ExecuteKeyWithDuration(Key.S, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.S, randomDuration);
                 break;
             case ActionType.MoveLeft:
-                yield return ExecuteKeyWithDuration(Key.A, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.A, randomDuration);
                 break;
             case ActionType.MoveRight:
-                yield return ExecuteKeyWithDuration(Key.D, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.D, randomDuration);
                 break;
             case ActionType.MoveUp:
-                yield return ExecuteKeyWithDuration(Key.E, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.E, randomDuration);
                 break;
             case ActionType.MoveDown:
-                yield return ExecuteKeyWithDuration(Key.Q, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.Q, randomDuration);
                 break;
             case ActionType.GripAction:
-                yield return ExecuteKeyWithDuration(Key.G, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.G, randomDuration);
                 break;
             case ActionType.TriggerAction:
-                yield return ExecuteKeyWithDuration(Key.T, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.T, randomDuration);
                 break;
             case ActionType.SwitchMode:
                 isCameraMode = true;
