@@ -12,26 +12,6 @@ using Newtonsoft.Json;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using System.Linq;
 
-
-[Serializable]
-public class InteractionEvent
-{
-  public string interactor;
-  public List<string> condition;
-  public string interactable;
-  public string type;
-  public string event_type;
-
-  public InteractionEvent(string interactor, List<string> condition, string interactable, string type, string event_type)
-  {
-    this.interactor = interactor;
-    this.condition = condition;
-    this.interactable = interactable;
-    this.type = type;
-    this.event_type = event_type;
-  }
-}
-
 public static class Utils
 {
 
@@ -105,38 +85,12 @@ public static class Utils
     return worldDirection;
   }
 
-  public static Dictionary<GameObject, InteractableObject> GetInteractables()
-  {
-    Dictionary<GameObject, InteractableObject> interactables = new Dictionary<GameObject, InteractableObject>();
-    GameObject[] gos = UnityEngine.Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None);
-    foreach (GameObject go in gos)
-    {
-      EventTrigger trigger = go.GetComponent<EventTrigger>();
-      UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable xrInteractable =
-        go.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable>();
-      // if (trigger != null && !interactables.ContainsKey(go))
-      // {
-      //   interactables[go] = new InteractableObject(null, go, "2d", new List<string>());
-      // }
-      if (xrInteractable != null && !interactables.ContainsKey(go))
-      {
-        interactables[go] = new InteractableObject(null, go, "3d", new List<string>());
-      }
-    }
-    foreach (var interactable in interactables)
-    {
-      Debug.Log("Interactable: " + interactable.Key.name + " " + interactable.Value.GetName());
-    }
-    Debug.Log("Interactables: " + interactables.Count);
-    return interactables;
-  }
-
   /// <summary>
   /// Get the interaction events from the interaction_results.json file
   /// </summary>
-  public static List<InteractionEvent> GetInteractionEvents()
+  public static List<InteractionEvent> ParseInteractionGraph()
   {
-    string jsonPath = Path.Combine(Application.dataPath, "Scripts/interaction_results.json");
+    string jsonPath = Path.Combine(Application.dataPath, "Scripts/scene_graph.json");
     using (StreamReader r = new StreamReader(jsonPath))
     {
       string json = r.ReadToEnd();
@@ -145,169 +99,91 @@ public static class Utils
     }
   }
 
-  public static void ExecuteKey(Key key)
-  {
-    Debug.Log("Executing key: " + key);
-    var keyboard = InputSystem.GetDevice<Keyboard>();
-    if (keyboard == null) return;
-    InputSystem.QueueStateEvent(keyboard, new KeyboardState(key));
-    InputSystem.QueueStateEvent(keyboard, new KeyboardState());
-  }
-
-  public static void ExecuteKeyImmediate(Key key)
-  {
-    var keyboard = InputSystem.GetDevice<Keyboard>();
-    if (keyboard == null) return;
-
-    // Press and release immediately
-    InputSystem.QueueStateEvent(keyboard, new KeyboardState(key));
-    InputSystem.QueueStateEvent(keyboard, new KeyboardState());
-  }
-
   public static List<InteractableObject> GetInteractableObjects()
   {
-    var interactionEvents = GetInteractionEvents();
-    var interactableObjects = new List<InteractableObject>();
-    var interactableEventTypes = CollectEventTypes(interactionEvents);
-    var processedInteractables = new HashSet<string>();
+    var interactionEvents = ParseInteractionGraph();
+    var interactableDict = new Dictionary<string, InteractableObject>();
 
     foreach (var interactionEvent in interactionEvents)
     {
-      if (processedInteractables.Contains(interactionEvent.interactable)) continue;
-
-      var interactable = FindInteractableObject(interactionEvent.interactable);
+      var interactable = GameObject.Find(interactionEvent.interactable);
       if (interactable == null) continue;
 
-      ProcessInteractable(interactable, interactionEvent, interactableEventTypes, interactionEvents, interactableObjects, processedInteractables);
+      if (!interactableDict.TryGetValue(interactionEvent.interactable, out var obj))
+      {
+        // Create new InteractableObject with the first interaction type
+        var events = new List<string> { interactionEvent.interaction_type };
+        bool isTrigger = interactionEvent.interaction_type == "trigger";
+        obj = new InteractableObject(interactionEvent.interactable, interactable, isTrigger, events);
+        interactableDict[interactionEvent.interactable] = obj;
+      }
+      else
+      {
+        // Add new interaction type if not already present
+        if (!obj.Events.Contains(interactionEvent.interaction_type))
+        {
+          obj.Events.Add(interactionEvent.interaction_type);
+        }
+        // If any interaction type is trigger, set IsTrigger to true
+        if (interactionEvent.interaction_type == "trigger")
+        {
+          obj.IsTrigger = true;
+        }
+      }
     }
-    LogInteractables(interactableObjects);
+    var interactableObjects = interactableDict.Values.ToList();
+    // LogInteractables(interactableObjects);
     return interactableObjects;
   }
 
-  private static Dictionary<string, HashSet<string>> CollectEventTypes(List<InteractionEvent> events)
+  public static int GetInteractableEventsCount(List<InteractableObject> interactableObjects)
   {
-    var eventTypes = new Dictionary<string, HashSet<string>>();
-    foreach (var evt in events)
+    int eventCount = 0;
+    foreach (var obj in interactableObjects)
     {
-      if (!eventTypes.ContainsKey(evt.interactable))
+      if (obj.Events != null)
       {
-        eventTypes[evt.interactable] = new HashSet<string>();
-      }
-      eventTypes[evt.interactable].Add(evt.event_type);
-    }
-    return eventTypes;
-  }
-
-  private static void ProcessInteractable(
-    GameObject interactable,
-    InteractionEvent currentEvent,
-    Dictionary<string, HashSet<string>> eventTypes,
-    List<InteractionEvent> allEvents,
-    List<InteractableObject> interactableObjects,
-    HashSet<string> processedInteractables)
-  {
-    var type = currentEvent.type;
-    var interactableEvents = eventTypes[currentEvent.interactable];
-
-    if (ShouldCombineEvents(currentEvent.interactable, interactableEvents, allEvents))
-    {
-      if (TryAddInteractable(interactable, type, currentEvent.interactable, interactableObjects, new List<string> { "select", "activate" }))
-      {
-        processedInteractables.Add(currentEvent.interactable);
-        return;
+        eventCount += obj.Events.Count;
       }
     }
-    else
-    {
-      if (TryAddInteractable(interactable, type, currentEvent.interactable, interactableObjects, new List<string> { currentEvent.event_type }))
-      {
-        processedInteractables.Add(currentEvent.interactable);
-        return;
-      }
-    }
-
-    AddChildInteractables(interactable, type, currentEvent.interactable, interactableObjects, interactableEvents);
-    processedInteractables.Add(currentEvent.interactable);
-  }
-
-  private static bool ShouldCombineEvents(string interactableName, HashSet<string> eventTypes, List<InteractionEvent> allEvents)
-  {
-    bool hasSelect = eventTypes.Contains("select");
-    bool hasActivate = eventTypes.Contains("activate");
-    bool hasSelectCondition = allEvents.Any(evt =>
-      evt.interactable == interactableName &&
-      evt.condition != null &&
-      evt.condition.Contains("select"));
-
-    return hasSelect && hasActivate && hasSelectCondition;
+    return eventCount;
   }
 
   private static void LogInteractables(List<InteractableObject> interactables)
   {
     foreach (var interactable in interactables)
     {
-      Debug.Log($"Interactable: {interactable.GetName()} <{string.Join(", ", interactable.GetEvents())}> ({interactable.GetObject().name})");
+      Debug.Log($"Interactable: {interactable.Name} <{string.Join(", ", interactable.Events)}> ({interactable.Interactable.name})");
     }
   }
 
-  private static GameObject FindInteractableObject(string name)
-  {
-    var interactable = GameObject.Find(name);
-    if (interactable != null) return interactable;
-
-    return GameObject.FindObjectsByType<GameObject>(FindObjectsSortMode.None)
-        .FirstOrDefault(obj => obj.name.Contains(name));
-  }
-
-  private static bool TryAddInteractable(GameObject obj, string type, string name, List<InteractableObject> interactables, List<string> eventTypes)
-  {
-    if (type == "2d" && obj.GetComponent<EventTrigger>() != null)
-    {
-      interactables.Add(new InteractableObject(name, obj, "2d", eventTypes));
-      return true;
-    }
-    if (type == "3d" && obj.GetComponent<XRBaseInteractable>() != null)
-    {
-      interactables.Add(new InteractableObject(name, obj, "3d", eventTypes));
-      return true;
-    }
-    return false;
-  }
-
-  private static void AddChildInteractables(GameObject parent, string type, string name, List<InteractableObject> interactables, HashSet<string> eventTypes)
-  {
-    if (type == "2d")
-    {
-      foreach (var trigger in parent.GetComponentsInChildren<EventTrigger>())
-      {
-        interactables.Add(new InteractableObject(name, trigger.gameObject, "2d", new List<string>(eventTypes)));
-      }
-    }
-    else if (type == "3d")
-    {
-      foreach (var interactable in parent.GetComponentsInChildren<XRBaseInteractable>())
-      {
-        interactables.Add(new InteractableObject(name, interactable.gameObject, "3d", new List<string>(eventTypes)));
-      }
-    }
-  }
-
-  public static int CountInteracted(List<InteractableObject> interactableObjects)
+  public static int CountInteracted(List<InteractableObject> interactableObjects, bool detailedLog = false)
   {
     int count = 0;
     foreach (var obj in interactableObjects)
     {
-      if (obj.GetInteracted())
+      if (obj.Interacted)
+      {
+        count++;
+        if (obj.IsTrigger)
+        {
+          count++;
+        }
+      }
+      else if (!obj.Interacted && obj.Grabbed)
       {
         count++;
       }
-      else if (!obj.GetInteracted() && obj.GetIntersected())
+      if (detailedLog)
       {
-        Debug.Log("Could be a bug: " + obj.GetName());
-      }
-      else
-      {
-        Debug.Log("Not Interacted Interactable: " + obj.GetName());
+        if (!obj.Interacted && obj.Intersected)
+        {
+          Debug.Log("Could be a bug: " + obj.Name);
+        }
+        if (!obj.Interacted)
+        {
+          Debug.Log("Not Interacted Interactable: " + obj.Name);
+        }
       }
     }
     return count;
@@ -327,5 +203,50 @@ public static class Utils
       return combinedBounds.Intersects(controllerCollider.bounds);
     }
     return false;
+  }
+
+  public class InteractionEvent
+  {
+    public string interactor;
+    public List<string> condition;
+    public string interactable;
+    public string interaction_type;
+
+    public InteractionEvent() { }
+
+    public InteractionEvent(string interactor, List<string> condition, string interactable, string interaction_type)
+    {
+      this.interactor = interactor;
+      this.condition = condition;
+      this.interactable = interactable;
+      this.interaction_type = interaction_type;
+    }
+  }
+
+  public class InteractableObject
+  {
+    public GameObject Interactable { get; set; }
+    public string Name { get; set; }
+    public List<string> Events { get; set; }
+    public bool Intersected { get; set; }
+    public bool IsTrigger { get; set; }
+    public bool Triggered { get; set; }
+    public bool Grabbed { get; set; }
+    public bool Visited { get; set; }
+    public bool InteractionAttempted { get; set; }
+    public bool Interacted { get; set; }
+
+
+    public InteractableObject(string name, GameObject go, bool isTrigger, List<string> events)
+    {
+      this.Name = name;
+      this.Interactable = go;
+      this.IsTrigger = isTrigger;
+      this.Visited = false;
+      this.Interacted = false;
+      this.InteractionAttempted = false;
+      this.Intersected = false;
+      this.Events = events;
+    }
   }
 }

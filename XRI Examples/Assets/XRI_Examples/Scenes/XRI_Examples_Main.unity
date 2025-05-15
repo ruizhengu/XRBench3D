@@ -11316,7 +11316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7508849101168945004, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
-      value: SheepPrize 2
+      value: SheepPrize 3
       objectReference: {fileID: 0}
     - target: {fileID: 7650257522284272077, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
@@ -15019,7 +15019,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2609984114077390473}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
   m_Name: 
@@ -15033,12 +15033,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2609984114077390473}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f83fbc6f43d44ea18234b2945826635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBudget: 300
+  interactionCount: 0
 --- !u!1001 &2875410408107174874
 PrefabInstance:
   m_ObjectHideFlags: 0

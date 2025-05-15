@@ -1,0 +1,152 @@
+[
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "InstantTracking 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "InstantTracking 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "InstantTracking 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "KinematicCube 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "KinematicCube 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "KinematicCube 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "VelocityTrackedCube 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "VelocityTrackedCube 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "VelocityTrackedCube 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "WateringCan",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Mallet",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "Mallet",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Launcher1H",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "Launcher1H",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Launcher2H",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "Launcher2H",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "SimpleSocketShape",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "SprintJointInteractable_02",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "SpringJointInteractable_01",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "SprintJointInteractable_04",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "SpringJointInteractable_03",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Drawer 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Drawer 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "DoorKey",
+    "interaction_type": "grab"
+  }
+]

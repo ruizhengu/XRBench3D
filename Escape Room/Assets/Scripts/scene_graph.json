@@ -1,0 +1,826 @@
+[
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Cheese 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Cheese 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Cheese 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Cheese 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Feather 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Feather 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Feather 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Feather 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Feather 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Orange 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Orange 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Orange 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Orange 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Orange 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "MeatSlice 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "MeatSlice 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "MeatSlice 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Onion 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Onion 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Onion 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Onion 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Onion 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 8",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 9",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookNavy Variant 10",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 8",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 9",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookYellow Variant 10",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookRed Variant 8",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookGreen Variant 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookGreen Variant 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookGreen Variant 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookGreen Variant 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookGreen Variant 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookGreen Variant 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBlue Variant 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookBrown Variant 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "WoodenLog  Variant",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "WoodenLog  Variant (1)",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "WoodenLog  Variant (2)",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "WoodenLog  Variant (3)",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "WoodenLog  Variant (4)",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "InstructionsShootingWand",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Secret_instructions",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Pumpking 8",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "InstructionsBookAndShootingWand",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "GhostToy",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "BookOfSpells",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "KeyForDesk",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Handle-KitchenLeftDoor",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Handle-KitchenRightDoor",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Radio",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Wand",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "Wand",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 1",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 2",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 3",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 4",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 5",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 6",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 7",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 8",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 8",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_2 9",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_2 9",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 1",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 2",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 2",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 3",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 3",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 4",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 4",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 5",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 5",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 6",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 6",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 7",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 7",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 8",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 8",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "PotionBottle_1 9",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "PotionBottle_1 9",
+    "interaction_type": "trigger"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "GameObject",
+    "interaction_type": "grab"
+  }
+]
