@@ -1,0 +1,58 @@
+[
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Cube Interactable",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Cylinder Interactable",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Torus Interactable",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Tapered Interactable",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Tapered Interactable 1",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Sphere Interactable",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Arch_Interactable",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [],
+    "interactable": "Blaster Variant",
+    "interaction_type": "grab"
+  },
+  {
+    "interactor": "XR Origin (XR Rig)",
+    "condition": [
+      "grab"
+    ],
+    "interactable": "Blaster Variant",
+    "interaction_type": "trigger"
+  }
+]

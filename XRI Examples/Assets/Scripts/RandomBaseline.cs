@@ -16,7 +16,7 @@ public class RandomBaseline : MonoBehaviour
     public int interactionCount = 0;
     public List<Utils.InteractableObject> interactableObjects;
     private float gameSpeed = 2.0f; // May alter gameSpeed to speed up the test execution process
-    private float actionInterval = 0.5f; // Time between random actions
+    private float actionInterval = 0.01f; // Time between random actions
     private float lastActionTime = 0f;
     private bool isExecutingAction = false;
     private bool isCameraMode = true; // Track whether we're in camera or controller mode
@@ -28,6 +28,8 @@ public class RandomBaseline : MonoBehaviour
     private float reportInterval = 30f; // Report interval in seconds
     private float reportTimer = 0f; // Timer for report interval
     private float minuteCount = 0.5f;
+    private Vector3 spawnPosition;
+    private List<ActionType> weightedActions;
 
     // Action types that can be randomly selected
     private enum ActionType
@@ -36,22 +38,36 @@ public class RandomBaseline : MonoBehaviour
         MoveBackward,
         MoveLeft,
         MoveRight,
+        RotateLeft,
         MoveUp,
         MoveDown,
-        RotateLeft,
         RotateRight,
         GripAction,
         TriggerAction,
-        SwitchMode
+        SwitchMode,
+        ResetPosition
     }
 
     void Start()
     {
         // Place the object at a random x and z position (y unchanged)
-        Vector3 pos = transform.position;
-        float randomX = UnityEngine.Random.Range(-2.5f, 2.5f);
-        float randomZ = UnityEngine.Random.Range(-2.5f, 2.5f);
-        transform.position = new Vector3(randomX, pos.y, randomZ);
+        float randomX = UnityEngine.Random.Range(0f, 25f);
+        float randomZ = UnityEngine.Random.Range(-10f, 10f);
+        spawnPosition = new Vector3(randomX, transform.position.y, randomZ);
+        transform.position = spawnPosition;
+
+        // Weighted actions: ResetPosition appears only once, others more often
+        weightedActions = new List<ActionType> {
+            ActionType.MoveForward, ActionType.MoveBackward, ActionType.MoveLeft, ActionType.MoveRight,
+            ActionType.RotateLeft, ActionType.MoveUp, ActionType.MoveDown, ActionType.RotateRight,
+            ActionType.GripAction, ActionType.TriggerAction, ActionType.SwitchMode,
+            // Add each action multiple times for higher weight
+            ActionType.MoveForward, ActionType.MoveBackward, ActionType.MoveLeft, ActionType.MoveRight,
+            ActionType.RotateLeft, ActionType.MoveUp, ActionType.MoveDown, ActionType.RotateRight,
+            ActionType.GripAction, ActionType.TriggerAction, ActionType.SwitchMode,
+            // ResetPosition only once for lower weight
+            ActionType.ResetPosition
+        };
 
         Time.timeScale = gameSpeed;
         startTime = Time.time;
@@ -157,8 +173,8 @@ public class RandomBaseline : MonoBehaviour
         isExecutingAction = true;
         lastActionTime = Time.time;
 
-        // Get a random action type
-        ActionType randomAction = (ActionType)UnityEngine.Random.Range(0, System.Enum.GetValues(typeof(ActionType)).Length);
+        // Get a random action type from the weighted list
+        ActionType randomAction = weightedActions[UnityEngine.Random.Range(0, weightedActions.Count)];
 
         // Execute the selected action
         if (isCameraMode)
@@ -191,12 +207,6 @@ public class RandomBaseline : MonoBehaviour
             case ActionType.MoveRight:
                 transform.Translate(Vector3.right * cameraMoveSpeed);
                 break;
-            case ActionType.MoveUp:
-                transform.Translate(Vector3.up * cameraMoveSpeed);
-                break;
-            case ActionType.MoveDown:
-                transform.Translate(Vector3.down * cameraMoveSpeed);
-                break;
             case ActionType.RotateLeft:
                 transform.Rotate(Vector3.up, -cameraRotateSpeed);
                 break;
@@ -204,9 +214,11 @@ public class RandomBaseline : MonoBehaviour
                 transform.Rotate(Vector3.up, cameraRotateSpeed);
                 break;
             case ActionType.SwitchMode:
-                Key switchControllerKey = Key.RightBracket;
-                yield return ExecuteKeyWithDuration(switchControllerKey, 0.1f);
                 isCameraMode = false;
+                yield return ExecuteKeyWithDuration(Key.RightBracket, 0.1f);
+                break;
+            case ActionType.ResetPosition:
+                transform.position = spawnPosition;
                 break;
         }
         yield return new WaitForSeconds(0.1f);
@@ -244,8 +256,10 @@ public class RandomBaseline : MonoBehaviour
                 break;
             case ActionType.SwitchMode:
                 isCameraMode = true;
-                Key switchCameraKey = Key.Tab;
-                yield return ExecuteKeyWithDuration(switchCameraKey, 0.1f);
+                yield return ExecuteKeyWithDuration(Key.Tab, 0.1f);
+                break;
+            case ActionType.ResetPosition:
+                yield return ExecuteKeyWithDuration(Key.R, 0.1f);
                 break;
         }
     }
