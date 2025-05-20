@@ -7,10 +7,10 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using Newtonsoft.Json;
 using System.Linq;
 
-public class SceneGraphGenerator : EditorWindow
+public class XUIGraphGenerator : EditorWindow
 {
-    [MenuItem("Tools/Generate Scene Graph")]
-    public static void GenerateSceneGraph()
+    [MenuItem("Tools/Generate XUI Graph")]
+    public static void GenerateXUIGraph()
     {
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         // Rename duplicate GameObjects before processing

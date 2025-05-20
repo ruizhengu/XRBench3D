@@ -123,7 +123,6 @@ public class InteractoBot : MonoBehaviour
     private void Navigation()
     {
         targetInteractable = GetCloestInteractable();
-        Debug.Log($"Current Closest Interactable: {targetInteractable.Name}");
         if (targetInteractable == null)
         {
             return;

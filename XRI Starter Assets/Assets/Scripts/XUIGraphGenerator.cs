@@ -5,13 +5,16 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using Newtonsoft.Json;
+using System.Linq;
 
-public class SceneGraphGenerator : EditorWindow
+public class XUIGraphGenerator : EditorWindow
 {
-    [MenuItem("Tools/Generate Scene Graph")]
-    public static void GenerateSceneGraph()
+    [MenuItem("Tools/Generate XUI Graph")]
+    public static void GenerateXUIGraph()
     {
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
+        // Rename duplicate GameObjects before processing
+        RenameDuplicateGameObjects(rootObjects);
         List<Utils.InteractionEvent> results = new List<Utils.InteractionEvent>();
 
         foreach (GameObject rootObj in rootObjects)
@@ -27,8 +30,6 @@ public class SceneGraphGenerator : EditorWindow
 
     private static void ProcessGameObject(GameObject obj, List<Utils.InteractionEvent> results)
     {
-        if (!obj.activeInHierarchy)
-            return;
         // Check grab interactions
         var grabInteractable = obj.GetComponent<XRGrabInteractable>();
         if (grabInteractable != null)
@@ -77,5 +78,40 @@ public class SceneGraphGenerator : EditorWindow
         }
 
         return componentNames;
+    }
+
+    // Add this method to rename duplicate GameObjects
+    private static void RenameDuplicateGameObjects(GameObject[] rootObjects)
+    {
+        Dictionary<string, int> nameCounts = new Dictionary<string, int>();
+        List<GameObject> allObjects = new List<GameObject>();
+        foreach (GameObject root in rootObjects)
+        {
+            CollectAllGameObjects(root, allObjects);
+        }
+        // Group by name
+        var grouped = allObjects.GroupBy(obj => obj.name);
+        foreach (var group in grouped)
+        {
+            if (group.Count() > 1)
+            {
+                int index = 1;
+                foreach (var obj in group)
+                {
+                    obj.name = $"{group.Key} {index}";
+                    index++;
+                }
+            }
+        }
+    }
+
+    // Helper to collect all GameObjects in the hierarchy
+    private static void CollectAllGameObjects(GameObject obj, List<GameObject> list)
+    {
+        list.Add(obj);
+        foreach (Transform child in obj.transform)
+        {
+            CollectAllGameObjects(child.gameObject, list);
+        }
     }
 }
