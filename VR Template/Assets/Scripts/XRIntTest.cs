@@ -11,7 +11,7 @@ using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class InteractoBot : MonoBehaviour
+public class XRIntTest : MonoBehaviour
 {
     public List<Utils.InteractableObject> interactableObjects;
     public Utils.InteractableObject targetInteractable;

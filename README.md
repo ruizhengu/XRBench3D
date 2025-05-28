@@ -1,5 +1,15 @@
 # XUIBench
 
+# VR Template
+
+**Link:** https://docs.unity3d.com/Packages/com.unity.template.vr@9.1/manual/index.html
+
+**Unity Editor Version:** 6000.0.45f1
+
+**XRI Version:** 3.1.1
+
+**Scene Under Test:** SampleScene
+
 # XRI Start Assets
 
 **Link:** https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/samples-starter-assets.html

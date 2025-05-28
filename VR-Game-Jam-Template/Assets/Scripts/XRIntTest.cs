@@ -11,7 +11,7 @@ using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class InteractoBot : MonoBehaviour
+public class XRIntTest : MonoBehaviour
 {
     public List<Utils.InteractableObject> interactableObjects;
     public Utils.InteractableObject targetInteractable;
@@ -218,11 +218,13 @@ public class InteractoBot : MonoBehaviour
     /// </summary>
     private void ThreeDInteraction()
     {
+        Debug.Log($"Current 3D Interaction Pattern: {current3DInteractionPattern}");
         // Grab and trigger action
         if (current3DInteractionPattern.Contains("grab") && current3DInteractionPattern.Contains("trigger"))
         {
             if (!isGrabHeld && grabActionCount == 0 && combinedActionCount == 0)
             {
+                Debug.Log("Hold Grab and Trigger");
                 StartCoroutine(HoldGrabAndTrigger());
             }
         }
@@ -370,6 +372,7 @@ public class InteractoBot : MonoBehaviour
 
     void ControllerGrabAction()
     {
+        // Debug.Log("Controller Grab Action");
         Key grabKey = Key.G;
         StartCoroutine(ExecuteKeyWithDuration(grabKey, 0.1f));
     }
@@ -382,30 +385,15 @@ public class InteractoBot : MonoBehaviour
     {
         Utils.InteractableObject closest = null;
         float minDistance = Mathf.Infinity;
-        float largeDistance = 100f;
         foreach (Utils.InteractableObject interactable in interactableObjects)
         {
             if (!interactable.Visited && !interactable.InteractionAttempted)
             {
-                try
+                float distance = Vector3.Distance(transform.position, interactable.Interactable.transform.position);
+                if (distance < minDistance)
                 {
-                    if (interactable.Interactable == null)
-                    {
-                        Debug.LogWarning($"Interactable object {interactable.Name} has been destroyed, skipping...");
-                        interactable.InteractionAttempted = true;
-                        continue;
-                    }
-                    float distance = Vector3.Distance(transform.position, interactable.Interactable.transform.position);
-                    if (distance < minDistance && distance < largeDistance)
-                    {
-                        minDistance = distance;
-                        closest = interactable;
-                    }
-                }
-                catch (System.Exception e)
-                {
-                    Debug.LogError($"Error accessing interactable object {interactable.Name}: {e.Message}");
-                    continue;
+                    minDistance = distance;
+                    closest = interactable;
                 }
             }
         }
@@ -429,29 +417,15 @@ public class InteractoBot : MonoBehaviour
     {
         foreach (var obj in interactableObjects)
         {
-            try
+            if (obj.Interactable.name == interactableName && !obj.Interacted)
             {
-                if (obj.Interactable == null)
+                obj.Grabbed = true;
+                if (!obj.IsTrigger)
                 {
-                    Debug.LogWarning($"Interactable object {obj.Name} has been destroyed, skipping grab...");
-                    obj.InteractionAttempted = true;
-                    continue;
+                    obj.Interacted = true;
                 }
-                if (obj.Interactable.name == interactableName && !obj.Interacted)
-                {
-                    obj.Grabbed = true;
-                    if (!obj.IsTrigger)
-                    {
-                        obj.Interacted = true;
-                    }
-                    Debug.Log("Grabbed: " + obj.Name + " " + obj.Interactable.name);
-                    break;
-                }
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError($"Error accessing interactable object {obj.Name} during grab: {e.Message}");
-                continue;
+                Debug.Log("Grabbed: " + obj.Name + " " + obj.Interactable.name);
+                break;
             }
         }
     }
@@ -460,29 +434,15 @@ public class InteractoBot : MonoBehaviour
     {
         foreach (var obj in interactableObjects)
         {
-            try
+            if (obj.Interactable.name == interactableName && !obj.Interacted)
             {
-                if (obj.Interactable == null)
+                obj.Triggered = true;
+                if (obj.Grabbed)
                 {
-                    Debug.LogWarning($"Interactable object {obj.Name} has been destroyed, skipping trigger...");
-                    obj.InteractionAttempted = true;
-                    continue;
+                    obj.Interacted = true;
                 }
-                if (obj.Interactable.name == interactableName && !obj.Interacted)
-                {
-                    obj.Triggered = true;
-                    if (obj.Grabbed)
-                    {
-                        obj.Interacted = true;
-                    }
-                    Debug.Log("Triggered: " + obj.Name + " " + obj.Interactable.name);
-                    break;
-                }
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError($"Error accessing interactable object {obj.Name} during trigger: {e.Message}");
-                continue;
+                Debug.Log("Triggered: " + obj.Name + " " + obj.Interactable.name);
+                break;
             }
         }
     }
@@ -490,12 +450,14 @@ public class InteractoBot : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         var xrInteractable = args.interactableObject;
+        // Debug.Log("OnSelectEntered: " + xrInteractable.transform.name);
         SetObjectGrabbed(xrInteractable.transform.name);
     }
 
     private void OnActivated(ActivateEventArgs args)
     {
         var interactable = args.interactableObject;
+        // Debug.Log($"OnActivated: {interactable.transform.name}");
         SetObjectTriggered(interactable.transform.name);
     }
 
@@ -514,5 +476,31 @@ public class InteractoBot : MonoBehaviour
             combinedActionCount = 0; // Reset combined action count
         }
         currentExplorationState = newState;
+    }
+
+    private void GetComponentAttributes()
+    {
+        GameObject blaster = GameObject.Find("Blaster").transform.parent.gameObject;
+        Debug.Log(blaster.GetComponent<XRGrabInteractable>());
+        var grabInteractable = blaster.GetComponent<XRGrabInteractable>();
+        if (grabInteractable != null)
+        {
+            // Get the activated event
+            var activatedEvent = grabInteractable.activated;
+            Debug.Log($"Blaster Activate Event: {activatedEvent}");
+            activatedEvent.AddListener((args) =>
+            {
+                Debug.Log("Blaster activated event was fired!");
+            });
+            // You can also check if there are any listeners attached to this event
+            var hasListeners = activatedEvent.GetPersistentEventCount() > 0;
+            Debug.Log($"Blaster Activate Event has listeners: {hasListeners}");
+            for (int i = 0; i < activatedEvent.GetPersistentEventCount(); i++)
+            {
+                var target = activatedEvent.GetPersistentTarget(i);
+                var method = activatedEvent.GetPersistentMethodName(i);
+                Debug.Log($"Activate Listener {i}: Target={target}, Method={method}");
+            }
+        }
     }
 }

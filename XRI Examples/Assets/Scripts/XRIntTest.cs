@@ -11,7 +11,7 @@ using UnityEngine.InputSystem.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class InteractoBot : MonoBehaviour
+public class XRIntTest : MonoBehaviour
 {
     public List<Utils.InteractableObject> interactableObjects;
     public Utils.InteractableObject targetInteractable;
@@ -218,11 +218,13 @@ public class InteractoBot : MonoBehaviour
     /// </summary>
     private void ThreeDInteraction()
     {
+        Debug.Log($"Current 3D Interaction Pattern: {current3DInteractionPattern}");
         // Grab and trigger action
         if (current3DInteractionPattern.Contains("grab") && current3DInteractionPattern.Contains("trigger"))
         {
             if (!isGrabHeld && grabActionCount == 0 && combinedActionCount == 0)
             {
+                Debug.Log("Hold Grab and Trigger");
                 StartCoroutine(HoldGrabAndTrigger());
             }
         }
@@ -370,6 +372,7 @@ public class InteractoBot : MonoBehaviour
 
     void ControllerGrabAction()
     {
+        // Debug.Log("Controller Grab Action");
         Key grabKey = Key.G;
         StartCoroutine(ExecuteKeyWithDuration(grabKey, 0.1f));
     }
@@ -382,13 +385,12 @@ public class InteractoBot : MonoBehaviour
     {
         Utils.InteractableObject closest = null;
         float minDistance = Mathf.Infinity;
-        float largeDistance = 100f;
         foreach (Utils.InteractableObject interactable in interactableObjects)
         {
             if (!interactable.Visited && !interactable.InteractionAttempted)
             {
                 float distance = Vector3.Distance(transform.position, interactable.Interactable.transform.position);
-                if (distance < minDistance && distance < largeDistance)
+                if (distance < minDistance)
                 {
                     minDistance = distance;
                     closest = interactable;
@@ -448,12 +450,14 @@ public class InteractoBot : MonoBehaviour
     private void OnSelectEntered(SelectEnterEventArgs args)
     {
         var xrInteractable = args.interactableObject;
+        // Debug.Log("OnSelectEntered: " + xrInteractable.transform.name);
         SetObjectGrabbed(xrInteractable.transform.name);
     }
 
     private void OnActivated(ActivateEventArgs args)
     {
         var interactable = args.interactableObject;
+        // Debug.Log($"OnActivated: {interactable.transform.name}");
         SetObjectTriggered(interactable.transform.name);
     }
 
@@ -472,5 +476,31 @@ public class InteractoBot : MonoBehaviour
             combinedActionCount = 0; // Reset combined action count
         }
         currentExplorationState = newState;
+    }
+
+    private void GetComponentAttributes()
+    {
+        GameObject blaster = GameObject.Find("Blaster").transform.parent.gameObject;
+        Debug.Log(blaster.GetComponent<XRGrabInteractable>());
+        var grabInteractable = blaster.GetComponent<XRGrabInteractable>();
+        if (grabInteractable != null)
+        {
+            // Get the activated event
+            var activatedEvent = grabInteractable.activated;
+            Debug.Log($"Blaster Activate Event: {activatedEvent}");
+            activatedEvent.AddListener((args) =>
+            {
+                Debug.Log("Blaster activated event was fired!");
+            });
+            // You can also check if there are any listeners attached to this event
+            var hasListeners = activatedEvent.GetPersistentEventCount() > 0;
+            Debug.Log($"Blaster Activate Event has listeners: {hasListeners}");
+            for (int i = 0; i < activatedEvent.GetPersistentEventCount(); i++)
+            {
+                var target = activatedEvent.GetPersistentTarget(i);
+                var method = activatedEvent.GetPersistentMethodName(i);
+                Debug.Log($"Activate Listener {i}: Target={target}, Method={method}");
+            }
+        }
     }
 }
