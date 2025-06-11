@@ -51,8 +51,8 @@ public class RandomBaseline : MonoBehaviour
     void Start()
     {
         // Place the object at a random x and z position (y unchanged)
-        float randomX = UnityEngine.Random.Range(0f, 25f);
-        float randomZ = UnityEngine.Random.Range(-10f, 10f);
+        float randomX = UnityEngine.Random.Range(-2.5f, 2.5f);
+        float randomZ = UnityEngine.Random.Range(-2.5f, 2.5f);
         spawnPosition = new Vector3(randomX, transform.position.y, randomZ);
         transform.position = spawnPosition;
 

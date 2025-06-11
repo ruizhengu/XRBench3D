@@ -174,12 +174,12 @@ public static class Utils
       {
         count++;
       }
-      if (!obj.Interacted && obj.Intersected)
-      {
-        Debug.Log("Could be a bug: " + obj.Name);
-      }
       if (detailedLog)
       {
+        if (!obj.Interacted && obj.Intersected)
+        {
+          Debug.Log("Could be a bug: " + obj.Name);
+        }
         if (!obj.Interacted)
         {
           Debug.Log("Not Interacted Interactable: " + obj.Name);

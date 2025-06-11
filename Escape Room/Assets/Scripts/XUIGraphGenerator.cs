@@ -9,9 +9,16 @@ using System.Linq;
 
 public class XUIGraphGenerator : EditorWindow
 {
+    private static Dictionary<string, List<string>> interactionTypes;
+
     [MenuItem("Tools/Generate XUI Graph")]
     public static void GenerateXUIGraph()
     {
+        // Load interaction types from JSON
+        string interactionJson = Path.Combine(Application.dataPath, "Scripts/interaction.json");
+        string interactionContent = File.ReadAllText(interactionJson);
+        interactionTypes = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(interactionContent);
+        
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         // Rename duplicate GameObjects before processing
         RenameDuplicateGameObjects(rootObjects);
@@ -22,39 +29,45 @@ public class XUIGraphGenerator : EditorWindow
             ProcessGameObject(rootObj, results);
         }
 
-        string json = JsonConvert.SerializeObject(results, Formatting.Indented);
+        string resultJson = JsonConvert.SerializeObject(results, Formatting.Indented);
         string path = Path.Combine(Application.dataPath, "Scripts/scene_graph.json");
-        File.WriteAllText(path, json);
+        File.WriteAllText(path, resultJson);
         Debug.Log($"Interaction results exported to {path}");
     }
 
     private static void ProcessGameObject(GameObject obj, List<Utils.InteractionEvent> results)
     {
-        // Check grab interactions
-        var grabInteractable = obj.GetComponent<XRGrabInteractable>();
-        if (grabInteractable != null)
+        foreach (var interaction_script in interactionTypes["grab"])
         {
-            var result = new Utils.InteractionEvent
+            var component = obj.GetComponent(interaction_script);
+            if (component != null)
             {
-                interactor = "XR Origin (XR Rig)",
-                condition = new List<string>(),
-                interactable = obj.name,
-                interaction_type = "grab"
-            };
-            results.Add(result);
-            // Check trigger interactions
-            var activatedEvent = grabInteractable.activated;
-            bool triggerInteraction = activatedEvent.GetPersistentEventCount() > 0;
-            if (triggerInteraction)
-            {
-                var triggerResult = new Utils.InteractionEvent
+                var result = new Utils.InteractionEvent
                 {
                     interactor = "XR Origin (XR Rig)",
-                    condition = new List<string> { "grab" },
+                    condition = new List<string>(),
                     interactable = obj.name,
-                    interaction_type = "trigger"
+                    interaction_type = "grab"
                 };
-                results.Add(triggerResult);
+                results.Add(result);
+                if (interaction_script == "XRGrabInteractable")
+                {
+                    var grabInteractable = component as XRGrabInteractable;
+                    var activatedEvent = grabInteractable.activated;
+                    bool triggerInteraction = activatedEvent.GetPersistentEventCount() > 0;
+                    if (triggerInteraction)
+                    {
+                        var triggerResult = new Utils.InteractionEvent
+                        {
+                            interactor = "XR Origin (XR Rig)",
+                            condition = new List<string> { "grab" },
+                            interactable = obj.name,
+                            interaction_type = "trigger"
+                        };
+                        results.Add(triggerResult);
+                    }
+                }
+                break;
             }
         }
 
@@ -64,21 +77,7 @@ public class XUIGraphGenerator : EditorWindow
         }
     }
 
-    private static List<string> GetComponentsList(GameObject obj)
-    {
-        Component[] components = obj.GetComponents<Component>();
-        List<string> componentNames = new List<string>();
 
-        foreach (Component component in components)
-        {
-            if (component != null)
-            {
-                componentNames.Add(component.GetType().Name);
-            }
-        }
-
-        return componentNames;
-    }
 
     // Add this method to rename duplicate GameObjects
     private static void RenameDuplicateGameObjects(GameObject[] rootObjects)
