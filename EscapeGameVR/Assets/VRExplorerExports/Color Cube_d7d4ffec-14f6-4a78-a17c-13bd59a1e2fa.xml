@@ -1,0 +1,8 @@
+<GameObject isPrefabAsset="False" guid="Instance:0e89eb4e7a634aa4b898a5ff43b43f41" name="Color Cube" path="GameElements/ColorCube/Color Cube">
+  <Script type="VRExplorer.XRGrabbable" enabled="True">
+    <Field name="usePhysicsOnRelease" type="System.Boolean">False</Field>
+    <Field name="GrabPhysics" type="BNG.GrabPhysics">Kinematic</Field>
+    <Field name="GrabMechanic" type="BNG.GrabType">Snap</Field>
+    <Field name="destination" type="UnityEngine.Transform">TransformRef(Instance:ce5e3b92a517c1743bda4a35567a2283)</Field>
+  </Script>
+</GameObject>

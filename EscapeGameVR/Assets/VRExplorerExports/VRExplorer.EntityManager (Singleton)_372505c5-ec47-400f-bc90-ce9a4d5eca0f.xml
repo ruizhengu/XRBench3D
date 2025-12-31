@@ -1,0 +1,8 @@
+<GameObject isPrefabAsset="False" guid="Scene:GlobalObjectId_V1-2-9fc0d4010bbf28b4594072e72b8655ab-944989909-0" name="VRExplorer.EntityManager (Singleton)" path="VRExplorer.EntityManager (Singleton)">
+  <Script type="VRExplorer.EntityManager" enabled="True">
+    <Field name="vrexplorerMono" type="UnityEngine.MonoBehaviour">null</Field>
+    <Field name="entityStates" type="System.Collections.Generic.Dictionary`2[[VRExplorer.IBaseEntity, VRExplorer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.HashSet`1[[System.Enum, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">Dict[]</Field>
+    <Field name="monoEntitiesMapping" type="System.Collections.Generic.Dictionary`2[[UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.List`1[[VRExplorer.IBaseEntity, VRExplorer, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">Dict[]</Field>
+    <Field name="monoState" type="System.Collections.Generic.Dictionary`2[[UnityEngine.MonoBehaviour, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">Dict[]</Field>
+  </Script>
+</GameObject>

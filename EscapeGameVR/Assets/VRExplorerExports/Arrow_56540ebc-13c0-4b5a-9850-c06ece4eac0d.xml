@@ -1,0 +1,6 @@
+<GameObject isPrefabAsset="False" guid="Scene:GlobalObjectId_V1-2-9fc0d4010bbf28b4594072e72b8655ab-1755527910-0" name="Arrow" path="GameElements/Arrows/Arrow">
+  <Script type="VRExplorer.Mono.XRTransformable" enabled="True">
+    <Field name="triggeringTime" type="System.Single">0.5</Field>
+    <Field name="destination" type="UnityEngine.Transform">TransformRef(Instance:e93d00c28f1f12349b500e23463dd69b)</Field>
+  </Script>
+</GameObject>

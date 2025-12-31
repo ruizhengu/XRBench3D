@@ -1,0 +1,7 @@
+<GameObject isPrefabAsset="False" guid="Instance:5770e6acf4262a64a92eb498c1cf34ed" name="Bow_Wooden_no_string_prefab (1)" path="GameElements/Bow_Wooden_no_string_prefab (1)">
+  <Script type="VRExplorer.Mono.XRTriggerable" enabled="True">
+    <Field name="triggerringEvents" type="System.Collections.Generic.List`1[[UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]">List[[Unsupported:UnityEvent]]</Field>
+    <Field name="triggerredEvents" type="System.Collections.Generic.List`1[[UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]">List[[Unsupported:UnityEvent]]</Field>
+    <Field name="triggeringTime" type="System.Single">1.5</Field>
+  </Script>
+</GameObject>

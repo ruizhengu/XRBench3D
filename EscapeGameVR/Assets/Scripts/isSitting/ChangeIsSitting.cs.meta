@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b3177e619bf389b4eaf05c55b5ac2821
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - isSittingSettings: {fileID: 11400000, guid: 8934c9fdc8c695e4b877516f83704db1,
+      type: 2}
+  - text: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
