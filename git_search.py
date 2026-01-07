@@ -31,7 +31,7 @@ This script prints only the number of GitHub code search results.
 """
 
 # Auth token (recommended). Set env var GITHUB_TOKEN or edit here
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = ""
 
 # Output file for filtered results
 OUTPUT_FILE = "results_filtered.json"
