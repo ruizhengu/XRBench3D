@@ -10,21 +10,66 @@ using System.Linq;
 
 public class IFGGenerator : EditorWindow
 {
-
-    private static List<string> interactionScripts = new List<string> { 
-        "XRGrabInteractable", "XRSocketInteractor"};
-
     [MenuItem("Tools/Generate IFG")]
     public static void GenerateIFG()
     {
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         // Rename duplicate GameObjects before processing
         RenameDuplicateGameObjects(rootObjects);
-        List<Utils.InteractionEvent> results = new List<Utils.InteractionEvent>();
+        
+        List<object> results = new List<object>();
+        List<XRGrabInteractable> allGrabInteractables = new List<XRGrabInteractable>();
+        List<XRSocketInteractor> allSocketInteractors = new List<XRSocketInteractor>();
 
+        // Pass 1: Collect all relevant components
         foreach (GameObject rootObj in rootObjects)
         {
-            ProcessGameObject(rootObj, results);
+            CollectComponents(rootObj, allGrabInteractables, allSocketInteractors);
+        }
+
+        // Pass 2: Generate events for XRGrabInteractable (Non-socket interactions)
+        foreach (var grab in allGrabInteractables)
+        {
+            var interactions = new List<string[]>();
+            
+            // Basic grab interaction
+            interactions.Add(new string[] { "grab", "" });
+
+            // Trigger interaction (if activated event has listeners)
+            var activatedEvent = grab.activated;
+            bool triggerInteraction = activatedEvent.GetPersistentEventCount() > 0;
+            if (triggerInteraction)
+            {
+                interactions.Add(new string[] { "trigger", "grab" });
+            }
+
+            var nonSocketInteraction = new
+            {
+                interactable = grab.name,
+                interaction = interactions
+            };
+            results.Add(nonSocketInteraction);
+        }
+
+        // Pass 3: Generate events for XRSocketInteractor
+        foreach (var socket in allSocketInteractors)
+        {
+            int socketMask = socket.interactionLayers.value;
+            foreach (var grab in allGrabInteractables)
+            {
+                int grabMask = grab.interactionLayers.value;
+                // Check if they share any interaction layer
+                if ((socketMask & grabMask) != 0)
+                {
+                    var socketInteraction = new
+                    {
+                        interactor = socket.name,
+                        interactable = grab.name,
+                        interaction = "socket"
+                    };
+                    results.Add(socketInteraction);
+                }
+            }
         }
 
         string resultJson = JsonConvert.SerializeObject(results, Formatting.Indented);
@@ -33,53 +78,25 @@ public class IFGGenerator : EditorWindow
         Debug.Log($"Interaction results exported to {path}");
     }
 
-    private static void ProcessGameObject(GameObject obj, List<Utils.InteractionEvent> results)
+    private static void CollectComponents(GameObject obj, List<XRGrabInteractable> grabs, List<XRSocketInteractor> sockets)
     {
-        foreach (var script in interactionScripts)
+        var grab = obj.GetComponent<XRGrabInteractable>();
+        if (grab != null)
         {
-            var component = obj.GetComponent(script);
-            if (component != null)
-            {
-                var result = new Utils.InteractionEvent
-                {
-                    interactor = "XR Origin (XR Rig)",
-                    condition = new List<string>(),
-                    interactable = obj.name,
-                    interaction_type = "grab"
-                };
-                results.Add(result);
-                if (script == "XRGrabInteractable")
-                {
-                    var grabInteractable = component as XRGrabInteractable;
-                    var activatedEvent = grabInteractable.activated;
-                    bool triggerInteraction = activatedEvent.GetPersistentEventCount() > 0;
-                    if (triggerInteraction)
-                    {
-                        var triggerResult = new Utils.InteractionEvent
-                        {
-                            interactor = "XR Origin (XR Rig)",
-                            condition = new List<string> { "grab" },
-                            interactable = obj.name,
-                            interaction_type = "trigger"
-                        };
-                        results.Add(triggerResult);
-                    }
-                } else if (script == "XRSocketInteractor") {
-                    var socketInteractor = component as XRSocketInteractor;
-                    var layerMask = socketInteractor.interactionLayers.value;
-                    Debug.Log($"Socket Interactor {socketInteractor.name} interaction layers: {layerMask}");
-                }
-                break;
-            }
+            grabs.Add(grab);
+        }
+
+        var socket = obj.GetComponent<XRSocketInteractor>();
+        if (socket != null)
+        {
+            sockets.Add(socket);
         }
 
         foreach (Transform child in obj.transform)
         {
-            ProcessGameObject(child.gameObject, results);
+            CollectComponents(child.gameObject, grabs, sockets);
         }
     }
-
-
 
     // Add this method to rename duplicate GameObjects
     private static void RenameDuplicateGameObjects(GameObject[] rootObjects)

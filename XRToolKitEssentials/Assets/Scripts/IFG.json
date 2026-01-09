@@ -1,62 +1,172 @@
 [
   {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
     "interactable": "CarPivot 2",
-    "interaction_type": "grab"
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
   },
   {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
-    "interactable": "SocketInteractor 2",
-    "interaction_type": "grab"
-  },
-  {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
-    "interactable": "SocketInteractor 1",
-    "interaction_type": "grab"
-  },
-  {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
-    "interactable": "SocketInteractor 4",
-    "interaction_type": "grab"
-  },
-  {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
     "interactable": "CarPivot 1",
-    "interaction_type": "grab"
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
   },
   {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
-    "interactable": "SocketInteractor 5",
-    "interaction_type": "grab"
-  },
-  {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
     "interactable": "SwordPivot",
-    "interaction_type": "grab"
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
   },
   {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
     "interactable": "AirplanePivot 1",
-    "interaction_type": "grab"
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
   },
   {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
-    "interactable": "SocketInteractor 3",
-    "interaction_type": "grab"
-  },
-  {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
     "interactable": "AirplanePivot 2",
-    "interaction_type": "grab"
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactor": "SocketInteractor 2",
+    "interactable": "CarPivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 2",
+    "interactable": "CarPivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 2",
+    "interactable": "SwordPivot",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 2",
+    "interactable": "AirplanePivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 2",
+    "interactable": "AirplanePivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 1",
+    "interactable": "CarPivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 1",
+    "interactable": "CarPivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 1",
+    "interactable": "SwordPivot",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 1",
+    "interactable": "AirplanePivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 1",
+    "interactable": "AirplanePivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 4",
+    "interactable": "CarPivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 4",
+    "interactable": "CarPivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 4",
+    "interactable": "SwordPivot",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 4",
+    "interactable": "AirplanePivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 4",
+    "interactable": "AirplanePivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 5",
+    "interactable": "CarPivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 5",
+    "interactable": "CarPivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 5",
+    "interactable": "SwordPivot",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 5",
+    "interactable": "AirplanePivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 5",
+    "interactable": "AirplanePivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 3",
+    "interactable": "CarPivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 3",
+    "interactable": "CarPivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 3",
+    "interactable": "SwordPivot",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 3",
+    "interactable": "AirplanePivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 3",
+    "interactable": "AirplanePivot 2",
+    "interaction": "socket"
   }
 ]
