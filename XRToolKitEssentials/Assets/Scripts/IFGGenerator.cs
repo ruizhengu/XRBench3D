@@ -4,24 +4,19 @@ using System.IO;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using Newtonsoft.Json;
 using System.Linq;
 
 public class IFGGenerator : EditorWindow
 {
-    // private static Dictionary<string, List<string>> interactionTypes;
 
     private static List<string> interactionScripts = new List<string> { 
-        "XRGrabInteractable"};
+        "XRGrabInteractable", "XRSocketInteractor"};
 
     [MenuItem("Tools/Generate IFG")]
     public static void GenerateIFG()
     {
-        // Load interaction types from JSON
-        // string interactionJson = Path.Combine(Application.dataPath, "Scripts/interaction.json");
-        // string interactionContent = File.ReadAllText(interactionJson);
-        // interactionTypes = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(interactionContent);
-        
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         // Rename duplicate GameObjects before processing
         RenameDuplicateGameObjects(rootObjects);
@@ -69,6 +64,10 @@ public class IFGGenerator : EditorWindow
                         };
                         results.Add(triggerResult);
                     }
+                } else if (script == "XRSocketInteractor") {
+                    var socketInteractor = component as XRSocketInteractor;
+                    var layerMask = socketInteractor.interactionLayers.value;
+                    Debug.Log($"Socket Interactor {socketInteractor.name} interaction layers: {layerMask}");
                 }
                 break;
             }
