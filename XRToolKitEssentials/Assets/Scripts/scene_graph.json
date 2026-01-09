@@ -8,25 +8,19 @@
   {
     "interactor": "XR Origin (XR Rig)",
     "condition": [],
-    "interactable": "AirplanePivot 1",
+    "interactable": "ShieldPivot",
     "interaction_type": "grab"
   },
   {
     "interactor": "XR Origin (XR Rig)",
     "condition": [],
-    "interactable": "CarPivot 1",
+    "interactable": "SwordPivot (1)",
     "interaction_type": "grab"
   },
   {
     "interactor": "XR Origin (XR Rig)",
     "condition": [],
-    "interactable": "CarPivot 2",
-    "interaction_type": "grab"
-  },
-  {
-    "interactor": "XR Origin (XR Rig)",
-    "condition": [],
-    "interactable": "AirplanePivot 2",
+    "interactable": "ShieldPivot (1)",
     "interaction_type": "grab"
   }
 ]

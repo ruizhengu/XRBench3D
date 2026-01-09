@@ -9,15 +9,18 @@ using System.Linq;
 
 public class IFGGenerator : EditorWindow
 {
-    private static Dictionary<string, List<string>> interactionTypes;
+    // private static Dictionary<string, List<string>> interactionTypes;
+
+    private static List<string> interactionScripts = new List<string> { 
+        "XRGrabInteractable"};
 
     [MenuItem("Tools/Generate IFG")]
     public static void GenerateIFG()
     {
         // Load interaction types from JSON
-        string interactionJson = Path.Combine(Application.dataPath, "Scripts/interaction.json");
-        string interactionContent = File.ReadAllText(interactionJson);
-        interactionTypes = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(interactionContent);
+        // string interactionJson = Path.Combine(Application.dataPath, "Scripts/interaction.json");
+        // string interactionContent = File.ReadAllText(interactionJson);
+        // interactionTypes = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(interactionContent);
         
         GameObject[] rootObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects();
         // Rename duplicate GameObjects before processing
@@ -30,16 +33,16 @@ public class IFGGenerator : EditorWindow
         }
 
         string resultJson = JsonConvert.SerializeObject(results, Formatting.Indented);
-        string path = Path.Combine(Application.dataPath, "Scripts/scene_graph.json");
+        string path = Path.Combine(Application.dataPath, "Scripts/IFG.json");
         File.WriteAllText(path, resultJson);
         Debug.Log($"Interaction results exported to {path}");
     }
 
     private static void ProcessGameObject(GameObject obj, List<Utils.InteractionEvent> results)
     {
-        foreach (var interaction_script in interactionTypes["grab"])
+        foreach (var script in interactionScripts)
         {
-            var component = obj.GetComponent(interaction_script);
+            var component = obj.GetComponent(script);
             if (component != null)
             {
                 var result = new Utils.InteractionEvent
@@ -50,7 +53,7 @@ public class IFGGenerator : EditorWindow
                     interaction_type = "grab"
                 };
                 results.Add(result);
-                if (interaction_script == "XRGrabInteractable")
+                if (script == "XRGrabInteractable")
                 {
                     var grabInteractable = component as XRGrabInteractable;
                     var activatedEvent = grabInteractable.activated;
