@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Sword
+  - Car1
+  - Car2
+  - Airplane1
+  - Airplane2
   - 
   - 
   - 

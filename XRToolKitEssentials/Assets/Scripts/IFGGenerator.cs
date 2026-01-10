@@ -80,14 +80,16 @@ public class IFGGenerator : EditorWindow
 
     private static void CollectComponents(GameObject obj, List<XRGrabInteractable> grabs, List<XRSocketInteractor> sockets)
     {
+        if (!obj.activeInHierarchy) return;
+
         var grab = obj.GetComponent<XRGrabInteractable>();
-        if (grab != null)
+        if (grab != null && grab.enabled)
         {
             grabs.Add(grab);
         }
 
         var socket = obj.GetComponent<XRSocketInteractor>();
-        if (socket != null)
+        if (socket != null && socket.enabled)
         {
             sockets.Add(socket);
         }
@@ -126,6 +128,8 @@ public class IFGGenerator : EditorWindow
     // Helper to collect all GameObjects in the hierarchy
     private static void CollectAllGameObjects(GameObject obj, List<GameObject> list)
     {
+        if (!obj.activeInHierarchy) return;
+
         list.Add(obj);
         foreach (Transform child in obj.transform)
         {

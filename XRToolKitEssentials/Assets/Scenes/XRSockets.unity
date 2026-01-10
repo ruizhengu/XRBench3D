@@ -790,6 +790,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CarPivot 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2374203978376826790, guid: 7b4ea55056a472242b6344d5584dd01b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8216857760572620304, guid: 7b4ea55056a472242b6344d5584dd01b,
         type: 3}
       propertyPath: m_RootOrder
@@ -1189,7 +1194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &458076541
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1345,6 +1350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AirplanePivot 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160841405416332734, guid: 1e62755b1a729ce488b6d33eb3c59573,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3160841405416332735, guid: 1e62755b1a729ce488b6d33eb3c59573,
         type: 3}
@@ -1602,7 +1612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &555879504
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4133,6 +4143,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 459158619057461600, guid: 3428157923ac8e343935293866f13000,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 459158619057461601, guid: 3428157923ac8e343935293866f13000,
         type: 3}
       propertyPath: m_RootOrder
@@ -4360,6 +4375,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pinch_Pointer_LOD0 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2449787133337329437, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
@@ -4656,6 +4681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CarPivot 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374203978376826790, guid: 7b4ea55056a472242b6344d5584dd01b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8216857760572620304, guid: 7b4ea55056a472242b6344d5584dd01b,
         type: 3}
@@ -5012,15 +5042,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1408269379}
-  - {fileID: 458076543}
   - {fileID: 1902149217}
-  - {fileID: 555879506}
-  - {fileID: 241543353}
-  - {fileID: 2085458199}
   - {fileID: 1345429604}
+  - {fileID: 458076543}
   - {fileID: 1638769659}
   - {fileID: 1894995611}
+  - {fileID: 241543353}
+  - {fileID: 555879506}
+  - {fileID: 1408269379}
+  - {fileID: 2085458199}
   - {fileID: 463670307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5254,6 +5284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AirplanePivot 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3160841405416332734, guid: 1e62755b1a729ce488b6d33eb3c59573,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3160841405416332735, guid: 1e62755b1a729ce488b6d33eb3c59573,
         type: 3}
@@ -6086,7 +6121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1894995609
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6223,7 +6258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
@@ -6643,7 +6678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &2085458197
 SphereCollider:
   m_ObjectHideFlags: 0

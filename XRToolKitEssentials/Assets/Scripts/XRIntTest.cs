@@ -41,6 +41,10 @@ public class XRIntTest : MonoBehaviour
     private float timeBudget = 600f; // 10 minutes time budget in seconds
     private float startTime; // Time when the program started
     private bool isTimeBudgetExceeded = false; // Flag to track if time budget is exceeded
+    
+    // Socket interaction support
+    private GameObject targetSocket;
+
     private enum ControllerState // Controller manipulation state
     {
         None,
@@ -55,6 +59,7 @@ public class XRIntTest : MonoBehaviour
         Navigation,
         ControllerMovement,
         ThreeDInteraction,
+        SocketInteraction
     }
 
     void Start()
@@ -63,6 +68,7 @@ public class XRIntTest : MonoBehaviour
         interactionCount = Utils.GetInteractableEventsCount(interactableObjects);
         RegisterListeners();
         Utils.FindSimulatedDevices(); // Find the simulated devices
+        startTime = Time.time;
     }
 
     void FixedUpdate()
@@ -91,7 +97,7 @@ public class XRIntTest : MonoBehaviour
         if (interactableObjects.All(obj => obj.InteractionAttempted))
         {
             // Only end if there are no ongoing interactions and at least one ThreeDInteraction attempt has been made
-            if (!isGrabHeld && grabActionCount == 0 && combinedActionCount == 0)
+            if (!isGrabHeld && grabActionCount == 0 && combinedActionCount == 0 && currentExplorationState == ExplorationState.Navigation)
             {
                 Debug.Log($"Test End: execution time {totalTime}s");
                 int currentActivated = Utils.CountInteracted(interactableObjects, true);
@@ -100,7 +106,7 @@ public class XRIntTest : MonoBehaviour
                 this.enabled = false;
                 return;
             }
-            return; // Don't end yet, there are ongoing interactions or ThreeDInteraction not attempted
+            if (currentExplorationState == ExplorationState.Navigation) return; // Don't end yet if we are navigating/interacting
         }
         // Handle different exploration states
         switch (currentExplorationState)
@@ -113,6 +119,9 @@ public class XRIntTest : MonoBehaviour
                 break;
             case ExplorationState.ThreeDInteraction:
                 ThreeDInteraction();
+                break;
+            case ExplorationState.SocketInteraction:
+                SocketInteraction();
                 break;
         }
     }
@@ -127,20 +136,40 @@ public class XRIntTest : MonoBehaviour
         {
             return;
         }
+        
+        // Reset interaction state
+        grabActionCount = 0;
+        combinedActionCount = 0;
+        isGrabHeld = false;
+        targetSocket = null;
+        current3DInteractionPattern = "";
+
         ResetControllerPosition();
         GameObject targetObject = targetInteractable.Interactable;
+        
+        MoveToTarget(targetObject, ExplorationState.ControllerMovement);
+    }
+
+    /// <summary>
+    /// Generic movement logic to reach a target object
+    /// </summary>
+    private void MoveToTarget(GameObject targetObject, ExplorationState nextState)
+    {
         Vector3 currentPos = transform.position;
         Vector3 targetPos = targetObject.transform.position;
 
         // Rotation (only rotate y-axis)
         Vector3 targetDirection = (targetPos - currentPos).normalized;
         targetDirection.y = 0;
-        float angle = Vector3.Angle(transform.forward, targetDirection);
-        if (angle > interactionAngle)
+        if (targetDirection != Vector3.zero)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
-            return; // Don't proceed with controller actions until angle difference is small enough
+            float angle = Vector3.Angle(transform.forward, targetDirection);
+            if (angle > interactionAngle)
+            {
+                Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
+                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
+                return; // Don't proceed with controller actions until angle difference is small enough
+            }
         }
 
         // Player Movement (calculate distance ignoring Y axis)
@@ -159,7 +188,7 @@ public class XRIntTest : MonoBehaviour
             return; // Don't proceed with controller actions until close enough
         }
         // If we're close enough, switch to controller movement with delay
-        StartCoroutine(TransitionToState(ExplorationState.ControllerMovement));
+        StartCoroutine(TransitionToState(nextState));
     }
 
     /// <summary>
@@ -168,10 +197,7 @@ public class XRIntTest : MonoBehaviour
     private void ControllerMovement()
     {
         rightController = GameObject.Find("Right Controller");
-        if (rightController == null)
-        {
-            return;
-        }
+        if (rightController == null) return;
 
         if (targetInteractable == null)
         {
@@ -180,6 +206,23 @@ public class XRIntTest : MonoBehaviour
         }
 
         GameObject targetObject = targetInteractable.Interactable;
+        
+        // Custom logic for arrival at interactable
+        Action onArrival = () => {
+            targetInteractable.Visited = true;
+            // Updated to use Interactions list
+            var types = targetInteractable.Interactions.Select(i => i.Type);
+            current3DInteractionPattern = string.Join(",", types);
+            bool intersection = Utils.GetIntersected(targetInteractable.Interactable, rightController);
+            targetInteractable.Intersected = intersection;
+            StartCoroutine(TransitionToState(ExplorationState.ThreeDInteraction));
+        };
+
+        MoveControllerToTarget(targetObject, onArrival);
+    }
+
+    private void MoveControllerToTarget(GameObject targetObject, Action onArrival)
+    {
         timeSinceLastUpdate += Time.deltaTime;
         if (timeSinceLastUpdate >= updateInterval)
         {
@@ -202,12 +245,7 @@ public class XRIntTest : MonoBehaviour
                 if (isControllerMoving) // Only proceed if the controller has stopped moving
                 {
                     isControllerMoving = false;
-                    targetInteractable.Visited = true;
-                    var events = targetInteractable.Events;
-                    current3DInteractionPattern = string.Join(",", events);
-                    bool intersection = Utils.GetIntersected(targetInteractable.Interactable, rightController);
-                    targetInteractable.Intersected = intersection;
-                    StartCoroutine(TransitionToState(ExplorationState.ThreeDInteraction));
+                    onArrival?.Invoke();
                 }
             }
         }
@@ -226,21 +264,71 @@ public class XRIntTest : MonoBehaviour
                 StartCoroutine(HoldGrabAndTrigger());
             }
         }
-        // Normal grab action
-        else if (current3DInteractionPattern.Contains("grab"))
+        // Normal grab action (or start of socket interaction)
+        else if (current3DInteractionPattern.Contains("grab") || current3DInteractionPattern.Contains("socket"))
         {
             if (grabActionCount < 2)
             {
-                ControllerGrabAction();
-                grabActionCount++;
-                if (grabActionCount >= 2)
+                // Only perform grab if we haven't grabbed yet (grabActionCount 0 -> 1)
+                if (grabActionCount == 0)
                 {
-                    targetInteractable.InteractionAttempted = true;
-                    StartCoroutine(TransitionToState(ExplorationState.Navigation));
+                    ControllerGrabAction();
+                    grabActionCount++;
+                    
+                    // After grabbing, check if we need to do socket interaction
+                    var socketInfo = targetInteractable.Interactions.FirstOrDefault(i => i.Type == "socket");
+                    if (socketInfo != null && !string.IsNullOrEmpty(socketInfo.TargetInteractor))
+                    {
+                        targetSocket = GameObject.Find(socketInfo.TargetInteractor);
+                        if (targetSocket != null)
+                        {
+                            // Transition to moving towards socket
+                            StartCoroutine(TransitionToState(ExplorationState.SocketInteraction));
+                            return; // Exit here, don't continue to release
+                        }
+                    }
+                }
+                else if (grabActionCount == 1)
+                {
+                    // If we are here, it means we grabbed, but didn't transition to socket (or finished socket and returned? No).
+                    // This is the release phase for normal grab.
+                    ControllerGrabAction();
+                    grabActionCount++;
+                    if (grabActionCount >= 2)
+                    {
+                        targetInteractable.InteractionAttempted = true;
+                        StartCoroutine(TransitionToState(ExplorationState.Navigation));
+                    }
                 }
             }
         }
     }
+
+    // --- Socket Interaction States ---
+
+    private void SocketInteraction()
+    {
+        Debug.Log("Start Socket Interaction: " + targetSocket);
+        if (targetSocket == null)
+        {
+            StartCoroutine(TransitionToState(ExplorationState.Navigation));
+            return;
+        }
+
+        Action onArrival = () => {
+             Debug.Log("Arrived at socket, releasing object.");
+             // Release the object
+             ControllerGrabAction(); // Press G to release
+             grabActionCount++; 
+             
+             targetInteractable.InteractionAttempted = true;
+             StartCoroutine(TransitionToState(ExplorationState.Navigation));
+        };
+        
+        MoveControllerToTarget(targetSocket, onArrival);
+    }
+
+    // ---------------------------------
 
     private IEnumerator HoldGrabAndTrigger()
     {
@@ -466,13 +554,30 @@ public class XRIntTest : MonoBehaviour
     {
         yield return new WaitForSeconds(stateTransitionDelay);
         // Reset the action flags when transitioning to a new state
-        if (newState != ExplorationState.ThreeDInteraction)
+        // NOTE: Don't reset if we are moving to socket states and want to keep grab count?
+        // But we handle grabActionCount manually in ThreeDInteraction.
+        // Actually, if we transition to SocketNavigation, we are HOLDING the object.
+        // So we should NOT reset isGrabHeld or grabActionCount completely if we want to track it.
+        // However, grabActionCount logic in ThreeDInteraction relies on it being 0 or 1.
+        
+        if (newState == ExplorationState.Navigation)
         {
-            current3DInteractionPattern = ""; // Clear the interaction pattern when leaving 3D state
-            isGrabHeld = false; // Ensure grab is released when leaving state
-            grabActionCount = 0; // Reset grab action count
-            combinedActionCount = 0; // Reset combined action count
+            // Fully reset when going back to Navigation
+            current3DInteractionPattern = "";
+            isGrabHeld = false;
+            grabActionCount = 0;
+            combinedActionCount = 0;
         }
+        else if (newState == ExplorationState.ThreeDInteraction)
+        {
+            // Reset when starting interaction? No, we might want to carry over? 
+            // Usually ThreeDInteraction starts fresh.
+             isGrabHeld = false;
+             grabActionCount = 0;
+             combinedActionCount = 0;
+        }
+        // For Socket transitions, we preserve state (holding object)
+        
         currentExplorationState = newState;
     }
 
