@@ -4585,13 +4585,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396243544}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22a1768db0a2a479bbb2410346ff3e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCount: 0
-  rightController: {fileID: 0}
+  GameSpeed: 2
+  MoveSpeed: 1
+  RotateSpeed: 1
+  InteractionDistance: 2
+  TimeBudget: 600
+  ReportInterval: 30
+  RightController: {fileID: 0}
 --- !u!64 &1396243548
 MeshCollider:
   m_ObjectHideFlags: 0
