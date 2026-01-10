@@ -9,8 +9,64 @@
     ]
   },
   {
+    "interactable": "AirplanePivot 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CarPivot 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CarPivot 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "AirplanePivot 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
     "interactor": "SocketInteractor 1",
     "interactable": "SwordPivot",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 2",
+    "interactable": "AirplanePivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 3",
+    "interactable": "CarPivot 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 4",
+    "interactable": "CarPivot 2",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SocketInteractor 5",
+    "interactable": "AirplanePivot 2",
     "interaction": "socket"
   }
 ]

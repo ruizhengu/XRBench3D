@@ -97,19 +97,20 @@ public static class Utils
       public string Type;
       public string Condition;
       public string TargetInteractor;
+      public bool Attempted;
 
       public InteractionInfo(string type, string condition, string targetInteractor = null)
       {
           Type = type;
           Condition = condition;
           TargetInteractor = targetInteractor;
+          Attempted = false;
       }
 
       public override string ToString()
       {
-          if (TargetInteractor != null)
-              return $"{Type} -> {TargetInteractor}";
-          return Type;
+          string info = (TargetInteractor != null) ? $"{Type} -> {TargetInteractor}" : Type;
+          return $"{info} [Attempted: {Attempted}]";
       }
   }
 
