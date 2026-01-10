@@ -24,7 +24,7 @@ public class XRIntTest : MonoBehaviour
     private float updateInterval = 0.001f;
     private float timeSinceLastUpdate = 0f;
     private float interactionAngle = 5.0f; // The angle for transiting from rotation to interaction
-    private float controllerMovementThreshold = 0.05f; // The distance of controller movement to continue interaction
+    private float controllerMovementThreshold = 0.15f; // The distance of controller movement to continue interaction
     private float stateTransitionDelay = 0.1f; // Delay between state transitions
     private bool isControllerMoving = false; // Flag to track if controller is currently moving
     private ControllerState currentControllerState = ControllerState.None; // Default state
@@ -34,6 +34,8 @@ public class XRIntTest : MonoBehaviour
     private bool isGrabHeld = false; // Track if grab is currently held
     private int grabActionCount = 0; // Track number of grab actions
     private int combinedActionCount = 0; // Track number of combined actions
+    private bool waitingForSocketCheck = false; // Flag to pause updates while checking for socket
+    private bool isSocketGrabActive = false; // Flag to track if we are holding grab for socket
     private float reportInterval = 30f; // Report interval in seconds
     private float reportTimer = 0f; // Timer for report interval
     private float totalTime = 0f; // Total time of the test
@@ -143,6 +145,7 @@ public class XRIntTest : MonoBehaviour
         isGrabHeld = false;
         targetSocket = null;
         current3DInteractionPattern = "";
+        waitingForSocketCheck = false;
 
         ResetControllerPosition();
         GameObject targetObject = targetInteractable.Interactable;
@@ -223,6 +226,7 @@ public class XRIntTest : MonoBehaviour
 
     private void MoveControllerToTarget(GameObject targetObject, Action onArrival)
     {
+        Debug.Log("Moving to:" + targetObject.name);
         timeSinceLastUpdate += Time.deltaTime;
         if (timeSinceLastUpdate >= updateInterval)
         {
@@ -242,11 +246,11 @@ public class XRIntTest : MonoBehaviour
             }
             else
             {
-                if (isControllerMoving) // Only proceed if the controller has stopped moving
-                {
-                    isControllerMoving = false;
-                    onArrival?.Invoke();
-                }
+                // We are close enough.
+                // NOTE: We do not check !isControllerMoving here because controller movement is done by key simulation.
+                // We just stop sending move commands and call onArrival.
+                isControllerMoving = false;
+                onArrival?.Invoke();
             }
         }
     }
@@ -267,25 +271,29 @@ public class XRIntTest : MonoBehaviour
         // Normal grab action (or start of socket interaction)
         else if (current3DInteractionPattern.Contains("grab") || current3DInteractionPattern.Contains("socket"))
         {
+            if (waitingForSocketCheck) return;
+
             if (grabActionCount < 2)
             {
                 // Only perform grab if we haven't grabbed yet (grabActionCount 0 -> 1)
                 if (grabActionCount == 0)
                 {
-                    ControllerGrabAction();
-                    grabActionCount++;
-                    
-                    // After grabbing, check if we need to do socket interaction
+                    // Check if we need to do socket interaction
                     var socketInfo = targetInteractable.Interactions.FirstOrDefault(i => i.Type == "socket");
-                    if (socketInfo != null && !string.IsNullOrEmpty(socketInfo.TargetInteractor))
+
+                    if (socketInfo != null)
                     {
-                        targetSocket = GameObject.Find(socketInfo.TargetInteractor);
-                        if (targetSocket != null)
-                        {
-                            // Transition to moving towards socket
-                            StartCoroutine(TransitionToState(ExplorationState.SocketInteraction));
-                            return; // Exit here, don't continue to release
-                        }
+                        // For socket, use Hold
+                        StartHoldingGrab();
+                        grabActionCount++;
+                        waitingForSocketCheck = true;
+                        StartCoroutine(CheckAndStartSocketInteraction(socketInfo));
+                    }
+                    else
+                    {
+                        // Normal grab (Tap)
+                        ControllerGrabAction();
+                        grabActionCount++;
                     }
                 }
                 else if (grabActionCount == 1)
@@ -304,6 +312,48 @@ public class XRIntTest : MonoBehaviour
         }
     }
 
+    private IEnumerator CheckAndStartSocketInteraction(Utils.InteractionInfo socketInfo)
+    {
+        yield return new WaitForSeconds(0.1f); // Wait for grab to potentially register
+        bool socketFound = false;
+        if (socketInfo != null && !string.IsNullOrEmpty(socketInfo.TargetInteractor))
+        {
+            targetSocket = GameObject.Find(socketInfo.TargetInteractor);
+            if (targetSocket != null)
+            {
+                Debug.Log($"Transitioning to SocketInteraction. Target Socket: {targetSocket.name}");
+                
+                // Note: Listener is now registered globally in RegisterListeners()
+
+                socketFound = true;
+                StartCoroutine(TransitionToState(ExplorationState.SocketInteraction));
+            }
+            else
+            {
+                Debug.LogWarning($"Socket interaction found but target socket '{socketInfo.TargetInteractor}' not found in scene.");
+            }
+        }
+        
+        if (!socketFound)
+        {
+            waitingForSocketCheck = false;
+            if (isSocketGrabActive) StopHoldingGrab(); // Cleanup if we started holding but failed
+        }
+    }
+
+    private void OnSocketSnap(SelectEnterEventArgs args)
+    {
+        Debug.Log($"Socket Interaction Successful: Object '{args.interactableObject.transform.name}' snapped into '{args.interactorObject.transform.name}'");
+        
+        // Mark the object as socketed
+        var objName = args.interactableObject.transform.name;
+        var interactableObj = interactableObjects.FirstOrDefault(o => o.Interactable.name == objName);
+        if (interactableObj != null)
+        {
+            interactableObj.Socketed = true;
+        }
+    }
+
     // --- Socket Interaction States ---
 
     private void SocketInteraction()
@@ -318,14 +368,20 @@ public class XRIntTest : MonoBehaviour
         Action onArrival = () => {
              Debug.Log("Arrived at socket, releasing object.");
              // Release the object
-             ControllerGrabAction(); // Press G to release
-             grabActionCount++; 
-             
-             targetInteractable.InteractionAttempted = true;
-             StartCoroutine(TransitionToState(ExplorationState.Navigation));
+             StartCoroutine(ReleaseObjectWithDelay());
         };
         
         MoveControllerToTarget(targetSocket, onArrival);
+    }
+
+    private IEnumerator ReleaseObjectWithDelay()
+    {
+        yield return new WaitForSeconds(1.0f); // Wait for 0.5s to ensure the object is in the socket
+        StopHoldingGrab(); // Release held object
+        grabActionCount++; 
+             
+        targetInteractable.InteractionAttempted = true;
+        StartCoroutine(TransitionToState(ExplorationState.Navigation));
     }
 
     // ---------------------------------
@@ -389,12 +445,49 @@ public class XRIntTest : MonoBehaviour
     {
         var keyboard = InputSystem.GetDevice<Keyboard>();
         if (keyboard == null) yield break;
-        // Press the key
-        InputSystem.QueueStateEvent(keyboard, new KeyboardState(key));
+        
+        // Construct state with preserved keys if needed
+        List<Key> keysToPress = new List<Key>();
+        if (key != Key.None) keysToPress.Add(key);
+        if (isSocketGrabActive) keysToPress.Add(Key.G);
+
+        // Press the key(s)
+        InputSystem.QueueStateEvent(keyboard, new KeyboardState(keysToPress.ToArray()));
+        
         // Wait for the specified duration
         yield return new WaitForSeconds(duration);
-        // Release the key
-        InputSystem.QueueStateEvent(keyboard, new KeyboardState());
+        
+        // Release the key (but keep G if holding)
+        if (isSocketGrabActive)
+        {
+             InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.G));
+        }
+        else
+        {
+             InputSystem.QueueStateEvent(keyboard, new KeyboardState());
+        }
+    }
+
+    void StartHoldingGrab()
+    {
+        // Debug.Log("Start Holding Grab");
+        isSocketGrabActive = true;
+        var keyboard = InputSystem.GetDevice<Keyboard>();
+        if (keyboard != null)
+        {
+            InputSystem.QueueStateEvent(keyboard, new KeyboardState(Key.G));
+        }
+    }
+
+    void StopHoldingGrab()
+    {
+        // Debug.Log("Stop Holding Grab");
+        isSocketGrabActive = false;
+        var keyboard = InputSystem.GetDevice<Keyboard>();
+        if (keyboard != null)
+        {
+            InputSystem.QueueStateEvent(keyboard, new KeyboardState());
+        }
     }
 
     /// <summary>
@@ -488,6 +581,7 @@ public class XRIntTest : MonoBehaviour
 
     void RegisterListeners()
     {
+        // Register listeners for interactable objects (Grab, etc.)
         foreach (var obj in interactableObjects)
         {
             var baseInteractable = obj.Interactable.GetComponent<XRBaseInteractable>();
@@ -496,6 +590,13 @@ public class XRIntTest : MonoBehaviour
                 baseInteractable.selectEntered.AddListener(OnSelectEntered);
                 baseInteractable.activated.AddListener(OnActivated);
             }
+        }
+
+        // Register listeners for all socket interactors in the scene
+        var allSockets = FindObjectsOfType<UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor>();
+        foreach (var socket in allSockets)
+        {
+            socket.selectEntered.AddListener(OnSocketSnap);
         }
     }
 

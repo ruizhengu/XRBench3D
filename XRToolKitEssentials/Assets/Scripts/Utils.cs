@@ -217,13 +217,17 @@ public static class Utils
         
       if (obj.Interacted)
       {
-        count++; // Base interaction
+        count++; // Base interaction (Grab)
         if (obj.IsTrigger) count++;
-        // TODO: Count socket interactions?
       }
       else if (obj.Grabbed)
       {
         count++;
+      }
+      
+      if (obj.Socketed)
+      {
+          count++;
       }
     }
     return count;
@@ -258,6 +262,8 @@ public static class Utils
     public bool InteractionAttempted { get; set; }
     public bool Interacted { get; set; }
 
+    public bool Socketed { get; set; }
+
 
     public InteractableObject(string name, GameObject go, bool isTrigger, List<InteractionInfo> interactions)
     {
@@ -268,6 +274,7 @@ public static class Utils
       this.Interacted = false;
       this.InteractionAttempted = false;
       this.Intersected = false;
+      this.Socketed = false;
       this.Interactions = interactions;
     }
   }
