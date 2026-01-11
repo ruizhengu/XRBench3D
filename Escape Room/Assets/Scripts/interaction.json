@@ -1,9 +1,0 @@
-{
-  "grab": [
-    "XRGrabInteractable",
-    "XRKnob"
-  ],
-  "trigger": [
-    "XRBaseInteractable"
-  ]
-}

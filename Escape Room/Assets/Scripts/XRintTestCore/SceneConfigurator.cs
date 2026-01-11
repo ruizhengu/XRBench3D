@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class SceneConfigurator : EditorWindow
 {
@@ -90,6 +91,36 @@ public class SceneConfigurator : EditorWindow
                             if (!needsUpdate)
                             {
                                 Debug.Log("Right Controller's Mesh Collider already has Convex and Is Trigger enabled.");
+                            }
+                        }
+
+                        // Configure interaction layer mask for child objects
+                        string[] interactorNames = { "Poke Interactor 2", "Near-Far Interactor 2" };
+                        foreach (string name in interactorNames)
+                        {
+                            Debug.Log($"Check interaction layer mask for {name}");
+                            Transform childTransform = rightController.transform.Find(name);
+                            if (childTransform != null)
+                            {
+                                var interactor = childTransform.GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInteractor>();
+                                if (interactor != null)
+                                {
+                                    // Set interaction layer mask to Everything (value is -1)
+                                    // Use direct property access as m_InteractionLayerMask might be internal/private or named differently in newer versions
+                                    
+                                    InteractionLayerMask mask = interactor.interactionLayers;
+                                    mask.value = -1; // Everything
+                                    interactor.interactionLayers = mask;
+                                    Debug.Log($"Set Interaction Layer Mask to Everything for {name}");
+                                }
+                                else
+                                {
+                                    Debug.LogWarning($"{name} does not have an XRBaseInteractor component.");
+                                }
+                            }
+                            else
+                            {
+                                Debug.LogWarning($"{name} not found as child of Right Controller.");
                             }
                         }
                     }

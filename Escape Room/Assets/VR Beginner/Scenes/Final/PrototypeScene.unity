@@ -155,6 +155,56 @@ Transform:
   - {fileID: 659298163}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &271670719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 480706230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &271670724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271670719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1001 &480706230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163,10 +213,79 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1319746308, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58445280694286476, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265607810277527178, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: NearFar 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 393207239731357619, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 558235185392661866, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 950175637189515454, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 970762308342442650, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000662906955510728, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246816219822305359, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_A 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316853283282549446, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352799979873374140, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Home 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368390096103844038, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470279098769358944, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
@@ -218,6 +337,206 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1763277165867629938, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842862291474320369, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2190828208922718286, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449787133337329437, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2626757739553014894, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633365042866799530, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908298819410470536, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998152119438995280, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: LineVisual 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3533369827395663398, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549580823586112762, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675530901336607967, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754057301151876428, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bumper 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867254018184489335, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: TouchPad 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3904471525139099824, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929596498127475894, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065709321064247272, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088110610454198647, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: UniversalController 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090405666657053172, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: NearFar 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343660526480754339, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383292563047305748, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551477191942292801, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_B 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555019985763976546, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5167925059111895691, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227292470352409039, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: LineVisual 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392308954264473942, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617778599117486727, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038107472648090404, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237513019617653394, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bumper 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278634950042787497, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: TouchPad 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499517531677593257, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: UniversalController 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747261228452868767, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_B 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755294685494112956, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045326174636273504, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066467136973266244, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092707227144796258, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Home 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341962337745733521, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_A 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748500131873809389, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877177980677234388, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -230,6 +549,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 580041355}
+    - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 271670724}
     - targetCorrespondingSourceObject: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
       insertIndex: -1
@@ -248,13 +571,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580041347}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCount: 0
-  rightController: {fileID: 0}
+  GameSpeed: 2
+  MoveSpeed: 1
+  RotateSpeed: 1
+  InteractionDistance: 2
+  TimeBudget: 600
+  ReportInterval: 30
+  RightController: {fileID: 0}
 --- !u!114 &580041355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +590,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580041347}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f83fbc6f43d44ea18234b2945826635, type: 3}
   m_Name: 
@@ -1018,6 +1346,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 510316c8e8621fe4fa79bd9019d53965, type: 2}
+    - target: {fileID: 5133913965574556032, guid: ceb05cd7b14eed644827add74f9edb54,
+        type: 3}
+      propertyPath: m_Name
+      value: Body 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5287474916569954790, guid: ceb05cd7b14eed644827add74f9edb54,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -1197,6 +1530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BubbleGun
       objectReference: {fileID: 0}
+    - target: {fileID: 162697020884084889, guid: eaa84f54f50e8884c80cfa5a47a92c44,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3904864498203525650, guid: eaa84f54f50e8884c80cfa5a47a92c44,
         type: 3}
       propertyPath: m_RootOrder
@@ -1251,6 +1589,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3965692419778977499, guid: eaa84f54f50e8884c80cfa5a47a92c44,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectActivator 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5069563230651568028, guid: eaa84f54f50e8884c80cfa5a47a92c44,
+        type: 3}
+      propertyPath: m_Name
+      value: Collider 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1421,6 +1769,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8370721266674984517, guid: 58e70592c837bbe4897359258333f245,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectActivator 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989499559576215299, guid: 58e70592c837bbe4897359258333f245,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017076622968255459, guid: 58e70592c837bbe4897359258333f245,
+        type: 3}
+      propertyPath: m_Name
+      value: Colliders 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1538,6 +1901,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thermostat
       objectReference: {fileID: 0}
+    - target: {fileID: 5133913965574556032, guid: e13ccf4a61408af4cb902275e5a5d161,
+        type: 3}
+      propertyPath: m_Name
+      value: Body 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8319845580240427014, guid: e13ccf4a61408af4cb902275e5a5d161,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -1630,6 +1998,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2603468964893842960, guid: 9bf1ea7e4e3a766428ef3f8802039887,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectActivator 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4355813804287330373, guid: 9bf1ea7e4e3a766428ef3f8802039887,
         type: 3}
       propertyPath: m_RootOrder
@@ -1689,6 +2062,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drill
+      objectReference: {fileID: 0}
+    - target: {fileID: 6861157764444802865, guid: 9bf1ea7e4e3a766428ef3f8802039887,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8947830861751699762, guid: 9bf1ea7e4e3a766428ef3f8802039887,
+        type: 3}
+      propertyPath: m_Name
+      value: Colliders 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1831,10 +2214,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlashlightMesh
       objectReference: {fileID: 0}
+    - target: {fileID: 878102817173273230, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectActivator 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2797935045773057444, guid: 3219c13bf087a7e4f9756cc8c9207b27,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006003338933202411, guid: 3219c13bf087a7e4f9756cc8c9207b27,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 4
       objectReference: {fileID: 0}
     - target: {fileID: 6476951282455166928, guid: 3219c13bf087a7e4f9756cc8c9207b27,
         type: 3}
@@ -1968,6 +2361,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71389533545912752, guid: 3341466b7de624346be882932da05b6d,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 341780962099078719, guid: 3341466b7de624346be882932da05b6d,
         type: 3}
       propertyPath: m_Mesh
@@ -1992,7 +2390,7 @@ PrefabInstance:
     - target: {fileID: 2041848882740158602, guid: 3341466b7de624346be882932da05b6d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.475
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2041848882740158602, guid: 3341466b7de624346be882932da05b6d,
         type: 3}
@@ -2125,6 +2523,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7926882226097286838, guid: e823a873e63743c4894c28c0a891f016,
         type: 3}
+    - target: {fileID: 7151724323282399485, guid: 3341466b7de624346be882932da05b6d,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2173,10 +2576,15 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3654774611892890111, guid: c4f2734a8b499614c86618f2504ba0be,
+        type: 3}
+      propertyPath: m_Name
+      value: DimmerSwitch 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4147255009141472372, guid: c4f2734a8b499614c86618f2504ba0be,
         type: 3}
       propertyPath: m_Name
-      value: DimmerSwitch
+      value: DimmerSwitch 1
       objectReference: {fileID: 0}
     - target: {fileID: 8188992145730608563, guid: c4f2734a8b499614c86618f2504ba0be,
         type: 3}
@@ -2301,10 +2709,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 20.615997
       objectReference: {fileID: 0}
+    - target: {fileID: 1539161920050853833, guid: 9d10edaecc9279d41baf1d5e360afc08,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3879379326887835974, guid: 9d10edaecc9279d41baf1d5e360afc08,
         type: 3}
       propertyPath: m_Name
-      value: Fusebox
+      value: Fusebox 1
       objectReference: {fileID: 0}
     - target: {fileID: 3911214525545768812, guid: 9d10edaecc9279d41baf1d5e360afc08,
         type: 3}
@@ -2345,6 +2758,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725854288723386192, guid: 9d10edaecc9279d41baf1d5e360afc08,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725854288723386192, guid: 9d10edaecc9279d41baf1d5e360afc08,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5725854288723386192, guid: 9d10edaecc9279d41baf1d5e360afc08,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199666232720725054, guid: 9d10edaecc9279d41baf1d5e360afc08,
+        type: 3}
+      propertyPath: m_Name
+      value: Fusebox 2
       objectReference: {fileID: 0}
     - target: {fileID: 6783651945081004065, guid: 9d10edaecc9279d41baf1d5e360afc08,
         type: 3}
@@ -2428,6 +2861,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449246404323954345, guid: 84340939e88318240af73607a519a496,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264743002663128467, guid: 84340939e88318240af73607a519a496,
+        type: 3}
+      propertyPath: m_Name
+      value: Colliders 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306058275786143961, guid: 84340939e88318240af73607a519a496,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectActivator 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2531,6 +2979,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Remote
       objectReference: {fileID: 0}
+    - target: {fileID: 2624428097709648517, guid: ec734f5a2f3e6a24fb51b9acac110b0c,
+        type: 3}
+      propertyPath: m_Name
+      value: Body 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632043996229885150, guid: ec734f5a2f3e6a24fb51b9acac110b0c,
+        type: 3}
+      propertyPath: m_Name
+      value: Collider 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2751189407878678559, guid: ec734f5a2f3e6a24fb51b9acac110b0c,
         type: 3}
       propertyPath: m_RootOrder
@@ -2604,6 +3062,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 179384331565217114, guid: 55abf0939fcfe064aa6e7063c0da9804,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectActivator 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 648944444967811607, guid: 55abf0939fcfe064aa6e7063c0da9804,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 908696847726732828, guid: 55abf0939fcfe064aa6e7063c0da9804,
+        type: 3}
+      propertyPath: m_Name
+      value: Collider 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6207711677953224200, guid: 55abf0939fcfe064aa6e7063c0da9804,
         type: 3}
       propertyPath: m_Name

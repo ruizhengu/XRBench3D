@@ -85,55 +85,107 @@ public static class Utils
     return worldDirection;
   }
 
+  private class InteractionGroup
+  {
+    public string interactor;
+    public string interactable;
+    public object interaction;
+  }
+
+  public class InteractionInfo
+  {
+      public string Type;
+      public string Condition;
+      public string TargetInteractor;
+      public bool Attempted;
+
+      public InteractionInfo(string type, string condition, string targetInteractor = null)
+      {
+          Type = type;
+          Condition = condition;
+          TargetInteractor = targetInteractor;
+          Attempted = false;
+          Completed = false;
+      }
+
+      public bool Completed;
+
+      public override string ToString()
+      {
+          string info = (TargetInteractor != null) ? $"{Type} -> {TargetInteractor}" : Type;
+          return $"{info} [Attempted: {Attempted}, Completed: {Completed}]";
+      }
+  }
+
   /// <summary>
   /// Get the interaction events from the interaction_results.json file
   /// </summary>
-  public static List<InteractionEvent> ParseInteractionGraph()
+  public static List<InteractableObject> GetInteractableObjects()
   {
-    string jsonPath = Path.Combine(Application.dataPath, "Scripts/scene_graph.json");
+    string jsonPath = Path.Combine(Application.dataPath, "Scripts/IFG.json");
+    if (!File.Exists(jsonPath))
+    {
+        Debug.LogError($"IFG.json not found at {jsonPath}");
+        return new List<InteractableObject>();
+    }
+
     using (StreamReader r = new StreamReader(jsonPath))
     {
       string json = r.ReadToEnd();
-      List<InteractionEvent> interactionEvents = JsonConvert.DeserializeObject<List<InteractionEvent>>(json);
-      return interactionEvents;
-    }
-  }
+      var groupedEvents = JsonConvert.DeserializeObject<List<InteractionGroup>>(json);
+      var interactableDict = new Dictionary<string, InteractableObject>();
 
-  public static List<InteractableObject> GetInteractableObjects()
-  {
-    var interactionEvents = ParseInteractionGraph();
-    var interactableDict = new Dictionary<string, InteractableObject>();
-
-    foreach (var interactionEvent in interactionEvents)
-    {
-      var interactable = GameObject.Find(interactionEvent.interactable);
-      if (interactable == null) continue;
-
-      if (!interactableDict.TryGetValue(interactionEvent.interactable, out var obj))
+      if (groupedEvents != null)
       {
-        // Create new InteractableObject with the first interaction type
-        var events = new List<string> { interactionEvent.interaction_type };
-        bool isTrigger = interactionEvent.interaction_type == "trigger";
-        obj = new InteractableObject(interactionEvent.interactable, interactable, isTrigger, events);
-        interactableDict[interactionEvent.interactable] = obj;
-      }
-      else
-      {
-        // Add new interaction type if not already present
-        if (!obj.Events.Contains(interactionEvent.interaction_type))
+        foreach (var group in groupedEvents)
         {
-          obj.Events.Add(interactionEvent.interaction_type);
-        }
-        // If any interaction type is trigger, set IsTrigger to true
-        if (interactionEvent.interaction_type == "trigger")
-        {
-          obj.IsTrigger = true;
+          var interactableGO = GameObject.Find(group.interactable);
+          if (interactableGO == null) continue;
+
+          if (!interactableDict.TryGetValue(group.interactable, out var obj))
+          {
+            obj = new InteractableObject(group.interactable, interactableGO, false, new List<InteractionInfo>());
+            interactableDict[group.interactable] = obj;
+          }
+
+          if (group.interaction != null)
+          {
+            if (group.interaction is string interactionStr && interactionStr == "socket")
+            {
+                bool exists = obj.Interactions.Any(i => i.Type == "socket" && i.TargetInteractor == group.interactor);
+                if (!exists)
+                {
+                    obj.Interactions.Add(new InteractionInfo("socket", "grab", group.interactor));
+                }
+            }
+            else if (group.interaction is Newtonsoft.Json.Linq.JArray interactionList)
+            {
+                foreach (var item in interactionList)
+                {
+                    if (item is Newtonsoft.Json.Linq.JArray interaction && interaction.Count >= 2)
+                    {
+                        string type = interaction[0].ToString();
+                        string condition = interaction[1].ToString();
+                        
+                        // Add interaction if not present (simple check based on type and target)
+                        bool exists = obj.Interactions.Any(i => i.Type == type && i.TargetInteractor == group.interactor);
+                        if (!exists)
+                        {
+                            obj.Interactions.Add(new InteractionInfo(type, condition, group.interactor));
+                        }
+
+                        if (type == "trigger")
+                        {
+                            obj.IsTrigger = true;
+                        }
+                    }
+                }
+            }
+          }
         }
       }
+      return interactableDict.Values.ToList();
     }
-    var interactableObjects = interactableDict.Values.ToList();
-    // LogInteractables(interactableObjects);
-    return interactableObjects;
   }
 
   public static int GetInteractableEventsCount(List<InteractableObject> interactableObjects)
@@ -141,9 +193,9 @@ public static class Utils
     int eventCount = 0;
     foreach (var obj in interactableObjects)
     {
-      if (obj.Events != null)
+      if (obj.Interactions != null)
       {
-        eventCount += obj.Events.Count;
+        eventCount += obj.Interactions.Count;
       }
     }
     return eventCount;
@@ -153,7 +205,7 @@ public static class Utils
   {
     foreach (var interactable in interactables)
     {
-      Debug.Log($"Interactable: {interactable.Name} <{string.Join(", ", interactable.Events)}> ({interactable.Interactable.name})");
+      Debug.Log($"Interactable: {interactable.Name} <{string.Join(", ", interactable.Interactions)}> ({interactable.Interactable.name})");
     }
   }
 
@@ -162,29 +214,13 @@ public static class Utils
     int count = 0;
     foreach (var obj in interactableObjects)
     {
-      if (obj.Interacted)
-      {
-        count++;
-        if (obj.IsTrigger)
+        foreach (var interaction in obj.Interactions)
         {
-          count++;
+            if (interaction.Completed)
+            {
+                count++;
+            }
         }
-      }
-      else if (!obj.Interacted && obj.Grabbed)
-      {
-        count++;
-      }
-      if (detailedLog)
-      {
-        if (!obj.Interacted && obj.Intersected)
-        {
-          Debug.Log("Could be a bug: " + obj.Name);
-        }
-        if (!obj.Interacted)
-        {
-          Debug.Log("Not Interacted Interactable: " + obj.Name);
-        }
-      }
     }
     return count;
   }
@@ -205,29 +241,11 @@ public static class Utils
     return false;
   }
 
-  public class InteractionEvent
-  {
-    public string interactor;
-    public List<string> condition;
-    public string interactable;
-    public string interaction_type;
-
-    public InteractionEvent() { }
-
-    public InteractionEvent(string interactor, List<string> condition, string interactable, string interaction_type)
-    {
-      this.interactor = interactor;
-      this.condition = condition;
-      this.interactable = interactable;
-      this.interaction_type = interaction_type;
-    }
-  }
-
   public class InteractableObject
   {
     public GameObject Interactable { get; set; }
     public string Name { get; set; }
-    public List<string> Events { get; set; }
+    public List<InteractionInfo> Interactions { get; set; }
     public bool Intersected { get; set; }
     public bool IsTrigger { get; set; }
     public bool Triggered { get; set; }
@@ -236,8 +254,10 @@ public static class Utils
     public bool InteractionAttempted { get; set; }
     public bool Interacted { get; set; }
 
+    public bool Socketed { get; set; }
 
-    public InteractableObject(string name, GameObject go, bool isTrigger, List<string> events)
+
+    public InteractableObject(string name, GameObject go, bool isTrigger, List<InteractionInfo> interactions)
     {
       this.Name = name;
       this.Interactable = go;
@@ -246,7 +266,8 @@ public static class Utils
       this.Interacted = false;
       this.InteractionAttempted = false;
       this.Intersected = false;
-      this.Events = events;
+      this.Socketed = false;
+      this.Interactions = interactions;
     }
   }
 }
