@@ -1,0 +1,213 @@
+[
+  {
+    "interactable": "InstantTracking 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "InstantTracking 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "InstantTracking 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "KinematicCube 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "KinematicCube 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "KinematicCube 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "VelocityTrackedCube 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "VelocityTrackedCube 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "VelocityTrackedCube 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "WateringCan",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Mallet 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Launcher1H",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Launcher2H",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "SimpleSocketShape",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SprintJointInteractable_02",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SpringJointInteractable_01",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SprintJointInteractable_04",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SpringJointInteractable_03",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Drawer 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Drawer 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "DoorKey",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactor": "SimpleSocket",
+    "interactable": "SimpleSocketShape",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "Lock Socket",
+    "interactable": "DoorKey",
+    "interaction": "socket"
+  }
+]

@@ -501,7 +501,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 97d14f45615450c4faf9ac7d4cb9a730, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 97d14f45615450c4faf9ac7d4cb9a730, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.15
@@ -711,7 +711,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 97d14f45615450c4faf9ac7d4cb9a730, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 97d14f45615450c4faf9ac7d4cb9a730, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.08
@@ -871,7 +871,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 43d817ca7df1bfb4eb3f728761f525c8, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 43d817ca7df1bfb4eb3f728761f525c8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.01
@@ -1000,7 +1000,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 97d14f45615450c4faf9ac7d4cb9a730, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 97d14f45615450c4faf9ac7d4cb9a730, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -3565,7 +3565,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 73bd19702a335e646a528fc7af3065fe, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 73bd19702a335e646a528fc7af3065fe, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.02
@@ -6237,7 +6237,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d472408b66d3fcc46bad633ab1257789, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d472408b66d3fcc46bad633ab1257789, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5

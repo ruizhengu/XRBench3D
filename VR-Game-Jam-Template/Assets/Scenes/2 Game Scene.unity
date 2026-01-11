@@ -260,6 +260,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -69.948
       objectReference: {fileID: 0}
+    - target: {fileID: 3254885906862564315, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469394360321266254, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Ball Scale OUT and IN 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539726159715344599, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Launcher (Visuals) 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801883810004983779, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4862484800023522930, guid: 796d4ee7f4cf3ec46877a335d40d6296,
         type: 3}
       propertyPath: m_Name
@@ -320,10 +340,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 5389369260569378419, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245314150361507199, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536200437880810654, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Launch Point 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7048750260010228544, guid: 796d4ee7f4cf3ec46877a335d40d6296,
         type: 3}
       propertyPath: m_Name
       value: Launcher1H
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362282915071947818, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7554533192126451919, guid: 796d4ee7f4cf3ec46877a335d40d6296,
+        type: 3}
+      propertyPath: m_Name
+      value: SphereProjectile LARGE 1
       objectReference: {fileID: 0}
     - target: {fileID: 9207176055816488244, guid: 796d4ee7f4cf3ec46877a335d40d6296,
         type: 3}
@@ -351,7 +396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94380032}
   m_Layer: 0
-  m_Name: Simple Example Controls
+  m_Name: Simple Example Controls 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +431,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103630844}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f83fbc6f43d44ea18234b2945826635, type: 3}
   m_Name: 
@@ -399,13 +444,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103630844}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCount: 0
-  rightController: {fileID: 0}
+  GameSpeed: 2
+  MoveSpeed: 1
+  RotateSpeed: 1
+  InteractionDistance: 2
+  TimeBudget: 600
+  ReportInterval: 30
+  RightController: {fileID: 0}
 --- !u!1001 &160090339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -418,6 +468,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SimpleSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 728864242803681389, guid: aec71f91a8da27d418aa44bd0c543f9b,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 728864242803681389, guid: aec71f91a8da27d418aa44bd0c543f9b,
         type: 3}
@@ -479,6 +534,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1602715075570566562, guid: aec71f91a8da27d418aa44bd0c543f9b,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -501,7 +561,7 @@ PrefabInstance:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b,
         type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 3
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b,
         type: 3}
@@ -639,6 +699,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 181313968651555345, guid: 36eff8b49ecdca745894efb1d2ce5f8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 703244385185758329, guid: 36eff8b49ecdca745894efb1d2ce5f8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5202211970501327854, guid: 36eff8b49ecdca745894efb1d2ce5f8f,
         type: 3}
       propertyPath: m_RootOrder
@@ -693,6 +763,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433587972373598511, guid: 36eff8b49ecdca745894efb1d2ce5f8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 15
       objectReference: {fileID: 0}
     - target: {fileID: 7459442142708147920, guid: 36eff8b49ecdca745894efb1d2ce5f8f,
         type: 3}
@@ -807,10 +882,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1906631484910594704, guid: f987e56f5c36e264e888555e47dec1bc,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905038776123162090, guid: f987e56f5c36e264e888555e47dec1bc,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 16
+      objectReference: {fileID: 0}
     - target: {fileID: 5162356030215288089, guid: f987e56f5c36e264e888555e47dec1bc,
         type: 3}
       propertyPath: m_Name
       value: Joystick 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334240440595505955, guid: f987e56f5c36e264e888555e47dec1bc,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -831,6 +921,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 660297796496560238, guid: f82abdd31bfe9b749b21edfda28e5130,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010521503043022907, guid: f82abdd31bfe9b749b21edfda28e5130,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090812434762907622, guid: f82abdd31bfe9b749b21edfda28e5130,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6348035730422218626, guid: f82abdd31bfe9b749b21edfda28e5130,
         type: 3}
       propertyPath: m_RootOrder
@@ -1066,10 +1171,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 408905525}
     m_Modifications:
+    - target: {fileID: 502328958617599460, guid: ef8968d3811b4f9448c64ac756317715,
+        type: 3}
+      propertyPath: m_Name
+      value: FlipDoor 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1308265130741877079, guid: ef8968d3811b4f9448c64ac756317715,
         type: 3}
       propertyPath: m_Name
-      value: FlipDoor
+      value: FlipDoor 1
       objectReference: {fileID: 0}
     - target: {fileID: 4731520106948969076, guid: ef8968d3811b4f9448c64ac756317715,
         type: 3}
@@ -1162,7 +1272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534385766}
   m_Layer: 0
-  m_Name: Simple Example Controls
+  m_Name: Simple Example Controls 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1199,6 +1309,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Slider 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922319005928238128, guid: d69d1b462f51a2c4a8358ce041c996a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312457874115791811, guid: d69d1b462f51a2c4a8358ce041c996a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015235700158999872, guid: d69d1b462f51a2c4a8358ce041c996a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 19
       objectReference: {fileID: 0}
     - target: {fileID: 7563839910878393084, guid: d69d1b462f51a2c4a8358ce041c996a7,
         type: 3}
@@ -1324,6 +1449,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 23
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -1404,6 +1534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringJointInteractable_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1432,11 +1567,10 @@ SpringJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649429180}
-  serializedVersion: 3
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1163028383}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 1.037706, y: 0.4999999, z: 1.6653359}
   m_Spring: 60
@@ -1513,10 +1647,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1938328786324727194, guid: 8b799fb37a52aaa49a29e4cd5358345e,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414846825475710180, guid: 8b799fb37a52aaa49a29e4cd5358345e,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5319416733037820165, guid: 8b799fb37a52aaa49a29e4cd5358345e,
         type: 3}
       propertyPath: m_Name
-      value: DoorLocked
+      value: DoorLocked 1
       objectReference: {fileID: 0}
     - target: {fileID: 6506544725693368079, guid: 8b799fb37a52aaa49a29e4cd5358345e,
         type: 3}
@@ -1532,6 +1676,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -11.578051
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824770567609431110, guid: 8b799fb37a52aaa49a29e4cd5358345e,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307938702395324619, guid: 8b799fb37a52aaa49a29e4cd5358345e,
+        type: 3}
+      propertyPath: m_Name
+      value: DoorLocked 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803757493882187037, guid: 8b799fb37a52aaa49a29e4cd5358345e,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951968135628852726, guid: 8b799fb37a52aaa49a29e4cd5358345e,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1711,6 +1875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wheel 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1614141111669090888, guid: 04052c76cd8138f47bfc66ae8d456707,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 18
+      objectReference: {fileID: 0}
     - target: {fileID: 3344241857523076466, guid: 04052c76cd8138f47bfc66ae8d456707,
         type: 3}
       propertyPath: m_RootOrder
@@ -1766,6 +1935,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7129939606460030718, guid: 04052c76cd8138f47bfc66ae8d456707,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170742975278099391, guid: 04052c76cd8138f47bfc66ae8d456707,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1785,6 +1964,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -1865,6 +2049,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SprintJointInteractable_04
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1899,11 +2088,10 @@ SpringJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954011859}
-  serializedVersion: 3
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 5.1872025, y: 3.12164, z: -7.142283}
   m_Spring: 10
@@ -1995,7 +2183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079906845}
   m_Layer: 0
-  m_Name: Simple Example Objects
+  m_Name: Simple Example Objects 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2064,6 +2252,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76,
         type: 3}
       propertyPath: m_RootOrder
@@ -2196,6 +2394,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76,
         type: 3}
       propertyPath: m_RootOrder
@@ -2328,6 +2536,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 22
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2408,6 +2621,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SprintJointInteractable_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2442,11 +2660,10 @@ SpringJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163028384}
-  serializedVersion: 3
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 5.612691, y: 3.12164, z: -7.0443954}
   m_Spring: 10
@@ -2468,6 +2685,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76,
         type: 3}
       propertyPath: m_RootOrder
@@ -2600,6 +2827,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2680,6 +2912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringJointInteractable_03
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2748,6 +2985,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1079906845}
     m_Modifications:
+    - target: {fileID: 1112969587351092107, guid: d81193b4b57486b46b4762e8b26d2de8,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783574885720267529, guid: d81193b4b57486b46b4762e8b26d2de8,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277249689611702729, guid: d81193b4b57486b46b4762e8b26d2de8,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6957000769822834732, guid: d81193b4b57486b46b4762e8b26d2de8,
         type: 3}
       propertyPath: m_RootOrder
@@ -2808,6 +3065,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SimpleSocketShape
       objectReference: {fileID: 0}
+    - target: {fileID: 7671007539148675018, guid: d81193b4b57486b46b4762e8b26d2de8,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2839,6 +3101,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1858042528}
     m_Modifications:
+    - target: {fileID: 256590688421087238, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 10
+      objectReference: {fileID: 0}
     - target: {fileID: 919132147767488671, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
         type: 3}
       propertyPath: m_SelectMode
@@ -2848,6 +3115,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Threshold
       value: 0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198530707099206668, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 1
       objectReference: {fileID: 0}
     - target: {fileID: 1341942267753567421, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
         type: 3}
@@ -2919,6 +3191,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: WateringCan
       objectReference: {fileID: 0}
+    - target: {fileID: 2234463320894931585, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336983493560846869, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339573659774565589, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2938,10 +3225,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 408905525}
     m_Modifications:
+    - target: {fileID: 681871961572972546, guid: 52b0efbba0ab54548af1006d60566fe1,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 9
+      objectReference: {fileID: 0}
     - target: {fileID: 784072565763923235, guid: 52b0efbba0ab54548af1006d60566fe1,
         type: 3}
       propertyPath: m_Name
       value: DoorKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248893662269552321, guid: 52b0efbba0ab54548af1006d60566fe1,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 28
       objectReference: {fileID: 0}
     - target: {fileID: 3241471165601854204, guid: 52b0efbba0ab54548af1006d60566fe1,
         type: 3}
@@ -2998,6 +3295,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 4775636269207396207, guid: 52b0efbba0ab54548af1006d60566fe1,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787014444239497147, guid: 52b0efbba0ab54548af1006d60566fe1,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909829913775324272, guid: 52b0efbba0ab54548af1006d60566fe1,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720807404180150961, guid: 52b0efbba0ab54548af1006d60566fe1,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3049,6 +3366,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 539894096189802668, guid: 14f944f3f57b6ef4394a9fbf815aec71,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099519734850519933, guid: 14f944f3f57b6ef4394a9fbf815aec71,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977573098061681095, guid: 14f944f3f57b6ef4394a9fbf815aec71,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 17
+      objectReference: {fileID: 0}
     - target: {fileID: 7036237613977572533, guid: 14f944f3f57b6ef4394a9fbf815aec71,
         type: 3}
       propertyPath: m_Name
@@ -3156,6 +3488,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 2876667103213065188, guid: da3b468b35b58334693dfcd04f6e06a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 21
+      objectReference: {fileID: 0}
     - target: {fileID: 3130556819844574636, guid: da3b468b35b58334693dfcd04f6e06a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3216,6 +3553,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4539088451305259770, guid: da3b468b35b58334693dfcd04f6e06a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448982282374398281, guid: da3b468b35b58334693dfcd04f6e06a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3240,7 +3587,7 @@ GameObject:
   - component: {fileID: 1577728379}
   - component: {fileID: 1577728378}
   m_Layer: 0
-  m_Name: Table
+  m_Name: Table 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3346,7 +3693,7 @@ PrefabInstance:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b,
         type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 2
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b,
         type: 3}
@@ -3485,10 +3832,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1813656557}
     m_Modifications:
+    - target: {fileID: 1378672759217526964, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894326031922175862, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 26
+      objectReference: {fileID: 0}
     - target: {fileID: 3622177212092079325, guid: 2967c4c1619c42c45abe25baea2b56d5,
         type: 3}
       propertyPath: m_Name
-      value: Cabinet
+      value: Cabinet 1
       objectReference: {fileID: 0}
     - target: {fileID: 4111608713154070119, guid: 2967c4c1619c42c45abe25baea2b56d5,
         type: 3}
@@ -3565,6 +3922,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drawer 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4627736786313833028, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698980230386498457, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6252418184100948470, guid: 2967c4c1619c42c45abe25baea2b56d5,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -3584,6 +3951,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drawer 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545523525402250016, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766208832466807341, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Cabinet 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7999835431576218313, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500501213364988822, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025655288541115545, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046980591893371349, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070966680969422694, guid: 2967c4c1619c42c45abe25baea2b56d5,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3709,7 +4111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913037774}
   m_Layer: 0
-  m_Name: Simple Example Objects
+  m_Name: Simple Example Objects 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3751,6 +4153,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Launcher2H
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061229388982941016, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Ball Scale OUT and IN 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068140167547016949, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390948782106405922, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445319694425516712, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466660175706750078, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Launcher (Visuals) 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490511791280925427, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: SphereProjectile LARGE 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671067771199121705, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Launch Point 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931630189125322530, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 13
       objectReference: {fileID: 0}
     - target: {fileID: 6268644901827289618, guid: f26c6e321b50489479b8ce05321a9ece,
         type: 3}
@@ -3806,6 +4248,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -69.948
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985335587841719912, guid: f26c6e321b50489479b8ce05321a9ece,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3947,6 +4394,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 3284484971126212555, guid: 10297a1bb8a48324da4743a14b7528ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417967606763071852, guid: 10297a1bb8a48324da4743a14b7528ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef,
         type: 3}
       propertyPath: m_RootOrder
@@ -4079,6 +4536,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4144,6 +4606,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VelocityTrackedCube 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4163,6 +4630,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 3284484971126212555, guid: 10297a1bb8a48324da4743a14b7528ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417967606763071852, guid: 10297a1bb8a48324da4743a14b7528ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef,
         type: 3}
       propertyPath: m_RootOrder
@@ -4295,6 +4772,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1319746308, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
@@ -4310,6 +4791,51 @@ PrefabInstance:
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265607810277527178, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: NearFar 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 393207239731357619, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 558235185392661866, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 950175637189515454, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 970762308342442650, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000662906955510728, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246816219822305359, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_A 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352799979873374140, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Home 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368390096103844038, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point 1
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
@@ -4366,6 +4892,166 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1763277165867629938, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842862291474320369, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449787133337329437, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633365042866799530, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908298819410470536, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998152119438995280, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: LineVisual 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549580823586112762, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675530901336607967, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754057301151876428, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bumper 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867254018184489335, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: TouchPad 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929596498127475894, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065709321064247272, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088110610454198647, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: UniversalController 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090405666657053172, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: NearFar 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383292563047305748, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551477191942292801, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_B 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555019985763976546, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227292470352409039, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: LineVisual 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392308954264473942, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038107472648090404, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237513019617653394, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bumper 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278634950042787497, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: TouchPad 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499517531677593257, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: UniversalController 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747261228452868767, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_B 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755294685494112956, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045326174636273504, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066467136973266244, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092707227144796258, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Home 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341962337745733521, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_A 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748500131873809389, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4395,6 +5081,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4455,6 +5146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VelocityTrackedCube 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4477,12 +5173,27 @@ PrefabInstance:
     - target: {fileID: 168243530322359989, guid: ae8a45b9d38012f4089dd386600cd6ee,
         type: 3}
       propertyPath: m_Name
-      value: Mallet
+      value: Mallet 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 288020851918937672, guid: ae8a45b9d38012f4089dd386600cd6ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Mallet 2
       objectReference: {fileID: 0}
     - target: {fileID: 398670456967341933, guid: ae8a45b9d38012f4089dd386600cd6ee,
         type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 408592640218454495, guid: ae8a45b9d38012f4089dd386600cd6ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280280955741018922, guid: ae8a45b9d38012f4089dd386600cd6ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 11
       objectReference: {fileID: 0}
     - target: {fileID: 4807449582191205079, guid: ae8a45b9d38012f4089dd386600cd6ee,
         type: 3}
@@ -4554,6 +5265,21 @@ PrefabInstance:
       propertyPath: m_SelectMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5310812447018159767, guid: ae8a45b9d38012f4089dd386600cd6ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Collision 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693003029571932872, guid: ae8a45b9d38012f4089dd386600cd6ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671506334967650335, guid: ae8a45b9d38012f4089dd386600cd6ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4573,6 +5299,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 3284484971126212555, guid: 10297a1bb8a48324da4743a14b7528ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417967606763071852, guid: 10297a1bb8a48324da4743a14b7528ef,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef,
         type: 3}
       propertyPath: m_RootOrder
@@ -4705,6 +5441,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4784,6 +5525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VelocityTrackedCube 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7,
+        type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

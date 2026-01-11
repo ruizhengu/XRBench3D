@@ -14,21 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Mallet
+  - RibbonStick
+  - DoorKey
+  - Battery
+  - PegRed
+  - PegOrange
+  - PegYellow
+  - PegGreen
+  - PegBlue
+  - PegIndigo
+  - PegViolet
+  - PegWhite
+  - PegBlack
+  - SimpleSocket
+  - PerlerMachine
   - 
   - 
   - 

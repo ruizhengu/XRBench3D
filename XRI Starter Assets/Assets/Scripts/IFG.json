@@ -1,0 +1,64 @@
+[
+  {
+    "interactable": "Interactable Kinematic Torus",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Interactable Instant Cylinder",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Interactable Velocity Tapered Cylinder",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Blaser-Long",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Blaser",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Dynamic Attach Torus",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  }
+]

@@ -1,0 +1,455 @@
+[
+  {
+    "interactable": "InstantTracking 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "InstantTracking 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "InstantTracking 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "KinematicCube 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "KinematicCube 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "KinematicCube 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "VelocityTrackedCube 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "VelocityTrackedCube 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "VelocityTrackedCube 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "WateringCan",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Mallet 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "RibbonStick",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SimpleActivateShape 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "SimpleActivateShape 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "SimpleActivateShape 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "CandleSmallRound",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CandleSmallAngular 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CandleSmallAngular 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Lighter 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Launcher1H",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Launcher2H",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "Megaphone 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ],
+      [
+        "trigger",
+        "grab"
+      ]
+    ]
+  },
+  {
+    "interactable": "SimpleSocketShape",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Battery",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Focus Interactable 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Focus Interactable 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Focus Interactable 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CowPrize 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "BlackSheepPrize 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SheepPrize 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CowPrize 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SheepPrize 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "BlackSheepPrize 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "BlackSheepPrize 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "CowPrize 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "BlackSheepPrize 4",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SheepPrize 3",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SprintJointInteractable_02",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SpringJointInteractable_01",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SprintJointInteractable_04",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "SpringJointInteractable_03",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Drawer 1",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "Drawer 2",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactable": "DoorKey",
+    "interaction": [
+      [
+        "grab",
+        ""
+      ]
+    ]
+  },
+  {
+    "interactor": "MalletStand",
+    "interactable": "Mallet 1",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "RibbonStickStand",
+    "interactable": "RibbonStick",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "SimpleSocket",
+    "interactable": "SimpleSocketShape",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "BatterySlot",
+    "interactable": "Battery",
+    "interaction": "socket"
+  },
+  {
+    "interactor": "Lock Socket",
+    "interactable": "DoorKey",
+    "interaction": "socket"
+  }
+]

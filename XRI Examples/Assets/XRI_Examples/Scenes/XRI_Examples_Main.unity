@@ -232,6 +232,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -69.948006
       objectReference: {fileID: 0}
+    - target: {fileID: 3254885906862564315, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Collision 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469394360321266254, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Ball Scale OUT and IN 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539726159715344599, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Launcher (Visuals) 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801883810004983779, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 32
+      objectReference: {fileID: 0}
     - target: {fileID: 4862484800023522930, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
       propertyPath: m_Name
       value: Launcher
@@ -280,9 +296,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 5389369260569378419, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245314150361507199, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6536200437880810654, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Launch Point 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7048750260010228544, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
       propertyPath: m_Name
       value: Launcher1H
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362282915071947818, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: Attach 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7554533192126451919, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
+      propertyPath: m_Name
+      value: SphereProjectile LARGE 1
       objectReference: {fileID: 0}
     - target: {fileID: 9207176055816488244, guid: 796d4ee7f4cf3ec46877a335d40d6296, type: 3}
       propertyPath: launchSpeed
@@ -319,7 +355,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 6
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -405,7 +441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94380032}
   m_Layer: 0
-  m_Name: Simple Example Controls
+  m_Name: Simple Example Controls 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -583,6 +619,10 @@ PrefabInstance:
       value: SimpleSocket
       objectReference: {fileID: 0}
     - target: {fileID: 728864242803681389, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 728864242803681389, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
       propertyPath: m_StartingSelectedInteractable
       value: 
       objectReference: {fileID: 1313722630}
@@ -629,6 +669,26 @@ PrefabInstance:
     - target: {fileID: 734996079564348568, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010441622692718940, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
+      propertyPath: m_Name
+      value: Cube (2) 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602715075570566562, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
+      propertyPath: m_Name
+      value: Attach 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427271494345311123, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
+      propertyPath: m_Name
+      value: Cube (1) 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5736995918871761936, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
+      propertyPath: m_Name
+      value: Cube 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614057041200256932, guid: aec71f91a8da27d418aa44bd0c543f9b, type: 3}
+      propertyPath: m_Name
+      value: Cube (3) 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -693,7 +753,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 9
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_IsActive
@@ -905,6 +965,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 181313968651555345, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 703244385185758329, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085524165433171635, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
+      propertyPath: m_Name
+      value: Lever Visuals 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787228807492158669, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
+      propertyPath: m_Name
+      value: LeverStick 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5202211970501327854, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -949,9 +1025,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5433587972373598511, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 41
+      objectReference: {fileID: 0}
     - target: {fileID: 7459442142708147920, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
       propertyPath: m_Name
       value: Lever 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7483610665172923651, guid: 36eff8b49ecdca745894efb1d2ce5f8f, type: 3}
+      propertyPath: m_Name
+      value: LeverPlate 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -982,6 +1066,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1469059959}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1399,9 +1491,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1906631484910594704, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962145994612492955, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
+      propertyPath: m_Name
+      value: Joystick Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910029191845569514, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
+      propertyPath: m_Name
+      value: Joystick 1 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4905038776123162090, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 42
+      objectReference: {fileID: 0}
     - target: {fileID: 5162356030215288089, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
       propertyPath: m_Name
-      value: Joystick 1
+      value: Joystick 1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334240440595505955, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7610412742751988093, guid: f987e56f5c36e264e888555e47dec1bc, type: 3}
+      propertyPath: m_Name
+      value: JoystickPlate 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1437,6 +1553,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 660297796496560238, guid: f82abdd31bfe9b749b21edfda28e5130, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010521503043022907, guid: f82abdd31bfe9b749b21edfda28e5130, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090812434762907622, guid: f82abdd31bfe9b749b21edfda28e5130, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 46
+      objectReference: {fileID: 0}
     - target: {fileID: 6348035730422218626, guid: f82abdd31bfe9b749b21edfda28e5130, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1519,7 +1647,7 @@ GameObject:
   - component: {fileID: 393950094}
   - component: {fileID: 393950093}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Cube (2) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1624,7 +1752,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 3
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1743,9 +1871,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1519479189}
     m_Modifications:
+    - target: {fileID: 413239865, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 32768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010385131, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_Name
+      value: Bottom 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975548677, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 971136572950463270, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233517723578482038, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406710742873715879, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760424674268406987, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162184251915073349, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3655369429389812117, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_Name
+      value: Attach 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3727593350938165552, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010924997224655863, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847396400072159892, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879586271994541961, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113653483418021017, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599109665521381590, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6636790378521320505, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 7136348739373863079, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7273246072956950060, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_Name
+      value: Attach 13
       objectReference: {fileID: 0}
     - target: {fileID: 7427099217759664756, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
       propertyPath: m_Name
@@ -1794,6 +1990,10 @@ PrefabInstance:
     - target: {fileID: 7807425153428955342, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150430686792395930, guid: c3014b24b7f247b478b4058c9339acb8, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 36
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1938,7 +2138,7 @@ GameObject:
   - component: {fileID: 427063465}
   - component: {fileID: 427063464}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Cube (3) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2041,9 +2241,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 408905525}
     m_Modifications:
+    - target: {fileID: 502328958617599460, guid: ef8968d3811b4f9448c64ac756317715, type: 3}
+      propertyPath: m_Name
+      value: FlipDoor 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1308265130741877079, guid: ef8968d3811b4f9448c64ac756317715, type: 3}
       propertyPath: m_Name
-      value: FlipDoor
+      value: FlipDoor 1
       objectReference: {fileID: 0}
     - target: {fileID: 4731520106948969076, guid: ef8968d3811b4f9448c64ac756317715, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -2129,7 +2333,7 @@ GameObject:
   - component: {fileID: 464131232}
   - component: {fileID: 464131231}
   m_Layer: 29
-  m_Name: Cube
+  m_Name: Cube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2576,7 +2780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534385766}
   m_Layer: 0
-  m_Name: Simple Example Controls
+  m_Name: Simple Example Controls 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,7 +2815,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451206656157691855, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
       propertyPath: m_Name
-      value: Slider 3
+      value: Slider 3 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2216368845641281768, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
+      propertyPath: m_Name
+      value: SliderPlate 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2922319005928238128, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3624182616336594352, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
+      propertyPath: m_Name
+      value: Slider 3 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312457874115791811, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339200424723862222, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
+      propertyPath: m_Name
+      value: Slider Visuals 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015235700158999872, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 45
       objectReference: {fileID: 0}
     - target: {fileID: 7563839910878393084, guid: d69d1b462f51a2c4a8358ce041c996a7, type: 3}
       propertyPath: m_RootOrder
@@ -2908,7 +3136,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 2
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2992,6 +3220,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1469059959}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 39
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3194,7 +3430,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c8950304eea7f334dab6991341a45115, type: 2}
     - target: {fileID: 919132149155446097, guid: bd6b121ab36aeff4cb6690ff9a345aa5, type: 3}
       propertyPath: m_Name
-      value: Stand
+      value: Stand 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3305,7 +3541,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c8950304eea7f334dab6991341a45115, type: 2}
     - target: {fileID: 919132149155446097, guid: bd6b121ab36aeff4cb6690ff9a345aa5, type: 3}
       propertyPath: m_Name
-      value: Stand
+      value: Stand 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3354,6 +3590,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 51
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3414,6 +3654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpringJointInteractable_01
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 51
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3450,11 +3694,10 @@ SpringJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649429180}
-  serializedVersion: 3
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 1163028383}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 1.037706, y: 0.4999999, z: 1.6653359}
   m_Spring: 60
@@ -3478,7 +3721,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 5
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3567,7 +3810,7 @@ GameObject:
   - component: {fileID: 651975776}
   - component: {fileID: 651975775}
   m_Layer: 0
-  m_Name: Table
+  m_Name: Table 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3671,6 +3914,170 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1200013191}
     m_Modifications:
+    - target: {fileID: 976622492, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 123207481138516746, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Dial Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 123207481368085719, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Dial Visuals 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 181313969013696060, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 251158790255692688, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 489604955083297825, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 489604955171972321, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 489604955629061280, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 503515099956352599, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 535245243365836644, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 535245243453339556, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 535245243893782501, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 546278376947302778, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 546278378377333469, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 546278378555262729, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 601031874758152130, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 703244384843499604, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 749292567161752377, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 915972055523742321, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Dial 2 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 915972055828940204, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Dial 1 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052884698702274367, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverStick 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052884698750833387, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverStick 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052884700358792344, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverStick 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117138400266233767, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1161647765019881561, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277333266183611164, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834583221795502357, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870205203715573335, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163879827389353202, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2163879827694557999, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207374608325644656, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2272442927334491480, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481737622258237927, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Left Back Leg 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510982830428882957, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2557536883724426056, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2641825193733796653, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667099651456564453, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670451708276318312, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109769019829612273, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverPlate 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109769020050400037, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverPlate 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109769021662618966, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverPlate 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3131828208244143749, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
       value: Lever 3
@@ -3683,25 +4090,197 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3148704777793192257, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3266942505850756701, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
-      value: Dial 2
+      value: Dial 2 1
       objectReference: {fileID: 0}
     - target: {fileID: 3266942506082290048, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
-      value: Dial 1
+      value: Dial 1 1
       objectReference: {fileID: 0}
     - target: {fileID: 3298358551258930488, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
       value: PushButton 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3306227531987087467, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306227532075745451, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3306227532603691050, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085524165069728414, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever Visuals 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4220020898525542294, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329820268572913147, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377745790980552316, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377745791059642044, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4377745791525267197, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497438202137351644, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: group1 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4497438202442285569, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: group1 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4737614149401252632, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
       value: PushButton 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4746955687254345310, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787228807419146464, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverStick 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985857763298700332, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985857763837110879, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4985857764066158475, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5073576341645409149, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
       value: PushButton 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5178702900423890577, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: SliderPlate 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246934719499222285, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293459066601942600, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294557880767673029, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433587972161381634, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5444052480041260441, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5444052480268862020, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843952977826287, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843953302698303, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Diagonal Root 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843953315971535, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Diagonal Root 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843953439010132, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843953815577426, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Teleport/Turn 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843953947263065, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Diagonal Root 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843953989346977, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954008761078, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954045085634, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Move/Strafe 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954082460684, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Move/Strafe 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954112978430, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954151633963, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Teleport/Turn 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954184404164, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954219589825, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Value Label 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954293269526, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954333700926, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954337535311, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Locomotion Type Selection 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954651627905, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954797277834, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Locomotion Settings 2
       objectReference: {fileID: 0}
     - target: {fileID: 5544843954889725784, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_RootOrder
@@ -3721,19 +4300,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5544843954889725785, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
-      value: Locomotion Settings
+      value: Locomotion Settings 1
       objectReference: {fileID: 0}
     - target: {fileID: 5544843954889725799, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Manager
       value: 
       objectReference: {fileID: 2609984114077390472}
+    - target: {fileID: 5544843954905119389, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Value Label 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954907719922, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Value Label 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544843954939212430, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Locomotion Type Selection 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5566402559122065846, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
-      value: Slider 2
+      value: Slider 2 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654012228992190947, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654012229199086647, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654012230808158788, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5669355102877670048, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5692375087211879999, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Label 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5796099527808590811, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895704638393141653, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5895704638702280264, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922551863094696176, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: SliderPlate 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6320931773025061822, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 13
       objectReference: {fileID: 0}
     - target: {fileID: 6399763442014652375, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
-      value: Slider 1
+      value: Slider 1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845644350184086357, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Knob 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845644350413786248, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Knob 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986316538109937757, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Value Label 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116955113545002426, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 12
       objectReference: {fileID: 0}
     - target: {fileID: 7196094625038779604, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
@@ -3747,13 +4394,105 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushButton 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7203967352253524359, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240969707293967400, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7290064091343631543, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Slider Visuals 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313766756652217322, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7459442143184605949, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
       value: Lever 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7483610665515385134, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: LeverPlate 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545977583036159219, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Left Back Leg 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717137106002396488, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717137106358969609, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717137106548168137, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7734865849107780553, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Slider 2 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125850496818051798, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Slider Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183679091724274249, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218271998169814102, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218271998526288919, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8218271998715610327, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276304214715768656, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8377131433231222933, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8377131433447818561, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever Visuals 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8377131434844425958, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Lever Visuals 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8408004059565048617, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
       propertyPath: m_Name
       value: PushButton 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587189816706507739, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965072042187629300, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8972444721967435919, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Collision 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131207476040293800, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
+      propertyPath: m_Name
+      value: Slider 1 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4060,9 +4799,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 323039753}
     m_Modifications:
+    - target: {fileID: 463082006626823846, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: Attach 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1236279715314887974, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_Name
       value: RibbonStickStand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840589427250150859, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: RibbonStickStand Visuals 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895378094682653545, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1895378094682653545, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_StartingSelectedInteractable
@@ -4111,6 +4862,14 @@ PrefabInstance:
     - target: {fileID: 1901633351629748124, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238325607385157568, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: RibbonStick Stand 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326172649404490545, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: RibbonStick Stand Collision 2
       objectReference: {fileID: 0}
     - target: {fileID: 7890702496595745675, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -4303,9 +5062,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1938328786324727194, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414846825475710180, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
+      propertyPath: m_Name
+      value: Attach 18
+      objectReference: {fileID: 0}
     - target: {fileID: 5319416733037820165, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
       propertyPath: m_Name
-      value: DoorLocked
+      value: DoorLocked 1
       objectReference: {fileID: 0}
     - target: {fileID: 6506544725693368079, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -4318,6 +5085,22 @@ PrefabInstance:
     - target: {fileID: 6506544725693368079, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -11.578051
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824770567609431110, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307938702395324619, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
+      propertyPath: m_Name
+      value: DoorLocked 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803757493882187037, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951968135628852726, guid: 8b799fb37a52aaa49a29e4cd5358345e, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4580,7 +5363,7 @@ GameObject:
   - component: {fileID: 761336472}
   - component: {fileID: 761336471}
   m_Layer: 29
-  m_Name: Cube (1)
+  m_Name: Cube (1) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4950,6 +5733,10 @@ PrefabInstance:
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1718242724553267532, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2298217136369571307, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -4977,6 +5764,18 @@ PrefabInstance:
     - target: {fileID: 2298217136369571307, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886768914826715028, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Center 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995350678156834329, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer COLLISION THICK (1) 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516687483866964301, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer COLLISION THICK 3
       objectReference: {fileID: 0}
     - target: {fileID: 5065160622894537718, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_Controller
@@ -5034,6 +5833,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: bf081468ad635ca409e855ac9adfda5b, type: 2}
+    - target: {fileID: 6716825767238811975, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Animation Root 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119945975886253448, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer Lights 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5137,7 +5944,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 954591851760057252, guid: 04052c76cd8138f47bfc66ae8d456707, type: 3}
       propertyPath: m_Name
-      value: Wheel
+      value: Wheel 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614141111669090888, guid: 04052c76cd8138f47bfc66ae8d456707, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 44
       objectReference: {fileID: 0}
     - target: {fileID: 3344241857523076466, guid: 04052c76cd8138f47bfc66ae8d456707, type: 3}
       propertyPath: m_RootOrder
@@ -5183,6 +5994,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7129939606460030718, guid: 04052c76cd8138f47bfc66ae8d456707, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252025237873701082, guid: 04052c76cd8138f47bfc66ae8d456707, type: 3}
+      propertyPath: m_Name
+      value: Wheel 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8170742975278099391, guid: 04052c76cd8138f47bfc66ae8d456707, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 44
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5212,6 +6035,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 52
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -5272,6 +6099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SprintJointInteractable_04
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 52
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5313,11 +6144,10 @@ SpringJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954011859}
-  serializedVersion: 3
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 5.1872025, y: 3.12164, z: -7.142283}
   m_Spring: 10
@@ -5401,7 +6231,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c8950304eea7f334dab6991341a45115, type: 2}
     - target: {fileID: 919132149155446097, guid: bd6b121ab36aeff4cb6690ff9a345aa5, type: 3}
       propertyPath: m_Name
-      value: Stand
+      value: Stand 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5454,6 +6284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Megaphone
       objectReference: {fileID: 0}
+    - target: {fileID: 1523568554480449532, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
+      propertyPath: m_Name
+      value: Collision 16
+      objectReference: {fileID: 0}
     - target: {fileID: 1851151860459901539, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5498,6 +6332,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2403181830892022037, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
+      propertyPath: m_Name
+      value: Attach 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509320758948361385, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 34
+      objectReference: {fileID: 0}
     - target: {fileID: 2785464732825257599, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
       propertyPath: m_Name
       value: Megaphone 1
@@ -5526,6 +6368,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
       objectReference: {fileID: 2100000, guid: 2c44c9a7133826540943db286873dc9c, type: 2}
+    - target: {fileID: 7042758554751029680, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7369349276656855581, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5605,6 +6451,10 @@ PrefabInstance:
     - target: {fileID: 7375161053877196451, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161209728913171531, guid: 0142785d226e6fe4d995a4775bfaa5f3, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 34
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5736,7 +6586,7 @@ GameObject:
   - component: {fileID: 1005955890}
   - component: {fileID: 1005955889}
   m_Layer: 0
-  m_Name: Glass
+  m_Name: Glass 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5826,6 +6676,10 @@ PrefabInstance:
       propertyPath: m_OnPress.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2876667103213065188, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 37
+      objectReference: {fileID: 0}
     - target: {fileID: 3130556819844574636, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5882,6 +6736,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PushButton 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4539088451305259770, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348116015657636364, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448982282374398281, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994418282940253830, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085050572727677009, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5933,7 +6807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079906845}
   m_Layer: 0
-  m_Name: Simple Example Objects
+  m_Name: Simple Example Objects 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6369,7 +7243,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4aa5e83ae912c46409c45fc3f4f5cfe4, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 4aa5e83ae912c46409c45fc3f4f5cfe4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -6503,6 +7377,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 18
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6626,6 +7508,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6749,6 +7639,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627049872}
     m_Modifications:
+    - target: {fileID: 1766965538009230140, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342449123178416486, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573238842314850797, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: LightArea 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5922479929321339615, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6796,6 +7698,14 @@ PrefabInstance:
     - target: {fileID: 6447800829924892773, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: m_Name
       value: CandleSmallAngular 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154312500548181918, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751116817855349203, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Candle_Small_Angular 1
       objectReference: {fileID: 0}
     - target: {fileID: 8751116817855349204, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -6910,6 +7820,10 @@ PrefabInstance:
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1718242724553267532, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2298217136369571307, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -6937,6 +7851,18 @@ PrefabInstance:
     - target: {fileID: 2298217136369571307, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886768914826715028, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Center 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995350678156834329, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer COLLISION THICK (1) 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516687483866964301, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer COLLISION THICK 1
       objectReference: {fileID: 0}
     - target: {fileID: 5065160622894537718, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_Controller
@@ -6994,6 +7920,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: cf783dde197a2fc4d820dfe6fa19c55e, type: 2}
+    - target: {fileID: 6716825767238811975, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Animation Root 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119945975886253448, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer Lights 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7028,6 +7962,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7088,6 +8026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SprintJointInteractable_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7129,11 +8071,10 @@ SpringJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163028384}
-  serializedVersion: 3
+  serializedVersion: 4
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
   m_ConnectedAnchor: {x: 5.612691, y: 3.12164, z: -7.0443954}
   m_Spring: 10
@@ -7447,6 +8388,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 17
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7570,6 +8519,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534385766}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 53
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7629,6 +8582,10 @@ PrefabInstance:
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
       value: SpringJointInteractable_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 53
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7734,6 +8691,10 @@ PrefabInstance:
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1718242724553267532, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2298217136369571307, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -7761,6 +8722,18 @@ PrefabInstance:
     - target: {fileID: 2298217136369571307, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_OnHit.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886768914826715028, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Center 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3995350678156834329, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer COLLISION THICK (1) 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4516687483866964301, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer COLLISION THICK 2
       objectReference: {fileID: 0}
     - target: {fileID: 5149536996622462063, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_Name
@@ -7809,6 +8782,14 @@ PrefabInstance:
     - target: {fileID: 5493551732918695637, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716825767238811975, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Animation Root 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119945975886253448, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
+      propertyPath: m_Name
+      value: TargetRing Outer Lights 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7877,6 +8858,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1469059959}
     m_Modifications:
+    - target: {fileID: 1426767934977034985, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684870111112088824, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 38
+      objectReference: {fileID: 0}
     - target: {fileID: 4769098102207602864, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7981,6 +8970,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1079906845}
     m_Modifications:
+    - target: {fileID: 1112969587351092107, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783574885720267529, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277249689611702729, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_Name
+      value: Attach 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957000769822834730, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
     - target: {fileID: 6957000769822834732, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8028,6 +9033,10 @@ PrefabInstance:
     - target: {fileID: 6957000769822834733, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
       propertyPath: m_Name
       value: SimpleSocketShape
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671007539148675018, guid: d81193b4b57486b46b4762e8b26d2de8, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8188,9 +9197,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1393367372}
     m_Modifications:
+    - target: {fileID: 256590688421087238, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 25
+      objectReference: {fileID: 0}
     - target: {fileID: 919132147767488674, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
       propertyPath: m_Threshold
       value: 0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198530707099206668, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 16
       objectReference: {fileID: 0}
     - target: {fileID: 1341942267753567421, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
       propertyPath: m_RootOrder
@@ -8247,6 +9264,18 @@ PrefabInstance:
     - target: {fileID: 1861211284762578439, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
       propertyPath: m_Name
       value: WateringCan
+      objectReference: {fileID: 0}
+    - target: {fileID: 2234463320894931585, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336983493560846869, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Name
+      value: Attach 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339573659774565589, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Name
+      value: Collision 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8419,6 +9448,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627049872}
     m_Modifications:
+    - target: {fileID: 1766965538009230140, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342449123178416486, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5573238842314850797, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: LightArea 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5922479929321339615, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8466,6 +9507,14 @@ PrefabInstance:
     - target: {fileID: 6447800829924892773, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: m_Name
       value: CandleSmallAngular 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154312500548181918, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751116817855349203, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
+      propertyPath: m_Name
+      value: Candle_Small_Angular 2
       objectReference: {fileID: 0}
     - target: {fileID: 8751116817855349204, guid: 0bb255b247078e849b1637d7134f8900, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -8527,9 +9576,25 @@ PrefabInstance:
       propertyPath: m_AABB.m_Extent.z
       value: 0.020131376
       objectReference: {fileID: 0}
+    - target: {fileID: 1067782238251549813, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1205444369622675216, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
       propertyPath: m_Name
       value: RibbonStick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1676672813702496378, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
+      propertyPath: m_Name
+      value: Attach 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350108580934125891, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993315628597442028, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
+      propertyPath: m_Name
+      value: Collision 12
       objectReference: {fileID: 0}
     - target: {fileID: 5789478688879723378, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
       propertyPath: m_RootOrder
@@ -8574,6 +9639,14 @@ PrefabInstance:
     - target: {fileID: 5789478688879723378, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6239937568826189495, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198110260711105536, guid: 3cf910a0f0ea5a1489eb8d7dd0721171, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8728,7 +9801,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e5e88e22a2e4bc946bcecb9cb1737035, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e5e88e22a2e4bc946bcecb9cb1737035, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -8877,9 +9950,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 408905525}
     m_Modifications:
+    - target: {fileID: 681871961572972546, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
+      propertyPath: m_Name
+      value: Attach 17
+      objectReference: {fileID: 0}
     - target: {fileID: 784072565763923235, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
       propertyPath: m_Name
       value: DoorKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248893662269552321, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 56
       objectReference: {fileID: 0}
     - target: {fileID: 3241471165601854204, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
       propertyPath: m_RootOrder
@@ -8924,6 +10005,22 @@ PrefabInstance:
     - target: {fileID: 3241471165601854204, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775636269207396207, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787014444239497147, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7909829913775324272, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
+      propertyPath: m_Name
+      value: Collision 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8720807404180150961, guid: 52b0efbba0ab54548af1006d60566fe1, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9206,6 +10303,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 477410327821610858, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 2 5
+      objectReference: {fileID: 0}
     - target: {fileID: 496380258227363255, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -9226,6 +10327,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 484cff06ebc737c4d91da37e869ede17, type: 2}
+    - target: {fileID: 785519132433425165, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Station Light 2
+      objectReference: {fileID: 0}
     - target: {fileID: 855264879431701283, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9254,6 +10359,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1266608910378008387, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Station Light 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1342539015913254894, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9266,9 +10375,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 484cff06ebc737c4d91da37e869ede17, type: 2}
+    - target: {fileID: 1494693676841191446, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Station Light 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1688387565493119515, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703573813372912354, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Area Light 1
       objectReference: {fileID: 0}
     - target: {fileID: 1884592536151109319, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -9294,6 +10411,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 484cff06ebc737c4d91da37e869ede17, type: 2}
+    - target: {fileID: 2164896394254855418, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Station Light 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2400526016543949886, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Ceiling_Light 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2402204865893424715, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9301,6 +10426,10 @@ PrefabInstance:
     - target: {fileID: 2577250907803641153, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2610367702881476056, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 1 3
       objectReference: {fileID: 0}
     - target: {fileID: 2766532858584511684, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -9358,6 +10487,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2986350834217946748, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 1 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176624471945137367, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3321202164047675063, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9398,6 +10535,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3904745852026494751, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Area Light 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023235029432265674, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4056235563179334126, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9405,6 +10550,14 @@ PrefabInstance:
     - target: {fileID: 4184109500794679489, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193444572985804608, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258237565271644393, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Ceiling_Light 2
       objectReference: {fileID: 0}
     - target: {fileID: 4389484529694862343, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9421,6 +10574,10 @@ PrefabInstance:
     - target: {fileID: 4706203896456768623, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845984690217190518, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Ceiling_Light 1
       objectReference: {fileID: 0}
     - target: {fileID: 4913947077384611742, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_Name
@@ -9458,6 +10615,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 5426053208438106053, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Station Light 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5517754276811132463, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -9469,6 +10630,10 @@ PrefabInstance:
     - target: {fileID: 5642398997621026780, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733320644712671054, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 4
       objectReference: {fileID: 0}
     - target: {fileID: 5845058649593374676, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9498,6 +10663,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6410311368890015485, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 2 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6446702670489447743, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 1 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6457152160287875175, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 2 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6490537871862837468, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9522,6 +10699,26 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6903625867650018807, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7112856243581329049, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7121417619132422539, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Ceiling_Light 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139523852463928575, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 2 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160634272632271937, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Station Light 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7177726223056913167, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -9534,6 +10731,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7477446081008007327, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 1 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7590101843100424717, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9542,9 +10743,21 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8027226940531157027, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Collision 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8048614821069700333, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8069437593514483325, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Area Light 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127963856496747045, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 1 6
       objectReference: {fileID: 0}
     - target: {fileID: 8214575676060913775, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9558,6 +10771,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 8411600107681841401, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 1 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8427577940739576423, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9569,6 +10786,10 @@ PrefabInstance:
     - target: {fileID: 8465186994289382310, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481487065053069994, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Area Light 4
       objectReference: {fileID: 0}
     - target: {fileID: 8594336824012026598, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -9590,6 +10811,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 484cff06ebc737c4d91da37e869ede17, type: 2}
+    - target: {fileID: 8912969201733131764, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Name
+      value: Stair 2 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8932569904554873300, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -9850,9 +11075,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 539894096189802668, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 1437672436447973821, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: Knob 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099519734850519933, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4631127075067435161, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: Dial 3 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568286147578580543, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: Dial Visuals 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977573098061681095, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 43
+      objectReference: {fileID: 0}
     - target: {fileID: 7036237613977572533, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
       propertyPath: m_Name
-      value: Dial 3
+      value: Dial 3 1
       objectReference: {fileID: 0}
     - target: {fileID: 7954031252265753577, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
       propertyPath: m_RootOrder
@@ -9897,6 +11146,10 @@ PrefabInstance:
     - target: {fileID: 7954031252265753577, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8257668799299378996, guid: 14f944f3f57b6ef4394a9fbf815aec71, type: 3}
+      propertyPath: m_Name
+      value: group1 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10037,7 +11290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552201425}
   m_Layer: 0
-  m_Name: Simple Example Objects
+  m_Name: Simple Example Objects 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10069,6 +11322,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1112989157}
     m_Modifications:
+    - target: {fileID: 2876667103213065188, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 47
+      objectReference: {fileID: 0}
     - target: {fileID: 3130556819844574636, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10116,6 +11373,26 @@ PrefabInstance:
     - target: {fileID: 3399821747579187769, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
       propertyPath: m_Name
       value: PushButton 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4539088451305259770, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348116015657636364, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448982282374398281, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994418282940253830, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085050572727677009, guid: da3b468b35b58334693dfcd04f6e06a7, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10193,6 +11470,10 @@ PrefabInstance:
     - target: {fileID: 3375783972923635323, guid: 3bdd9c064e4aa5c48aa40ca54f81de9e, type: 3}
       propertyPath: m_Name
       value: PlantGrows
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858116283243775913, guid: 3bdd9c064e4aa5c48aa40ca54f81de9e, type: 3}
+      propertyPath: m_Name
+      value: Collision 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10685,7 +11966,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1d4ffba877e11574b83dd66ffe09c3e2, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 1d4ffba877e11574b83dd66ffe09c3e2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -10793,7 +12074,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 4
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11242,6 +12523,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 777917385}
     m_Modifications:
+    - target: {fileID: 301973724, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Back 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 724372081, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Bottom 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064864798, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Glass 2
+      objectReference: {fileID: 0}
     - target: {fileID: 102153097891186696, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
       value: BlackSheepPrize 4
@@ -11254,13 +12547,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackSheepPrize 2
       objectReference: {fileID: 0}
+    - target: {fileID: 677702917367281749, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 36
+      objectReference: {fileID: 0}
     - target: {fileID: 984094193647085265, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
       value: BarnMachine
       objectReference: {fileID: 0}
+    - target: {fileID: 1052461286812265149, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1098289368243681784, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStopPlate 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1811659115381141103, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
-      value: Joystick 2
+      value: Joystick 2 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914632304330909340, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950484644318775850, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599862503219375474, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: EmergencyStop 10
       objectReference: {fileID: 0}
     - target: {fileID: 3376210039400353937, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_RootOrder
@@ -11306,9 +12623,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3527709233924364146, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527709234915502904, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527709235547887674, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828547007786897730, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834364120108964773, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: PushButton Visuals 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896914795789598552, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896914796809545475, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3971487925658546699, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: JoystickPlate 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4481290059973052072, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
       value: BlackSheepPrize 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969060366368387558, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024574944816828909, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Joystick Visuals 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6866510135490662887, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6866510135935407848, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6866510136494966887, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6922288487677462215, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visuals 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128707896594429968, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 49
       objectReference: {fileID: 0}
     - target: {fileID: 7508849100308414263, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
@@ -11326,6 +12703,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SheepPrize 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8349861414569530939, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Attach 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8566568910840608924, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Joystick 2 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8671607662658341148, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_Name
       value: CowPrize 3
@@ -11341,6 +12726,10 @@ PrefabInstance:
     - target: {fileID: 8768138410289284921, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
       propertyPath: m_InteractionManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933927350978586894, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 49
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6028318826156562381, guid: c20ce57c53543934a8ea4b804db7829d, type: 3}
@@ -11515,7 +12904,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 8
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_IsActive
@@ -11872,6 +13261,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1072135331}
     m_Modifications:
+    - target: {fileID: 463082006626823846, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: Attach 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1236279715314887974, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_Name
       value: MalletStand
@@ -11879,6 +13272,14 @@ PrefabInstance:
     - target: {fileID: 1236279715314887974, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840589427250150859, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: RibbonStickStand Visuals 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1895378094682653545, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1895378094682653545, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_StartingSelectedInteractable
@@ -11927,6 +13328,14 @@ PrefabInstance:
     - target: {fileID: 1901633351629748124, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238325607385157568, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: RibbonStick Stand 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5326172649404490545, guid: e01373e490106ac46b76fba06110850e, type: 3}
+      propertyPath: m_Name
+      value: RibbonStick Stand Collision 1
       objectReference: {fileID: 0}
     - target: {fileID: 6702834800697104126, guid: e01373e490106ac46b76fba06110850e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11978,9 +13387,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1813656557}
     m_Modifications:
+    - target: {fileID: 664639254225761230, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Back 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378672759217526964, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2894326031922175862, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 54
+      objectReference: {fileID: 0}
     - target: {fileID: 3622177212092079325, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
       propertyPath: m_Name
-      value: Cabinet
+      value: Cabinet 1
       objectReference: {fileID: 0}
     - target: {fileID: 4111608713154070119, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
       propertyPath: m_RootOrder
@@ -12042,6 +13463,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drawer 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4627736786313833028, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698980230386498457, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Collision 18
+      objectReference: {fileID: 0}
     - target: {fileID: 6252418184100948470, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 0.00000012130477
@@ -12057,6 +13486,34 @@ PrefabInstance:
     - target: {fileID: 6405477311648000385, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
       propertyPath: m_Name
       value: Drawer 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7545523525402250016, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Collision 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766208832466807341, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Cabinet 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7999835431576218313, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Attach 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8500501213364988822, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025655288541115545, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Attach 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9046980591893371349, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070966680969422694, guid: 2967c4c1619c42c45abe25baea2b56d5, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 38
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12324,7 +13781,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_Name
-      value: Table
+      value: Table 1
       objectReference: {fileID: 0}
     - target: {fileID: 1458097890417193949, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12475,9 +13932,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627049872}
     m_Modifications:
+    - target: {fileID: 753387976664242136, guid: e5f583eb414b93849a117c40250890ca, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 22
+      objectReference: {fileID: 0}
     - target: {fileID: 1362929430410378996, guid: e5f583eb414b93849a117c40250890ca, type: 3}
       propertyPath: m_Name
       value: Lighter 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1518906416442200478, guid: e5f583eb414b93849a117c40250890ca, type: 3}
+      propertyPath: m_Name
+      value: Attach 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1786367955921795194, guid: e5f583eb414b93849a117c40250890ca, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 31
       objectReference: {fileID: 0}
     - target: {fileID: 2804422015809968620, guid: e5f583eb414b93849a117c40250890ca, type: 3}
       propertyPath: m_Name
@@ -12526,6 +13995,10 @@ PrefabInstance:
     - target: {fileID: 2804422015809968623, guid: e5f583eb414b93849a117c40250890ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227358855311393023, guid: e5f583eb414b93849a117c40250890ca, type: 3}
+      propertyPath: m_Name
+      value: Collision 13
       objectReference: {fileID: 0}
     - target: {fileID: 4766709043560216537, guid: e5f583eb414b93849a117c40250890ca, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -12619,6 +14092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 7974140596098301189, guid: e5f583eb414b93849a117c40250890ca, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 31
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12685,7 +14162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1913037774}
   m_Layer: 0
-  m_Name: Simple Example Objects
+  m_Name: Simple Example Objects 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13070,9 +14547,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1230061735}
     m_Modifications:
+    - target: {fileID: 333710485861653320, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: polySurface14 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411762366562688581, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: polySurface5 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1960616414049855359, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
       propertyPath: m_Name
       value: Launcher2H
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061229388982941016, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Ball Scale OUT and IN 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068140167547016949, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4390948782106405922, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Collision 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445319694425516712, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Attach 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4466660175706750078, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Launcher (Visuals) 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490511791280925427, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: SphereProjectile LARGE 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671067771199121705, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Launch Point 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931630189125322530, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 33
       objectReference: {fileID: 0}
     - target: {fileID: 6268644901827289618, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
       propertyPath: m_RootOrder
@@ -13117,6 +14634,22 @@ PrefabInstance:
     - target: {fileID: 6268644901827289618, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499050405287588342, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: polySurface13 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6985335587841719912, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7341066716865498497, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: polySurface3 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7793741440613989517, guid: f26c6e321b50489479b8ce05321a9ece, type: 3}
+      propertyPath: m_Name
+      value: polySurface4 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13255,6 +14788,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 3284484971126212555, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417967606763071852, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -13378,6 +14919,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 23
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -13429,6 +14974,10 @@ PrefabInstance:
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
       value: VelocityTrackedCube 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13567,6 +15116,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 3284484971126212555, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417967606763071852, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 21
+      objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -13798,6 +15355,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 24
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -13845,6 +15406,10 @@ PrefabInstance:
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
       value: VelocityTrackedCube 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13985,7 +15550,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 168243530322359989, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
       propertyPath: m_Name
-      value: Mallet
+      value: Mallet 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 288020851918937672, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_Name
+      value: Mallet 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 408592640218454495, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_Name
+      value: Attach 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2280280955741018922, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 26
       objectReference: {fileID: 0}
     - target: {fileID: 4807449582191205079, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
       propertyPath: m_RootOrder
@@ -14039,6 +15616,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.001
       objectReference: {fileID: 0}
+    - target: {fileID: 4933578997498543890, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310812447018159767, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_Name
+      value: Collision 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5693003029571932872, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671506334967650335, guid: ae8a45b9d38012f4089dd386600cd6ee, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14079,6 +15672,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 3284484971126212555, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417967606763071852, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 19
+      objectReference: {fileID: 0}
     - target: {fileID: 7517549319329480229, guid: 10297a1bb8a48324da4743a14b7528ef, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14599,6 +16200,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1605268092232435449, guid: 59f62e5ab55b9874f9b678433bf3b681, type: 3}
+      propertyPath: m_Name
+      value: LightArea 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120393358683991006, guid: 59f62e5ab55b9874f9b678433bf3b681, type: 3}
+      propertyPath: m_Name
+      value: Feedback Effects 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371100948524273589, guid: 59f62e5ab55b9874f9b678433bf3b681, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498224246108763966, guid: 59f62e5ab55b9874f9b678433bf3b681, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 28
+      objectReference: {fileID: 0}
     - target: {fileID: 7016888583840965314, guid: 59f62e5ab55b9874f9b678433bf3b681, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -14651,6 +16268,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1913037774}
     m_Modifications:
+    - target: {fileID: 1166199750573009533, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Audio Feedback 22
+      objectReference: {fileID: 0}
     - target: {fileID: 4257412417454173056, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -14714,6 +16335,10 @@ PrefabInstance:
     - target: {fileID: 4257412417454173071, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
       propertyPath: m_Name
       value: VelocityTrackedCube 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123813855974786839, guid: ed79eaa9dbed71a46b42588537c577a7, type: 3}
+      propertyPath: m_Name
+      value: Visual Feedback 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14847,6 +16472,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 27438572509248631, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 192167330748706478, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 366349416840011968, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 1
+      objectReference: {fileID: 0}
     - target: {fileID: 366349417295850675, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
@@ -14862,6 +16499,26 @@ PrefabInstance:
     - target: {fileID: 366349417295850675, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 369829410870875383, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Pusher 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 484744163727463758, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: NearFar 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 592851653043635066, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Trigger 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 607247042964943198, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 645872124585322508, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 2
       objectReference: {fileID: 0}
     - target: {fileID: 963534865920503432, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_RenderPostProcessing
@@ -14891,13 +16548,89 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1465952895378008971, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Button_A 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716879369885979768, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Button_Home 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1722898780718412546, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke Point 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778117618680134014, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2055508021618413621, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2120601583805458102, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249296449437080463, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2422408108644227182, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2660198778512262361, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3115292631596432376, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3210534016176157844, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: LineVisual 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263370872729386316, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3512446867450671795, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: TouchPad 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534375606854393480, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Bumper 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719185952716083058, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3755023497685003746, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771531767880720190, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897745885465007899, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke Point 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161639992294754768, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Poke 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189234211687128742, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197232527305432709, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Button_B 2
       objectReference: {fileID: 0}
     - target: {fileID: 4356456892009499901, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_RootOrder
@@ -14943,13 +16676,69 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4429789192398402604, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444606611056665267, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: UniversalController 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4454485073857917488, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: NearFar 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4838881153480763383, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5306750102549658663, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Pusher 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593077201029294603, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: LineVisual 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5746835800156637842, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924408216877598061, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: TouchPad 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6018376807658367318, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Bumper 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6259478033700235488, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388963429079050616, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6392471047118055771, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Button_B 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856559014618273133, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: UniversalController 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6947604102996551011, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_Name
       value: Complete XR Origin Set Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688547664238671012, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Trigger 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7702371170525726336, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 2
       objectReference: {fileID: 0}
     - target: {fileID: 8059801596075752103, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14962,6 +16751,18 @@ PrefabInstance:
     - target: {fileID: 8059801596075752103, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8456241134852744102, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Button_Home 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561644529999387733, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Button_A 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8970434190756149289, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15019,13 +16820,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2609984114077390473}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCount: 0
-  rightController: {fileID: 0}
+  GameSpeed: 2
+  MoveSpeed: 1
+  RotateSpeed: 1
+  InteractionDistance: 2
+  TimeBudget: 600
+  ReportInterval: 30
+  RightController: {fileID: 0}
 --- !u!114 &2609984114077390475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15033,7 +16839,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2609984114077390473}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f83fbc6f43d44ea18234b2945826635, type: 3}
   m_Name: 
@@ -15047,6 +16853,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1477099516}
     m_Modifications:
+    - target: {fileID: 2376845917899549127, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
+      propertyPath: m_Name
+      value: polySurface13 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918098870546773054, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
+      propertyPath: m_Name
+      value: polySurface4 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397168093586753072, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
+      propertyPath: m_Name
+      value: polySurface5 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6291112869912382028, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15094,6 +16912,14 @@ PrefabInstance:
     - target: {fileID: 6630800027498598646, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
       propertyPath: m_Name
       value: DistantTerrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995150741058766684, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
+      propertyPath: m_Name
+      value: polySurface14 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539856448422464336, guid: ff32deaec288ec544a233b8d0fd080fc, type: 3}
+      propertyPath: m_Name
+      value: polySurface3 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
