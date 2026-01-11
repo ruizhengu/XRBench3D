@@ -130,10 +130,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 11
+      objectReference: {fileID: 0}
     - target: {fileID: 354191105197367909, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 2
       objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
@@ -205,10 +215,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 11
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -236,6 +261,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -245,6 +275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 3
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -310,6 +345,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
@@ -419,8 +464,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 11
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -1183,6 +1238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -1275,6 +1335,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -1345,10 +1415,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 12
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -1552,8 +1637,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 4
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -1734,8 +1829,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 10
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -2047,6 +2152,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -2132,10 +2247,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 14
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 14
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 14
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -2247,6 +2377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5836997908749963290, guid: f6777e2d71d6ba640b9cdca084dd7f7d,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2563,8 +2698,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 9
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -2584,6 +2729,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -2664,10 +2819,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 16
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 16
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 16
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -3191,6 +3361,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5836997908749963290, guid: f6777e2d71d6ba640b9cdca084dd7f7d,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3373,7 +3548,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
       propertyPath: m_Name
-      value: Pipe
+      value: Pipe 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -3382,8 +3557,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 3
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -3960,6 +4145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -4182,6 +4372,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5836997908749963290, guid: f6777e2d71d6ba640b9cdca084dd7f7d,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4195,6 +4390,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 145810550}
     m_Modifications:
+    - target: {fileID: 3190389506012978004, guid: 7ed4674fd922ca748b5e81975ad7bafc,
+        type: 3}
+      propertyPath: m_Name
+      value: instructionsFrame 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3996644622980851560, guid: 7ed4674fd922ca748b5e81975ad7bafc,
         type: 3}
       propertyPath: m_OnSelectExit.m_PersistentCalls.m_Calls.Array.size
@@ -4299,6 +4499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Secret_instructions
+      objectReference: {fileID: 0}
+    - target: {fileID: 5395465195184497213, guid: 7ed4674fd922ca748b5e81975ad7bafc,
+        type: 3}
+      propertyPath: m_Name
+      value: instructionsPaper 2
       objectReference: {fileID: 0}
     - target: {fileID: 8218044380398345054, guid: 7ed4674fd922ca748b5e81975ad7bafc,
         type: 3}
@@ -4827,6 +5032,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -4917,10 +5132,25 @@ PrefabInstance:
       propertyPath: CollisionModule.type
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -5089,8 +5319,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 19
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -5442,8 +5682,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 14
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -5481,6 +5731,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -5490,6 +5745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 6
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -5556,6 +5816,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
     m_RemovedGameObjects: []
@@ -5595,7 +5865,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 258ec0352c1e835408b182b35f359e47, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 258ec0352c1e835408b182b35f359e47, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -5705,6 +5975,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1111941636}
     m_Modifications:
+    - target: {fileID: 1089712259887380092, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern_Base 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2166177948666100841, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_RootOrder
@@ -5760,10 +6035,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2391811637806161204, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: QuadFlame 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2906113165606522490, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_Name
-      value: Lantern
+      value: Lantern 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698457903933598167, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Chain 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6076,7 +6361,7 @@ PrefabInstance:
     - target: {fileID: 4322038331851203920, guid: 31b4e4b290b20394e841217a6f5d31cb,
         type: 3}
       propertyPath: m_Name
-      value: SpiderWeb
+      value: SpiderWeb 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6182,6 +6467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 6
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
@@ -6863,6 +7153,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -6872,6 +7167,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 4
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -6952,6 +7252,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
@@ -7159,8 +7469,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 17
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -7397,8 +7717,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 15
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -7424,6 +7754,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1111941636}
     m_Modifications:
+    - target: {fileID: 1089712259887380092, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern_Base 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2166177948666100841, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_RootOrder
@@ -7479,10 +7814,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2391811637806161204, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: QuadFlame 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2906113165606522490, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_Name
-      value: Lantern
+      value: Lantern 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698457903933598167, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Chain 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7503,6 +7848,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -7512,6 +7862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 9
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -7592,6 +7947,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
@@ -7850,12 +8215,17 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: cef9cad8e2e6aca41bfaacc4484c2b36,
         type: 3}
       propertyPath: m_Name
-      value: Shelf
+      value: Shelf 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: cef9cad8e2e6aca41bfaacc4484c2b36,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 250288976933949866, guid: cef9cad8e2e6aca41bfaacc4484c2b36,
+        type: 3}
+      propertyPath: m_Name
+      value: Shelf 2
       objectReference: {fileID: 0}
     - target: {fileID: 250288976933949866, guid: cef9cad8e2e6aca41bfaacc4484c2b36,
         type: 3}
@@ -8208,6 +8578,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -8217,6 +8592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 7
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -8297,6 +8677,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 7
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
@@ -8450,6 +8840,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -8458,6 +8853,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b087163334465c846aaae5f8ba363f50, type: 2}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8598,6 +8998,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -8607,6 +9012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 8
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -8672,6 +9082,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
@@ -8946,6 +9366,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -8955,6 +9380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 1
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -9026,6 +9456,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
     m_RemovedGameObjects: []
@@ -9046,6 +9486,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -9055,6 +9500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 5
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -9135,6 +9585,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
@@ -9219,7 +9679,7 @@ PrefabInstance:
     - target: {fileID: -7525026400633309321, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 5
       objectReference: {fileID: 0}
     - target: {fileID: -7525026400633309321, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9239,7 +9699,7 @@ PrefabInstance:
     - target: {fileID: -6744855938710662741, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 7
       objectReference: {fileID: 0}
     - target: {fileID: -6744855938710662741, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9294,7 +9754,7 @@ PrefabInstance:
     - target: {fileID: -6144811051915905063, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 4
       objectReference: {fileID: 0}
     - target: {fileID: -6144811051915905063, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9329,7 +9789,7 @@ PrefabInstance:
     - target: {fileID: -5706742300831185351, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 8
       objectReference: {fileID: 0}
     - target: {fileID: -5706742300831185351, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9339,7 +9799,7 @@ PrefabInstance:
     - target: {fileID: -5529713686703609784, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowFrame
+      value: WindowFrame 5
       objectReference: {fileID: 0}
     - target: {fileID: -5529713686703609784, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9354,7 +9814,7 @@ PrefabInstance:
     - target: {fileID: -5120367721168745972, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 1
       objectReference: {fileID: 0}
     - target: {fileID: -5120367721168745972, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9514,7 +9974,7 @@ PrefabInstance:
     - target: {fileID: -2174851273423260289, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowFrame
+      value: WindowFrame 4
       objectReference: {fileID: 0}
     - target: {fileID: -2174851273423260289, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9524,7 +9984,7 @@ PrefabInstance:
     - target: {fileID: -2140161484672580561, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 3
       objectReference: {fileID: 0}
     - target: {fileID: -2140161484672580561, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9554,7 +10014,7 @@ PrefabInstance:
     - target: {fileID: -1709510298170607756, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 1
       objectReference: {fileID: 0}
     - target: {fileID: -1709510298170607756, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9599,7 +10059,7 @@ PrefabInstance:
     - target: {fileID: -583518326661949876, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 7
       objectReference: {fileID: 0}
     - target: {fileID: -583518326661949876, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9643,13 +10103,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 250288976933949866, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
+      propertyPath: m_Name
+      value: Shelf 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 250288976933949866, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 252845738568265017, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 4
       objectReference: {fileID: 0}
     - target: {fileID: 252845738568265017, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9684,7 +10149,7 @@ PrefabInstance:
     - target: {fileID: 789998210567724727, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 2
       objectReference: {fileID: 0}
     - target: {fileID: 789998210567724727, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9774,7 +10239,7 @@ PrefabInstance:
     - target: {fileID: 2710777106231644851, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 6
       objectReference: {fileID: 0}
     - target: {fileID: 2710777106231644851, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9789,7 +10254,7 @@ PrefabInstance:
     - target: {fileID: 2775672747477114411, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowFrame
+      value: WindowFrame 6
       objectReference: {fileID: 0}
     - target: {fileID: 2775672747477114411, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9804,7 +10269,7 @@ PrefabInstance:
     - target: {fileID: 2856765743099800873, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 2
       objectReference: {fileID: 0}
     - target: {fileID: 2856765743099800873, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9814,7 +10279,7 @@ PrefabInstance:
     - target: {fileID: 2869187795156710693, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowDoors
+      value: WindowDoors 6
       objectReference: {fileID: 0}
     - target: {fileID: 2869187795156710693, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9844,7 +10309,7 @@ PrefabInstance:
     - target: {fileID: 3776678119519013772, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowFrame
+      value: WindowFrame 1
       objectReference: {fileID: 0}
     - target: {fileID: 3776678119519013772, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -9939,7 +10404,7 @@ PrefabInstance:
     - target: {fileID: 4370261531188644816, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowFrame
+      value: WindowFrame 2
       objectReference: {fileID: 0}
     - target: {fileID: 4370261531188644816, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -10029,7 +10494,7 @@ PrefabInstance:
     - target: {fileID: 6953288416410382797, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 3
       objectReference: {fileID: 0}
     - target: {fileID: 6953288416410382797, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -10049,7 +10514,7 @@ PrefabInstance:
     - target: {fileID: 7331389530772861489, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowFrame
+      value: WindowFrame 3
       objectReference: {fileID: 0}
     - target: {fileID: 7331389530772861489, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -10064,7 +10529,7 @@ PrefabInstance:
     - target: {fileID: 8210645525377195805, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
       propertyPath: m_Name
-      value: WindowGlass
+      value: WindowGlass 5
       objectReference: {fileID: 0}
     - target: {fileID: 8210645525377195805, guid: b46a848a5ea4d0f4d9784aaaff85e23a,
         type: 3}
@@ -10247,13 +10712,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2046883100835652380, guid: 99060b5187e8c494999855d830133e53,
         type: 3}
+      propertyPath: m_Name
+      value: PumpkingPicture 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2046883100835652380, guid: 99060b5187e8c494999855d830133e53,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 99060b5187e8c494999855d830133e53,
         type: 3}
       propertyPath: m_Name
-      value: PumpkingPicture
+      value: PumpkingPicture 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 99060b5187e8c494999855d830133e53,
         type: 3}
@@ -10430,12 +10900,17 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
       propertyPath: m_Name
-      value: WoodenLog
+      value: WoodenLog 8
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 9
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
@@ -10600,6 +11075,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5836997908749963290, guid: f6777e2d71d6ba640b9cdca084dd7f7d,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10632,7 +11112,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fd3bd321378413940b70e184d3689cf9, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: fd3bd321378413940b70e184d3689cf9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -11104,13 +11584,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1203129203068739540, guid: ad77cbe223d0f5e459175facc032b464,
         type: 3}
+      propertyPath: m_Name
+      value: CauldronPipe 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1203129203068739540, guid: ad77cbe223d0f5e459175facc032b464,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: ad77cbe223d0f5e459175facc032b464,
         type: 3}
       propertyPath: m_Name
-      value: CauldronPipe
+      value: CauldronPipe 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: ad77cbe223d0f5e459175facc032b464,
         type: 3}
@@ -11290,11 +11775,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: InstructionsShootingWand
       objectReference: {fileID: 0}
+    - target: {fileID: 1959177189674576656, guid: 7413fc233ac77474b800b213c507aaa7,
+        type: 3}
+      propertyPath: m_Name
+      value: instructionsFrame 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4824993234304072325, guid: 7413fc233ac77474b800b213c507aaa7,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1912cf3f8f6b9c644bbf1d004c946284, type: 2}
+    - target: {fileID: 9049530581786088057, guid: 7413fc233ac77474b800b213c507aaa7,
+        type: 3}
+      propertyPath: m_Name
+      value: instructionsPaper 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12163,6 +12658,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -12233,6 +12738,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
@@ -12302,6 +12817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -12715,8 +13235,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 16
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -13097,7 +13627,7 @@ PrefabInstance:
     - target: {fileID: -8350856983739495892, guid: 1821071dd69db7641a890e3392d28503,
         type: 3}
       propertyPath: m_Name
-      value: Totem
+      value: Totem 3
       objectReference: {fileID: 0}
     - target: {fileID: -5592065464115468328, guid: 1821071dd69db7641a890e3392d28503,
         type: 3}
@@ -13162,7 +13692,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 1821071dd69db7641a890e3392d28503,
         type: 3}
       propertyPath: m_Name
-      value: Totem
+      value: Totem 2
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 1821071dd69db7641a890e3392d28503,
         type: 3}
@@ -13272,6 +13802,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1319746308, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
@@ -13287,6 +13821,51 @@ PrefabInstance:
     - target: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_BackGroundColor.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265607810277527178, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: NearFar 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 393207239731357619, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 558235185392661866, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 950175637189515454, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 970762308342442650, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000662906955510728, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246816219822305359, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_A 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352799979873374140, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Home 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368390096103844038, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point 1
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
@@ -13342,6 +13921,166 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763277165867629938, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842862291474320369, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141651114331267770, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449787133337329437, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Teleport Interactor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2633365042866799530, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Interactor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908298819410470536, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998152119438995280, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: LineVisual 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549580823586112762, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3675530901336607967, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3754057301151876428, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bumper 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867254018184489335, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: TouchPad 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3929596498127475894, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke Point Affordances 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4065709321064247272, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pinch_Pointer_LOD0 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088110610454198647, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: UniversalController 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090405666657053172, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: NearFar 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4383292563047305748, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Poke 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4551477191942292801, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_B 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4555019985763976546, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227292470352409039, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: LineVisual 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5392308954264473942, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038107472648090404, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Controller_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6237513019617653394, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Bumper 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6278634950042787497, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: TouchPad 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499517531677593257, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: UniversalController 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747261228452868767, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_B 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755294685494112956, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: ThumbStick_Base 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045326174636273504, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8066467136973266244, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: XRController_Thumbstick_Buttons 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092707227144796258, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_Home 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8341962337745733521, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_A 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8748500131873809389, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Near-Far Interactor 2
       objectReference: {fileID: 0}
     - target: {fileID: 9173983156334026967, guid: f6336ac4ac8b4d34bc5072418cdc62a0,
         type: 3}
@@ -13477,6 +14216,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5836997908749963290, guid: f6777e2d71d6ba640b9cdca084dd7f7d,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13600,6 +14344,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1111941636}
     m_Modifications:
+    - target: {fileID: 1089712259887380092, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern_Base 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2166177948666100841, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_RootOrder
@@ -13655,10 +14404,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2391811637806161204, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: QuadFlame 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2906113165606522490, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_Name
-      value: Lantern
+      value: Lantern 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698457903933598167, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Chain 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14454,6 +15213,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 692219887185417531, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1239837363210103992, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
       propertyPath: m_Name
@@ -14463,6 +15227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PotionBottle_2 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2315618609342979417, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 2
       objectReference: {fileID: 0}
     - target: {fileID: 2552890292047807549, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
         type: 3}
@@ -14594,6 +15363,16 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7307547922126164891, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: 97fa8c9687fbf0d4cad34eb10285e06a,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6501210847604950516, guid: 97fa8c9687fbf0d4cad34eb10285e06a, type: 3}
     m_RemovedGameObjects: []
@@ -14620,6 +15399,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -14705,6 +15494,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 13
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 13
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
@@ -14774,6 +15573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 13
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -14942,8 +15746,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 7
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -15045,8 +15859,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 18
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -15151,7 +15975,7 @@ PrefabInstance:
     - target: {fileID: 4322038331851203920, guid: 31b4e4b290b20394e841217a6f5d31cb,
         type: 3}
       propertyPath: m_Name
-      value: SpiderWeb
+      value: SpiderWeb 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15251,6 +16075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 14
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
@@ -15617,8 +16446,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 8
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -15728,13 +16567,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670725257}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c3496a516db14d4d8443f7a86f3b17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionCount: 0
-  rightController: {fileID: 0}
+  GameSpeed: 2
+  MoveSpeed: 1
+  RotateSpeed: 1
+  InteractionDistance: 2
+  TimeBudget: 600
+  ReportInterval: 30
+  RightController: {fileID: 0}
 --- !u!114 &1670725271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15742,7 +16586,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670725257}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f83fbc6f43d44ea18234b2945826635, type: 3}
   m_Name: 
@@ -16060,6 +16904,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 13
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
@@ -16412,8 +17261,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 12
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -16650,8 +17509,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 5
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -16987,7 +17856,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 379d0e8bcb7263044ba0fbca05d6a5df,
         type: 3}
       propertyPath: m_Name
-      value: Carpet
+      value: Carpet 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 379d0e8bcb7263044ba0fbca05d6a5df,
         type: 3}
@@ -16999,6 +17868,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b087163334465c846aaae5f8ba363f50, type: 2}
+    - target: {fileID: 6818094716102994598, guid: 379d0e8bcb7263044ba0fbca05d6a5df,
+        type: 3}
+      propertyPath: m_Name
+      value: Carpet 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6818094716102994598, guid: 379d0e8bcb7263044ba0fbca05d6a5df,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17090,7 +17964,7 @@ PrefabInstance:
     - target: {fileID: 4322038331851203920, guid: 31b4e4b290b20394e841217a6f5d31cb,
         type: 3}
       propertyPath: m_Name
-      value: SpiderWeb
+      value: SpiderWeb 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17213,6 +18087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 250288976933949866, guid: cef9cad8e2e6aca41bfaacc4484c2b36,
+        type: 3}
+      propertyPath: m_Name
+      value: Shelf 3
       objectReference: {fileID: 0}
     - target: {fileID: 250288976933949866, guid: cef9cad8e2e6aca41bfaacc4484c2b36,
         type: 3}
@@ -17514,8 +18393,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
+      propertyPath: m_Name
+      value: Pipe 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291525905255224604, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 13
       objectReference: {fileID: 0}
     - target: {fileID: 6674317257561895437, guid: 0a8b150a8c98bd243960dcfc107d25bf,
         type: 3}
@@ -17695,6 +18584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -17801,6 +18695,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1111941636}
     m_Modifications:
+    - target: {fileID: 1089712259887380092, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern_Base 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2166177948666100841, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_RootOrder
@@ -17871,10 +18770,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2391811637806161204, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: QuadFlame 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2906113165606522490, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_Name
-      value: Lantern
+      value: Lantern 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698457903933598167, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Chain 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17895,6 +18804,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -17980,6 +18899,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 17
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 17
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
@@ -18049,6 +18978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 17
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -18993,6 +19927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
         type: 3}
+      propertyPath: m_Name
+      value: WoodenLog 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041291729999169145, guid: 514c05e59d36d8f4ba0f0a9c80f0ef2e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -19345,6 +20284,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5061543448732636466, guid: 34f60038cbdc1bc4cbcf03f80d58de66,
+        type: 3}
+      propertyPath: m_Name
+      value: PotionSpawner 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5143798968067697845, guid: 34f60038cbdc1bc4cbcf03f80d58de66,
         type: 3}
       propertyPath: m_RootOrder
@@ -19408,7 +20352,12 @@ PrefabInstance:
     - target: {fileID: 8158596388194934438, guid: 34f60038cbdc1bc4cbcf03f80d58de66,
         type: 3}
       propertyPath: m_Name
-      value: PotionSpawner
+      value: PotionSpawner 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8487524220097723443, guid: 34f60038cbdc1bc4cbcf03f80d58de66,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Source 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19466,6 +20415,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 524441940}
     m_Modifications:
+    - target: {fileID: 119155430896085687, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1252362311502488159, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Anchor 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1528666310737360430, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Name
@@ -19551,6 +20510,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plug 18
       objectReference: {fileID: 0}
+    - target: {fileID: 5414629486727298409, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: Liquid 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149631051281774773, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticleSplash 18
+      objectReference: {fileID: 0}
     - target: {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46,
         type: 3}
       propertyPath: m_Enabled
@@ -19620,6 +20589,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924087753015548593, guid: b4bbe15423322ed41a7f5c18437c5a46,
+        type: 3}
+      propertyPath: m_Name
+      value: LiquidParticle 18
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8829868047883503487, guid: b4bbe15423322ed41a7f5c18437c5a46, type: 3}
@@ -19969,6 +20943,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 145810550}
     m_Modifications:
+    - target: {fileID: 1707391538159579463, guid: 942fad8a26445c44596b9797de96bc39,
+        type: 3}
+      propertyPath: m_Name
+      value: Book 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2057296594790293761, guid: 942fad8a26445c44596b9797de96bc39,
         type: 3}
       propertyPath: m_RootOrder
@@ -20027,12 +21006,32 @@ PrefabInstance:
     - target: {fileID: 2057296594790293765, guid: 942fad8a26445c44596b9797de96bc39,
         type: 3}
       propertyPath: m_Name
-      value: BookOfSpells
+      value: BookOfSpells 1
       objectReference: {fileID: 0}
     - target: {fileID: 2057296594790293767, guid: 942fad8a26445c44596b9797de96bc39,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2057296594790293767, guid: 942fad8a26445c44596b9797de96bc39,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434831270097114292, guid: 942fad8a26445c44596b9797de96bc39,
+        type: 3}
+      propertyPath: m_Name
+      value: BookOfSpells 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654189949420731676, guid: 942fad8a26445c44596b9797de96bc39,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047107129097124990, guid: 942fad8a26445c44596b9797de96bc39,
+        type: 3}
+      propertyPath: m_Name
+      value: Book 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20084,6 +21083,10 @@ PrefabInstance:
     - target: {fileID: 736451346, guid: 762e3c2a45258ea4baa2ab45328a3243, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 54.363003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278372930, guid: 762e3c2a45258ea4baa2ab45328a3243, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1278372930, guid: 762e3c2a45258ea4baa2ab45328a3243, type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.size
@@ -20169,10 +21172,20 @@ PrefabInstance:
       propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 895203094772901549, guid: 762e3c2a45258ea4baa2ab45328a3243,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Source 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6109501134634765154, guid: 762e3c2a45258ea4baa2ab45328a3243,
         type: 3}
       propertyPath: m_Name
-      value: BookHolder
+      value: BookHolder 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6701576537829506251, guid: 762e3c2a45258ea4baa2ab45328a3243,
+        type: 3}
+      propertyPath: m_Name
+      value: BookHolder 2
       objectReference: {fileID: 0}
     - target: {fileID: 7102765063606810993, guid: 762e3c2a45258ea4baa2ab45328a3243,
         type: 3}
@@ -20358,6 +21371,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 145810550}
     m_Modifications:
+    - target: {fileID: 1079696149223085494, guid: 89026add816f1f142b81b0985e4e79a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 1 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2023597918370898531, guid: 89026add816f1f142b81b0985e4e79a9,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -20451,7 +21469,7 @@ PrefabInstance:
     - target: {fileID: 6873112912697376109, guid: 89026add816f1f142b81b0985e4e79a9,
         type: 3}
       propertyPath: m_Name
-      value: Kitchen
+      value: Kitchen 1 1
       objectReference: {fileID: 0}
     - target: {fileID: 7582208132016557950, guid: 89026add816f1f142b81b0985e4e79a9,
         type: 3}
@@ -20507,6 +21525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132426696508380777, guid: 89026add816f1f142b81b0985e4e79a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Kitchen 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20575,6 +21598,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Convex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873767035170357586, guid: 837ee73cd60b7964cbaa4cad186161d9,
+        type: 3}
+      propertyPath: m_Name
+      value: ExitDoor 2
       objectReference: {fileID: 0}
     - target: {fileID: 5883272438211707854, guid: 837ee73cd60b7964cbaa4cad186161d9,
         type: 3}
@@ -20694,13 +21722,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6723427850629216832, guid: 837ee73cd60b7964cbaa4cad186161d9,
         type: 3}
+      propertyPath: m_Name
+      value: DoorLock 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723427850629216832, guid: 837ee73cd60b7964cbaa4cad186161d9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6723427851587742359, guid: 837ee73cd60b7964cbaa4cad186161d9,
         type: 3}
       propertyPath: m_Name
-      value: ExitDoor
+      value: ExitDoor 1
       objectReference: {fileID: 0}
     - target: {fileID: 7716130551476525188, guid: 837ee73cd60b7964cbaa4cad186161d9,
         type: 3}
@@ -20759,8 +21792,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7761520494620486822, guid: 837ee73cd60b7964cbaa4cad186161d9,
         type: 3}
+      propertyPath: m_Name
+      value: DoorLock 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7761520494620486822, guid: 837ee73cd60b7964cbaa4cad186161d9,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9070836178654599706, guid: 837ee73cd60b7964cbaa4cad186161d9,
+        type: 3}
+      propertyPath: m_Name
+      value: Glass 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21802,6 +22845,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4405743561919865095, guid: 8c9051b3ca2d4ed4d8d7a18f8cad0cc5,
+        type: 3}
+      propertyPath: m_Name
+      value: Trigger 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5459842938470217825, guid: 8c9051b3ca2d4ed4d8d7a18f8cad0cc5,
         type: 3}
       propertyPath: m_Name
@@ -22251,7 +23299,7 @@ PrefabInstance:
     - target: {fileID: 3800336322104275752, guid: 31d9a7a8bf3e5284885375ad4726064d,
         type: 3}
       propertyPath: m_Name
-      value: FireBoy
+      value: FireBoy 1
       objectReference: {fileID: 0}
     - target: {fileID: 4736312866424086527, guid: 31d9a7a8bf3e5284885375ad4726064d,
         type: 3}
@@ -22278,6 +23326,11 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.006665684
       objectReference: {fileID: 0}
+    - target: {fileID: 5160118750131733972, guid: 31d9a7a8bf3e5284885375ad4726064d,
+        type: 3}
+      propertyPath: m_Name
+      value: FireBoy 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5160118750131733973, guid: 31d9a7a8bf3e5284885375ad4726064d,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -22298,6 +23351,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: b087163334465c846aaae5f8ba363f50, type: 2}
+    - target: {fileID: 8903741914393870436, guid: 31d9a7a8bf3e5284885375ad4726064d,
+        type: 3}
+      propertyPath: m_Name
+      value: FireBoy 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22380,7 +23438,7 @@ PrefabInstance:
     - target: {fileID: 4322038331851203920, guid: 31b4e4b290b20394e841217a6f5d31cb,
         type: 3}
       propertyPath: m_Name
-      value: SpiderWeb
+      value: SpiderWeb 1
       objectReference: {fileID: 0}
     - target: {fileID: 4322038331851203920, guid: 31b4e4b290b20394e841217a6f5d31cb,
         type: 3}
@@ -22400,6 +23458,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 145810550}
     m_Modifications:
+    - target: {fileID: 1431067540543621485, guid: 01a64cc768ea0434cb358614311e7565,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541211780856121858, guid: 01a64cc768ea0434cb358614311e7565,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Source 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2239672755083203536, guid: 01a64cc768ea0434cb358614311e7565,
         type: 3}
       propertyPath: m_RootOrder
@@ -22863,12 +23931,17 @@ PrefabInstance:
     - target: {fileID: 6848769154770853131, guid: 01a64cc768ea0434cb358614311e7565,
         type: 3}
       propertyPath: m_Name
-      value: Totem
+      value: Totem 1
       objectReference: {fileID: 0}
     - target: {fileID: 7589463225202779918, guid: 01a64cc768ea0434cb358614311e7565,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7589463225202779918, guid: 01a64cc768ea0434cb358614311e7565,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8181329426371569644, guid: 01a64cc768ea0434cb358614311e7565,
         type: 3}
@@ -23726,6 +24799,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1111941636}
     m_Modifications:
+    - target: {fileID: 1089712259887380092, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Lantern_Base 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2166177948666100841, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_RootOrder
@@ -23781,10 +24859,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2391811637806161204, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: QuadFlame 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2906113165606522490, guid: c6f09ea75abbda04fabde0f9b5e50cee,
         type: 3}
       propertyPath: m_Name
-      value: Lantern
+      value: Lantern 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698457903933598167, guid: c6f09ea75abbda04fabde0f9b5e50cee,
+        type: 3}
+      propertyPath: m_Name
+      value: Chain 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24214,6 +25302,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 145810550}
     m_Modifications:
+    - target: {fileID: 1443674554270737596, guid: 022b22f3c99f40d4391a1227940613f9,
+        type: 3}
+      propertyPath: m_Name
+      value: instructionsPaper 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1927399163284713420, guid: 022b22f3c99f40d4391a1227940613f9,
         type: 3}
       propertyPath: m_Name
@@ -24345,6 +25438,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8387354449841673184, guid: b4a4f7336e1f91c40897a521e35cdc28,
         type: 3}
+    - target: {fileID: 8263813961605897685, guid: 022b22f3c99f40d4391a1227940613f9,
+        type: 3}
+      propertyPath: m_Name
+      value: instructionsFrame 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7610681248271775486, guid: 022b22f3c99f40d4391a1227940613f9, type: 3}
     m_RemovedGameObjects: []
@@ -24402,6 +25500,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7713101395609482386, guid: 8ae894f3be4faf94ca4007ccb752fec3,
+        type: 3}
+      propertyPath: m_Name
+      value: Attach 2
       objectReference: {fileID: 0}
     - target: {fileID: 7713101395609482386, guid: 8ae894f3be4faf94ca4007ccb752fec3,
         type: 3}
@@ -24477,6 +25580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractionManager
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7713101396639640438, guid: 8ae894f3be4faf94ca4007ccb752fec3,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
